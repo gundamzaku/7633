@@ -1,0 +1,784 @@
+2016/09/22 10:53:14 [error] [php] date(): It is not safe to rely on the system's timezone settings. You are *required* to use the date.timezone setting or the date_default_timezone_set() function. In case you used any of those methods and you are still getting this warning, you most likely misspelled the timezone identifier. We selected the timezone 'UTC' for now, but please set date.timezone to select your timezone. (/data/www/web/protected/views/layouts/main.php:51)
+Stack trace:
+#0 /data/www/yii/framework/web/CBaseController.php(95): SiteController->renderInternal()
+#1 /data/www/yii/framework/web/widgets/CContentDecorator.php(76): SiteController->renderFile()
+#2 /data/www/yii/framework/web/widgets/CContentDecorator.php(54): CContentDecorator->decorate()
+#3 /data/www/yii/framework/web/widgets/COutputProcessor.php(44): CContentDecorator->processOutput()
+#4 /data/www/yii/framework/web/CBaseController.php(214): CContentDecorator->run()
+#5 /data/www/yii/framework/web/CBaseController.php(308): SiteController->endWidget()
+#6 /data/www/web/protected/views/layouts/column1.php(6): SiteController->endContent()
+#7 /data/www/yii/framework/web/CBaseController.php(126): require()
+#8 /data/www/yii/framework/web/CBaseController.php(95): SiteController->renderInternal()
+#9 /data/www/yii/framework/web/CController.php(784): SiteController->renderFile()
+#10 /data/www/web/protected/controllers/SiteController.php(32): SiteController->render()
+#11 /data/www/yii/framework/web/actions/CInlineAction.php(49): SiteController->actionIndex()
+#12 /data/www/yii/framework/web/CController.php(308): CInlineAction->runWithParams()
+#13 /data/www/yii/framework/web/CController.php(286): SiteController->runAction()
+#14 /data/www/yii/framework/web/CController.php(265): SiteController->runActionWithFilters()
+#15 /data/www/yii/framework/web/CWebApplication.php(282): SiteController->run()
+#16 /data/www/yii/framework/web/CWebApplication.php(141): CWebApplication->runController()
+#17 /data/www/yii/framework/base/CApplication.php(185): CWebApplication->processRequest()
+#18 /data/www/web/index-test.php(15): CWebApplication->run()
+REQUEST_URI=/index-test.php
+2016/09/22 10:53:55 [error] [php] date(): It is not safe to rely on the system's timezone settings. You are *required* to use the date.timezone setting or the date_default_timezone_set() function. In case you used any of those methods and you are still getting this warning, you most likely misspelled the timezone identifier. We selected the timezone 'UTC' for now, but please set date.timezone to select your timezone. (/data/www/web/protected/views/layouts/main.php:51)
+Stack trace:
+#0 /data/www/yii/framework/web/CBaseController.php(95): SiteController->renderInternal()
+#1 /data/www/yii/framework/web/widgets/CContentDecorator.php(76): SiteController->renderFile()
+#2 /data/www/yii/framework/web/widgets/CContentDecorator.php(54): CContentDecorator->decorate()
+#3 /data/www/yii/framework/web/widgets/COutputProcessor.php(44): CContentDecorator->processOutput()
+#4 /data/www/yii/framework/web/CBaseController.php(214): CContentDecorator->run()
+#5 /data/www/yii/framework/web/CBaseController.php(308): SiteController->endWidget()
+#6 /data/www/web/protected/views/layouts/column1.php(6): SiteController->endContent()
+#7 /data/www/yii/framework/web/CBaseController.php(126): require()
+#8 /data/www/yii/framework/web/CBaseController.php(95): SiteController->renderInternal()
+#9 /data/www/yii/framework/web/CController.php(784): SiteController->renderFile()
+#10 /data/www/web/protected/controllers/SiteController.php(32): SiteController->render()
+#11 /data/www/yii/framework/web/actions/CInlineAction.php(49): SiteController->actionIndex()
+#12 /data/www/yii/framework/web/CController.php(308): CInlineAction->runWithParams()
+#13 /data/www/yii/framework/web/CController.php(286): SiteController->runAction()
+#14 /data/www/yii/framework/web/CController.php(265): SiteController->runActionWithFilters()
+#15 /data/www/yii/framework/web/CWebApplication.php(282): SiteController->run()
+#16 /data/www/yii/framework/web/CWebApplication.php(141): CWebApplication->runController()
+#17 /data/www/yii/framework/base/CApplication.php(185): CWebApplication->processRequest()
+#18 /data/www/web/index.php(13): CWebApplication->run()
+REQUEST_URI=/index.php
+in /data/www/web/protected/views/layouts/main.php (51)
+in /data/www/web/protected/views/layouts/column1.php (6)
+in /data/www/web/protected/controllers/SiteController.php (32)
+2016/09/22 10:53:58 [error] [php] date(): It is not safe to rely on the system's timezone settings. You are *required* to use the date.timezone setting or the date_default_timezone_set() function. In case you used any of those methods and you are still getting this warning, you most likely misspelled the timezone identifier. We selected the timezone 'UTC' for now, but please set date.timezone to select your timezone. (/data/www/web/protected/views/layouts/main.php:51)
+Stack trace:
+#0 /data/www/yii/framework/web/CBaseController.php(95): SiteController->renderInternal()
+#1 /data/www/yii/framework/web/widgets/CContentDecorator.php(76): SiteController->renderFile()
+#2 /data/www/yii/framework/web/widgets/CContentDecorator.php(54): CContentDecorator->decorate()
+#3 /data/www/yii/framework/web/widgets/COutputProcessor.php(44): CContentDecorator->processOutput()
+#4 /data/www/yii/framework/web/CBaseController.php(214): CContentDecorator->run()
+#5 /data/www/yii/framework/web/CBaseController.php(308): SiteController->endWidget()
+#6 /data/www/web/protected/views/layouts/column1.php(6): SiteController->endContent()
+#7 /data/www/yii/framework/web/CBaseController.php(126): require()
+#8 /data/www/yii/framework/web/CBaseController.php(95): SiteController->renderInternal()
+#9 /data/www/yii/framework/web/CController.php(784): SiteController->renderFile()
+#10 /data/www/web/protected/controllers/SiteController.php(32): SiteController->render()
+#11 /data/www/yii/framework/web/actions/CInlineAction.php(49): SiteController->actionIndex()
+#12 /data/www/yii/framework/web/CController.php(308): CInlineAction->runWithParams()
+#13 /data/www/yii/framework/web/CController.php(286): SiteController->runAction()
+#14 /data/www/yii/framework/web/CController.php(265): SiteController->runActionWithFilters()
+#15 /data/www/yii/framework/web/CWebApplication.php(282): SiteController->run()
+#16 /data/www/yii/framework/web/CWebApplication.php(141): CWebApplication->runController()
+#17 /data/www/yii/framework/base/CApplication.php(185): CWebApplication->processRequest()
+#18 /data/www/web/index.php(13): CWebApplication->run()
+REQUEST_URI=/index.php
+in /data/www/web/protected/views/layouts/main.php (51)
+in /data/www/web/protected/views/layouts/column1.php (6)
+in /data/www/web/protected/controllers/SiteController.php (32)
+2016/09/24 13:09:30 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'The requested view "about" was not found.' in /data/www/yii/framework/web/actions/CViewAction.php:112
+Stack trace:
+#0 /data/www/yii/framework/web/actions/CViewAction.php(123): CViewAction->resolveView('about')
+#1 /data/www/yii/framework/web/actions/CAction.php(76): CViewAction->run()
+#2 /data/www/yii/framework/web/CController.php(308): CAction->runWithParams(Array)
+#3 /data/www/yii/framework/web/CController.php(286): CController->runAction(Object(CViewAction))
+#4 /data/www/yii/framework/web/CController.php(265): CController->runActionWithFilters(Object(CViewAction), Array)
+#5 /data/www/yii/framework/web/CWebApplication.php(282): CController->run('page')
+#6 /data/www/yii/framework/web/CWebApplication.php(141): CWebApplication->runController('site/page')
+#7 /data/www/yii/framework/base/CApplication.php(185): CWebApplication->processRequest()
+#8 /data/www/web/index.php(13): CApplication->run()
+#9 {main}
+REQUEST_URI=/index.php?r=site/page&view=about
+HTTP_REFERER=http://121.40.160.91/index.php?r=site/contact
+---
+2016/09/24 13:09:32 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'The requested view "about" was not found.' in /data/www/yii/framework/web/actions/CViewAction.php:112
+Stack trace:
+#0 /data/www/yii/framework/web/actions/CViewAction.php(123): CViewAction->resolveView('about')
+#1 /data/www/yii/framework/web/actions/CAction.php(76): CViewAction->run()
+#2 /data/www/yii/framework/web/CController.php(308): CAction->runWithParams(Array)
+#3 /data/www/yii/framework/web/CController.php(286): CController->runAction(Object(CViewAction))
+#4 /data/www/yii/framework/web/CController.php(265): CController->runActionWithFilters(Object(CViewAction), Array)
+#5 /data/www/yii/framework/web/CWebApplication.php(282): CController->run('page')
+#6 /data/www/yii/framework/web/CWebApplication.php(141): CWebApplication->runController('site/page')
+#7 /data/www/yii/framework/base/CApplication.php(185): CWebApplication->processRequest()
+#8 /data/www/web/index.php(13): CApplication->run()
+#9 {main}
+REQUEST_URI=/index.php?r=site/page&view=about
+HTTP_REFERER=http://121.40.160.91/index.php?r=site/contact
+---
+2016/09/24 13:09:48 [error] [exception.CException] exception 'CException' with message 'SiteController cannot find the requested view "index".' in /data/www/yii/framework/web/CController.php:878
+Stack trace:
+#0 /data/www/yii/framework/web/CController.php(782): CController->renderPartial('index', NULL, true)
+#1 /data/www/web/protected/controllers/SiteController.php(32): CController->render('index')
+#2 /data/www/yii/framework/web/actions/CInlineAction.php(49): SiteController->actionIndex()
+#3 /data/www/yii/framework/web/CController.php(308): CInlineAction->runWithParams(Array)
+#4 /data/www/yii/framework/web/CController.php(286): CController->runAction(Object(CInlineAction))
+#5 /data/www/yii/framework/web/CController.php(265): CController->runActionWithFilters(Object(CInlineAction), Array)
+#6 /data/www/yii/framework/web/CWebApplication.php(282): CController->run('')
+#7 /data/www/yii/framework/web/CWebApplication.php(141): CWebApplication->runController('')
+#8 /data/www/yii/framework/base/CApplication.php(185): CWebApplication->processRequest()
+#9 /data/www/web/index.php(13): CApplication->run()
+#10 {main}
+REQUEST_URI=/index.php
+---
+2016/09/24 13:11:22 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "site".' in /data/www/yii/framework/web/CWebApplication.php:286
+Stack trace:
+#0 /data/www/yii/framework/web/CWebApplication.php(141): CWebApplication->runController('')
+#1 /data/www/yii/framework/base/CApplication.php(185): CWebApplication->processRequest()
+#2 /data/www/web/index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/index.php
+---
+2016/09/24 13:11:27 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "site".' in /data/www/yii/framework/web/CWebApplication.php:286
+Stack trace:
+#0 /data/www/yii/framework/web/CWebApplication.php(141): CWebApplication->runController('')
+#1 /data/www/yii/framework/base/CApplication.php(185): CWebApplication->processRequest()
+#2 /data/www/web/index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/index.php
+---
+2016/09/24 13:16:01 [error] [exception.CException] exception 'CException' with message 'SiteController cannot find the requested view "index".' in /data/www/yii/framework/web/CController.php:878
+Stack trace:
+#0 /data/www/yii/framework/web/CController.php(782): CController->renderPartial('index', NULL, true)
+#1 /data/www/web/protected/controllers/SiteController.php(14): CController->render('index')
+#2 /data/www/yii/framework/web/actions/CInlineAction.php(49): SiteController->actionIndex()
+#3 /data/www/yii/framework/web/CController.php(308): CInlineAction->runWithParams(Array)
+#4 /data/www/yii/framework/web/CController.php(286): CController->runAction(Object(CInlineAction))
+#5 /data/www/yii/framework/web/CController.php(265): CController->runActionWithFilters(Object(CInlineAction), Array)
+#6 /data/www/yii/framework/web/CWebApplication.php(282): CController->run('')
+#7 /data/www/yii/framework/web/CWebApplication.php(141): CWebApplication->runController('')
+#8 /data/www/yii/framework/base/CApplication.php(185): CWebApplication->processRequest()
+#9 /data/www/web/index.php(13): CApplication->run()
+#10 {main}
+REQUEST_URI=/index.php
+---
+2016/09/24 13:16:02 [error] [exception.CException] exception 'CException' with message 'SiteController cannot find the requested view "index".' in /data/www/yii/framework/web/CController.php:878
+Stack trace:
+#0 /data/www/yii/framework/web/CController.php(782): CController->renderPartial('index', NULL, true)
+#1 /data/www/web/protected/controllers/SiteController.php(14): CController->render('index')
+#2 /data/www/yii/framework/web/actions/CInlineAction.php(49): SiteController->actionIndex()
+#3 /data/www/yii/framework/web/CController.php(308): CInlineAction->runWithParams(Array)
+#4 /data/www/yii/framework/web/CController.php(286): CController->runAction(Object(CInlineAction))
+#5 /data/www/yii/framework/web/CController.php(265): CController->runActionWithFilters(Object(CInlineAction), Array)
+#6 /data/www/yii/framework/web/CWebApplication.php(282): CController->run('')
+#7 /data/www/yii/framework/web/CWebApplication.php(141): CWebApplication->runController('')
+#8 /data/www/yii/framework/base/CApplication.php(185): CWebApplication->processRequest()
+#9 /data/www/web/index.php(13): CApplication->run()
+#10 {main}
+REQUEST_URI=/index.php
+---
+2016/09/24 13:17:21 [error] [exception.CException] exception 'CException' with message 'SiteController cannot find the requested view "index".' in /data/www/yii/framework/web/CController.php:878
+Stack trace:
+#0 /data/www/yii/framework/web/CController.php(782): CController->renderPartial('index', NULL, true)
+#1 /data/www/web/protected/controllers/SiteController.php(14): CController->render('index')
+#2 /data/www/yii/framework/web/actions/CInlineAction.php(49): SiteController->actionIndex()
+#3 /data/www/yii/framework/web/CController.php(308): CInlineAction->runWithParams(Array)
+#4 /data/www/yii/framework/web/CController.php(286): CController->runAction(Object(CInlineAction))
+#5 /data/www/yii/framework/web/CController.php(265): CController->runActionWithFilters(Object(CInlineAction), Array)
+#6 /data/www/yii/framework/web/CWebApplication.php(282): CController->run('')
+#7 /data/www/yii/framework/web/CWebApplication.php(141): CWebApplication->runController('')
+#8 /data/www/yii/framework/base/CApplication.php(185): CWebApplication->processRequest()
+#9 /data/www/web/index.php(13): CApplication->run()
+#10 {main}
+REQUEST_URI=/index.php
+---
+2016/09/24 13:17:23 [error] [exception.CException] exception 'CException' with message 'SiteController cannot find the requested view "index".' in /data/www/yii/framework/web/CController.php:878
+Stack trace:
+#0 /data/www/yii/framework/web/CController.php(782): CController->renderPartial('index', NULL, true)
+#1 /data/www/web/protected/controllers/SiteController.php(14): CController->render('index')
+#2 /data/www/yii/framework/web/actions/CInlineAction.php(49): SiteController->actionIndex()
+#3 /data/www/yii/framework/web/CController.php(308): CInlineAction->runWithParams(Array)
+#4 /data/www/yii/framework/web/CController.php(286): CController->runAction(Object(CInlineAction))
+#5 /data/www/yii/framework/web/CController.php(265): CController->runActionWithFilters(Object(CInlineAction), Array)
+#6 /data/www/yii/framework/web/CWebApplication.php(282): CController->run('')
+#7 /data/www/yii/framework/web/CWebApplication.php(141): CWebApplication->runController('')
+#8 /data/www/yii/framework/base/CApplication.php(185): CWebApplication->processRequest()
+#9 /data/www/web/index.php(13): CApplication->run()
+#10 {main}
+REQUEST_URI=/index.php
+---
+2016/09/24 13:17:24 [error] [exception.CException] exception 'CException' with message 'SiteController cannot find the requested view "index".' in /data/www/yii/framework/web/CController.php:878
+Stack trace:
+#0 /data/www/yii/framework/web/CController.php(782): CController->renderPartial('index', NULL, true)
+#1 /data/www/web/protected/controllers/SiteController.php(14): CController->render('index')
+#2 /data/www/yii/framework/web/actions/CInlineAction.php(49): SiteController->actionIndex()
+#3 /data/www/yii/framework/web/CController.php(308): CInlineAction->runWithParams(Array)
+#4 /data/www/yii/framework/web/CController.php(286): CController->runAction(Object(CInlineAction))
+#5 /data/www/yii/framework/web/CController.php(265): CController->runActionWithFilters(Object(CInlineAction), Array)
+#6 /data/www/yii/framework/web/CWebApplication.php(282): CController->run('')
+#7 /data/www/yii/framework/web/CWebApplication.php(141): CWebApplication->runController('')
+#8 /data/www/yii/framework/base/CApplication.php(185): CWebApplication->processRequest()
+#9 /data/www/web/index.php(13): CApplication->run()
+#10 {main}
+REQUEST_URI=/index.php
+---
+2016/09/24 13:32:39 [error] [php] Undefined variable: model (/data/www/web/protected/controllers/SiteController.php:18)
+Stack trace:
+#0 /data/www/yii/framework/web/CController.php(286): SiteController->runAction()
+#1 /data/www/yii/framework/web/CController.php(265): SiteController->runActionWithFilters()
+#2 /data/www/yii/framework/web/CWebApplication.php(282): SiteController->run()
+#3 /data/www/yii/framework/web/CWebApplication.php(141): CWebApplication->runController()
+#4 /data/www/yii/framework/base/CApplication.php(185): CWebApplication->processRequest()
+#5 /data/www/web/index.php(13): CWebApplication->run()
+REQUEST_URI=/index.php?r=site/rule
+in /data/www/web/protected/controllers/SiteController.php (18)
+in /data/www/web/index.php (13)
+2016/09/24 13:34:30 [error] [php] Undefined variable: var (/data/www/web/protected/views/site/index.php:9)
+Stack trace:
+#0 /data/www/yii/framework/web/CController.php(869): SiteController->renderFile()
+#1 /data/www/yii/framework/web/CController.php(782): SiteController->renderPartial()
+#2 /data/www/web/protected/controllers/SiteController.php(20): SiteController->render()
+#3 /data/www/yii/framework/web/actions/CInlineAction.php(49): SiteController->actionRule()
+#4 /data/www/yii/framework/web/CController.php(308): CInlineAction->runWithParams()
+#5 /data/www/yii/framework/web/CController.php(286): SiteController->runAction()
+#6 /data/www/yii/framework/web/CController.php(265): SiteController->runActionWithFilters()
+#7 /data/www/yii/framework/web/CWebApplication.php(282): SiteController->run()
+#8 /data/www/yii/framework/web/CWebApplication.php(141): CWebApplication->runController()
+#9 /data/www/yii/framework/base/CApplication.php(185): CWebApplication->processRequest()
+#10 /data/www/web/index.php(13): CWebApplication->run()
+REQUEST_URI=/index.php?r=site/rule
+in /data/www/web/protected/views/site/index.php (9)
+in /data/www/web/protected/controllers/SiteController.php (20)
+in /data/www/web/index.php (13)
+2016/09/24 13:34:32 [error] [php] Undefined variable: var (/data/www/web/protected/views/site/index.php:9)
+Stack trace:
+#0 /data/www/yii/framework/web/CController.php(869): SiteController->renderFile()
+#1 /data/www/yii/framework/web/CController.php(782): SiteController->renderPartial()
+#2 /data/www/web/protected/controllers/SiteController.php(20): SiteController->render()
+#3 /data/www/yii/framework/web/actions/CInlineAction.php(49): SiteController->actionRule()
+#4 /data/www/yii/framework/web/CController.php(308): CInlineAction->runWithParams()
+#5 /data/www/yii/framework/web/CController.php(286): SiteController->runAction()
+#6 /data/www/yii/framework/web/CController.php(265): SiteController->runActionWithFilters()
+#7 /data/www/yii/framework/web/CWebApplication.php(282): SiteController->run()
+#8 /data/www/yii/framework/web/CWebApplication.php(141): CWebApplication->runController()
+#9 /data/www/yii/framework/base/CApplication.php(185): CWebApplication->processRequest()
+#10 /data/www/web/index.php(13): CWebApplication->run()
+REQUEST_URI=/index.php?r=site/rule
+in /data/www/web/protected/views/site/index.php (9)
+in /data/www/web/protected/controllers/SiteController.php (20)
+in /data/www/web/index.php (13)
+2016/09/24 13:38:45 [error] [php] Indirect modification of overloaded property SiteForm::$attributes has no effect (/data/www/web/protected/controllers/SiteController.php:19)
+Stack trace:
+#0 /data/www/yii/framework/web/CController.php(286): SiteController->runAction()
+#1 /data/www/yii/framework/web/CController.php(265): SiteController->runActionWithFilters()
+#2 /data/www/yii/framework/web/CWebApplication.php(282): SiteController->run()
+#3 /data/www/yii/framework/web/CWebApplication.php(141): CWebApplication->runController()
+#4 /data/www/yii/framework/base/CApplication.php(185): CWebApplication->processRequest()
+#5 /data/www/web/index.php(13): CWebApplication->run()
+REQUEST_URI=/index.php?r=site/rule
+in /data/www/web/protected/controllers/SiteController.php (19)
+in /data/www/web/index.php (13)
+2016/09/24 13:39:48 [error] [php] include(authenticate.php): failed to open stream: No such file or directory (/data/www/yii/framework/YiiBase.php:432)
+Stack trace:
+#0 unknown(0): spl_autoload_call()
+#1 /data/www/yii/framework/YiiBase.php(303): class_exists()
+#2 /data/www/yii/framework/validators/CValidator.php(174): import()
+#3 /data/www/yii/framework/base/CModel.php(287): createValidator()
+#4 /data/www/yii/framework/base/CModel.php(260): SiteForm->createValidators()
+#5 /data/www/yii/framework/base/CModel.php(158): SiteForm->getValidators()
+#6 /data/www/web/protected/controllers/SiteController.php(20): SiteForm->validate()
+#7 /data/www/yii/framework/web/actions/CInlineAction.php(49): SiteController->actionRule()
+#8 /data/www/yii/framework/web/CController.php(308): CInlineAction->runWithParams()
+#9 /data/www/yii/framework/web/CController.php(286): SiteController->runAction()
+#10 /data/www/yii/framework/web/CController.php(265): SiteController->runActionWithFilters()
+#11 /data/www/yii/framework/web/CWebApplication.php(282): SiteController->run()
+#12 /data/www/yii/framework/web/CWebApplication.php(141): CWebApplication->runController()
+#13 /data/www/yii/framework/base/CApplication.php(185): CWebApplication->processRequest()
+#14 /data/www/web/index.php(13): CWebApplication->run()
+REQUEST_URI=/index.php?r=site/rule
+in /data/www/web/protected/controllers/SiteController.php (20)
+in /data/www/web/index.php (13)
+2016/09/24 13:40:15 [error] [php] include(authenticate.php): failed to open stream: No such file or directory (/data/www/yii/framework/YiiBase.php:432)
+Stack trace:
+#0 unknown(0): spl_autoload_call()
+#1 /data/www/yii/framework/YiiBase.php(303): class_exists()
+#2 /data/www/yii/framework/validators/CValidator.php(174): import()
+#3 /data/www/yii/framework/base/CModel.php(287): createValidator()
+#4 /data/www/yii/framework/base/CModel.php(260): SiteForm->createValidators()
+#5 /data/www/yii/framework/base/CModel.php(158): SiteForm->getValidators()
+#6 /data/www/web/protected/controllers/SiteController.php(20): SiteForm->validate()
+#7 /data/www/yii/framework/web/actions/CInlineAction.php(49): SiteController->actionRule()
+#8 /data/www/yii/framework/web/CController.php(308): CInlineAction->runWithParams()
+#9 /data/www/yii/framework/web/CController.php(286): SiteController->runAction()
+#10 /data/www/yii/framework/web/CController.php(265): SiteController->runActionWithFilters()
+#11 /data/www/yii/framework/web/CWebApplication.php(282): SiteController->run()
+#12 /data/www/yii/framework/web/CWebApplication.php(141): CWebApplication->runController()
+#13 /data/www/yii/framework/base/CApplication.php(185): CWebApplication->processRequest()
+#14 /data/www/web/index.php(13): CWebApplication->run()
+REQUEST_URI=/index.php?r=site/rule
+in /data/www/web/protected/controllers/SiteController.php (20)
+in /data/www/web/index.php (13)
+2016/09/24 13:40:16 [error] [php] include(authenticate.php): failed to open stream: No such file or directory (/data/www/yii/framework/YiiBase.php:432)
+Stack trace:
+#0 unknown(0): spl_autoload_call()
+#1 /data/www/yii/framework/YiiBase.php(303): class_exists()
+#2 /data/www/yii/framework/validators/CValidator.php(174): import()
+#3 /data/www/yii/framework/base/CModel.php(287): createValidator()
+#4 /data/www/yii/framework/base/CModel.php(260): SiteForm->createValidators()
+#5 /data/www/yii/framework/base/CModel.php(158): SiteForm->getValidators()
+#6 /data/www/web/protected/controllers/SiteController.php(20): SiteForm->validate()
+#7 /data/www/yii/framework/web/actions/CInlineAction.php(49): SiteController->actionRule()
+#8 /data/www/yii/framework/web/CController.php(308): CInlineAction->runWithParams()
+#9 /data/www/yii/framework/web/CController.php(286): SiteController->runAction()
+#10 /data/www/yii/framework/web/CController.php(265): SiteController->runActionWithFilters()
+#11 /data/www/yii/framework/web/CWebApplication.php(282): SiteController->run()
+#12 /data/www/yii/framework/web/CWebApplication.php(141): CWebApplication->runController()
+#13 /data/www/yii/framework/base/CApplication.php(185): CWebApplication->processRequest()
+#14 /data/www/web/index.php(13): CWebApplication->run()
+REQUEST_URI=/index.php?r=site/rule
+in /data/www/web/protected/controllers/SiteController.php (20)
+in /data/www/web/index.php (13)
+2016/09/24 13:42:17 [error] [php] Indirect modification of overloaded property SiteForm::$attributes has no effect (/data/www/web/protected/controllers/SiteController.php:19)
+Stack trace:
+#0 /data/www/yii/framework/web/CController.php(286): SiteController->runAction()
+#1 /data/www/yii/framework/web/CController.php(265): SiteController->runActionWithFilters()
+#2 /data/www/yii/framework/web/CWebApplication.php(282): SiteController->run()
+#3 /data/www/yii/framework/web/CWebApplication.php(141): CWebApplication->runController()
+#4 /data/www/yii/framework/base/CApplication.php(185): CWebApplication->processRequest()
+#5 /data/www/web/index.php(13): CWebApplication->run()
+REQUEST_URI=/index.php?r=site/rule
+in /data/www/web/protected/controllers/SiteController.php (19)
+in /data/www/web/index.php (13)
+2016/09/25 19:56:38 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'The system is unable to find the requested action "page".' in /data/www/yii/framework/web/CController.php:483
+Stack trace:
+#0 /data/www/yii/framework/web/CController.php(270): CController->missingAction('page')
+#1 /data/www/yii/framework/web/CWebApplication.php(282): CController->run('page')
+#2 /data/www/yii/framework/web/CWebApplication.php(141): CWebApplication->runController('site/page')
+#3 /data/www/yii/framework/base/CApplication.php(185): CWebApplication->processRequest()
+#4 /data/www/web/index.php(13): CApplication->run()
+#5 {main}
+REQUEST_URI=/index.php?r=site/page&view=about
+HTTP_REFERER=http://121.40.160.91/index.php
+---
+2016/09/25 19:56:39 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'The system is unable to find the requested action "page".' in /data/www/yii/framework/web/CController.php:483
+Stack trace:
+#0 /data/www/yii/framework/web/CController.php(270): CController->missingAction('page')
+#1 /data/www/yii/framework/web/CWebApplication.php(282): CController->run('page')
+#2 /data/www/yii/framework/web/CWebApplication.php(141): CWebApplication->runController('site/page')
+#3 /data/www/yii/framework/base/CApplication.php(185): CWebApplication->processRequest()
+#4 /data/www/web/index.php(13): CApplication->run()
+#5 {main}
+REQUEST_URI=/index.php?r=site/page&view=about
+---
+2016/09/25 19:56:40 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "PHNjcmlwdD5hbGVydCgxKTwvc2NyaXB0Pg==".' in /data/www/yii/framework/web/CWebApplication.php:286
+Stack trace:
+#0 /data/www/yii/framework/web/CWebApplication.php(141): CWebApplication->runController('PHNjcmlwdD5hbGV...')
+#1 /data/www/yii/framework/base/CApplication.php(185): CWebApplication->processRequest()
+#2 /data/www/web/index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/index.php?r=PHNjcmlwdD5hbGVydCgxKTwvc2NyaXB0Pg==&view=about
+HTTP_REFERER=http://121.40.160.91/index.php
+---
+2016/09/25 19:56:41 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'The system is unable to find the requested action "page".' in /data/www/yii/framework/web/CController.php:483
+Stack trace:
+#0 /data/www/yii/framework/web/CController.php(270): CController->missingAction('page')
+#1 /data/www/yii/framework/web/CWebApplication.php(282): CController->run('page')
+#2 /data/www/yii/framework/web/CWebApplication.php(141): CWebApplication->runController('site/page')
+#3 /data/www/yii/framework/base/CApplication.php(185): CWebApplication->processRequest()
+#4 /data/www/web/index.php(13): CApplication->run()
+#5 {main}
+REQUEST_URI=/index.php?r=site/page&view=PHNjcmlwdD5hbGVydCgxKTwvc2NyaXB0Pg==
+HTTP_REFERER=http://121.40.160.91/index.php
+---
+2016/09/25 19:56:41 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "amF2YXNjcmlwdDpwcm9tcHQoMTExKTt4".' in /data/www/yii/framework/web/CWebApplication.php:286
+Stack trace:
+#0 /data/www/yii/framework/web/CWebApplication.php(141): CWebApplication->runController('amF2YXNjcmlwdDp...')
+#1 /data/www/yii/framework/base/CApplication.php(185): CWebApplication->processRequest()
+#2 /data/www/web/index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/index.php?r=amF2YXNjcmlwdDpwcm9tcHQoMTExKTt4&view=about
+HTTP_REFERER=http://121.40.160.91/index.php
+---
+2016/09/25 19:56:42 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'The system is unable to find the requested action "page".' in /data/www/yii/framework/web/CController.php:483
+Stack trace:
+#0 /data/www/yii/framework/web/CController.php(270): CController->missingAction('page')
+#1 /data/www/yii/framework/web/CWebApplication.php(282): CController->run('page')
+#2 /data/www/yii/framework/web/CWebApplication.php(141): CWebApplication->runController('site/page')
+#3 /data/www/yii/framework/base/CApplication.php(185): CWebApplication->processRequest()
+#4 /data/www/web/index.php(13): CApplication->run()
+#5 {main}
+REQUEST_URI=/index.php?r=site/page&view=amF2YXNjcmlwdDpwcm9tcHQoMTExKTt4
+HTTP_REFERER=http://121.40.160.91/index.php
+---
+2016/09/25 19:56:42 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'The system is unable to find the requested action "pagei3943238i".' in /data/www/yii/framework/web/CController.php:483
+Stack trace:
+#0 /data/www/yii/framework/web/CController.php(270): CController->missingAction('pagei3943238i')
+#1 /data/www/yii/framework/web/CWebApplication.php(282): CController->run('pagei3943238i')
+#2 /data/www/yii/framework/web/CWebApplication.php(141): CWebApplication->runController('site/pagei39432...')
+#3 /data/www/yii/framework/base/CApplication.php(185): CWebApplication->processRequest()
+#4 /data/www/web/index.php(13): CApplication->run()
+#5 {main}
+REQUEST_URI=/index.php?r=site/pagei3943238i&view=about
+HTTP_REFERER=http://121.40.160.91/index.php
+---
+2016/09/25 19:56:43 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'The system is unable to find the requested action "page".' in /data/www/yii/framework/web/CController.php:483
+Stack trace:
+#0 /data/www/yii/framework/web/CController.php(270): CController->missingAction('page')
+#1 /data/www/yii/framework/web/CWebApplication.php(282): CController->run('page')
+#2 /data/www/yii/framework/web/CWebApplication.php(141): CWebApplication->runController('site/page')
+#3 /data/www/yii/framework/base/CApplication.php(185): CWebApplication->processRequest()
+#4 /data/www/web/index.php(13): CApplication->run()
+#5 {main}
+REQUEST_URI=/index.php?r=site/page&view=abouti3943238i
+HTTP_REFERER=http://121.40.160.91/index.php
+---
+2016/09/25 19:56:44 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "'" onmouseover=alert() d='"".' in /data/www/yii/framework/web/CWebApplication.php:286
+Stack trace:
+#0 /data/www/yii/framework/web/CWebApplication.php(141): CWebApplication->runController(''" onmouseover=...')
+#1 /data/www/yii/framework/base/CApplication.php(185): CWebApplication->processRequest()
+#2 /data/www/web/index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/index.php?r='%22+onmouseover=alert()+d='%22&view=about
+HTTP_REFERER=http://121.40.160.91/index.php
+---
+2016/09/25 19:56:45 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'The system is unable to find the requested action "page".' in /data/www/yii/framework/web/CController.php:483
+Stack trace:
+#0 /data/www/yii/framework/web/CController.php(270): CController->missingAction('page')
+#1 /data/www/yii/framework/web/CWebApplication.php(282): CController->run('page')
+#2 /data/www/yii/framework/web/CWebApplication.php(141): CWebApplication->runController('site/page')
+#3 /data/www/yii/framework/base/CApplication.php(185): CWebApplication->processRequest()
+#4 /data/www/web/index.php(13): CApplication->run()
+#5 {main}
+REQUEST_URI=/index.php?r=site/page&view='%22+onmouseover=alert()+d='%22
+HTTP_REFERER=http://121.40.160.91/index.php
+---
+2016/09/25 19:56:45 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "'" onmouseover=alert() d='"".' in /data/www/yii/framework/web/CWebApplication.php:286
+Stack trace:
+#0 /data/www/yii/framework/web/CWebApplication.php(141): CWebApplication->runController(''" onmouseover=...')
+#1 /data/www/yii/framework/base/CApplication.php(185): CWebApplication->processRequest()
+#2 /data/www/web/index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/index.php?r=%27%22%20onmouseover%3Dalert%28%29%20d%3D%27%22&view=about
+HTTP_REFERER=http://121.40.160.91/index.php
+---
+2016/09/25 19:56:46 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'The system is unable to find the requested action "page".' in /data/www/yii/framework/web/CController.php:483
+Stack trace:
+#0 /data/www/yii/framework/web/CController.php(270): CController->missingAction('page')
+#1 /data/www/yii/framework/web/CWebApplication.php(282): CController->run('page')
+#2 /data/www/yii/framework/web/CWebApplication.php(141): CWebApplication->runController('site/page')
+#3 /data/www/yii/framework/base/CApplication.php(185): CWebApplication->processRequest()
+#4 /data/www/web/index.php(13): CApplication->run()
+#5 {main}
+REQUEST_URI=/index.php?r=site/page&view=%27%22%20onmouseover%3Dalert%28%29%20d%3D%27%22
+HTTP_REFERER=http://121.40.160.91/index.php
+---
+2016/09/25 19:56:46 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "%27%22%20onmouseover%3Dalert%28%29%20d%3D%27%22".' in /data/www/yii/framework/web/CWebApplication.php:286
+Stack trace:
+#0 /data/www/yii/framework/web/CWebApplication.php(141): CWebApplication->runController('%27%22%20onmous...')
+#1 /data/www/yii/framework/base/CApplication.php(185): CWebApplication->processRequest()
+#2 /data/www/web/index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/index.php?r=%2527%2522%2520onmouseover%253Dalert%2528%2529%2520d%253D%2527%2522&view=about
+HTTP_REFERER=http://121.40.160.91/index.php
+---
+2016/09/25 19:56:47 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'The system is unable to find the requested action "page".' in /data/www/yii/framework/web/CController.php:483
+Stack trace:
+#0 /data/www/yii/framework/web/CController.php(270): CController->missingAction('page')
+#1 /data/www/yii/framework/web/CWebApplication.php(282): CController->run('page')
+#2 /data/www/yii/framework/web/CWebApplication.php(141): CWebApplication->runController('site/page')
+#3 /data/www/yii/framework/base/CApplication.php(185): CWebApplication->processRequest()
+#4 /data/www/web/index.php(13): CApplication->run()
+#5 {main}
+REQUEST_URI=/index.php?r=site/page&view=%2527%2522%2520onmouseover%253Dalert%2528%2529%2520d%253D%2527%2522
+HTTP_REFERER=http://121.40.160.91/index.php
+---
+2016/09/25 19:56:48 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "'"/></body><body onload=prompt()>".' in /data/www/yii/framework/web/CWebApplication.php:286
+Stack trace:
+#0 /data/www/yii/framework/web/CWebApplication.php(141): CWebApplication->runController(''"/></body><bod...')
+#1 /data/www/yii/framework/base/CApplication.php(185): CWebApplication->processRequest()
+#2 /data/www/web/index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/index.php?r='%22/%3E%3C/body%3E%3Cbody+onload=prompt()%3E&view=about
+HTTP_REFERER=http://121.40.160.91/index.php
+---
+2016/09/25 19:56:49 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'The system is unable to find the requested action "page".' in /data/www/yii/framework/web/CController.php:483
+Stack trace:
+#0 /data/www/yii/framework/web/CController.php(270): CController->missingAction('page')
+#1 /data/www/yii/framework/web/CWebApplication.php(282): CController->run('page')
+#2 /data/www/yii/framework/web/CWebApplication.php(141): CWebApplication->runController('site/page')
+#3 /data/www/yii/framework/base/CApplication.php(185): CWebApplication->processRequest()
+#4 /data/www/web/index.php(13): CApplication->run()
+#5 {main}
+REQUEST_URI=/index.php?r=site/page&view='%22/%3E%3C/body%3E%3Cbody+onload=prompt()%3E
+HTTP_REFERER=http://121.40.160.91/index.php
+---
+2016/09/25 19:56:49 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "'"/></body><body onload=prompt()>".' in /data/www/yii/framework/web/CWebApplication.php:286
+Stack trace:
+#0 /data/www/yii/framework/web/CWebApplication.php(141): CWebApplication->runController(''"/></body><bod...')
+#1 /data/www/yii/framework/base/CApplication.php(185): CWebApplication->processRequest()
+#2 /data/www/web/index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/index.php?r=%27%22%2f%3E%3C%2fbody%3E%3Cbody%20onload%3dprompt%28%29%3e&view=about
+HTTP_REFERER=http://121.40.160.91/index.php
+---
+2016/09/25 19:56:50 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'The system is unable to find the requested action "page".' in /data/www/yii/framework/web/CController.php:483
+Stack trace:
+#0 /data/www/yii/framework/web/CController.php(270): CController->missingAction('page')
+#1 /data/www/yii/framework/web/CWebApplication.php(282): CController->run('page')
+#2 /data/www/yii/framework/web/CWebApplication.php(141): CWebApplication->runController('site/page')
+#3 /data/www/yii/framework/base/CApplication.php(185): CWebApplication->processRequest()
+#4 /data/www/web/index.php(13): CApplication->run()
+#5 {main}
+REQUEST_URI=/index.php?r=site/page&view=%27%22%2f%3E%3C%2fbody%3E%3Cbody%20onload%3dprompt%28%29%3e
+HTTP_REFERER=http://121.40.160.91/index.php
+---
+2016/09/25 19:56:50 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "%27%22%2f%3E%3C%2fbody%3E%3Cbody%20onload%3dprompt%28%29%3e".' in /data/www/yii/framework/web/CWebApplication.php:286
+Stack trace:
+#0 /data/www/yii/framework/web/CWebApplication.php(141): CWebApplication->runController('%27%22%2f%3E%3C...')
+#1 /data/www/yii/framework/base/CApplication.php(185): CWebApplication->processRequest()
+#2 /data/www/web/index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/index.php?r=%2527%2522%252f%253E%253C%252fbody%253E%253Cbody%2520onload%253dprompt%2528%2529%253e&view=about
+HTTP_REFERER=http://121.40.160.91/index.php
+---
+2016/09/25 19:56:51 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'The system is unable to find the requested action "page".' in /data/www/yii/framework/web/CController.php:483
+Stack trace:
+#0 /data/www/yii/framework/web/CController.php(270): CController->missingAction('page')
+#1 /data/www/yii/framework/web/CWebApplication.php(282): CController->run('page')
+#2 /data/www/yii/framework/web/CWebApplication.php(141): CWebApplication->runController('site/page')
+#3 /data/www/yii/framework/base/CApplication.php(185): CWebApplication->processRequest()
+#4 /data/www/web/index.php(13): CApplication->run()
+#5 {main}
+REQUEST_URI=/index.php?r=site/page&view=%2527%2522%252f%253E%253C%252fbody%253E%253Cbody%2520onload%253dprompt%2528%2529%253e
+HTTP_REFERER=http://121.40.160.91/index.php
+---
+2016/09/25 19:56:51 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'The system is unable to find the requested action "page'"><iframe onload=alert()>".' in /data/www/yii/framework/web/CController.php:483
+Stack trace:
+#0 /data/www/yii/framework/web/CController.php(270): CController->missingAction('page'"><iframe ...')
+#1 /data/www/yii/framework/web/CWebApplication.php(282): CController->run('page'"><iframe ...')
+#2 /data/www/yii/framework/web/CWebApplication.php(141): CWebApplication->runController('site/page'"><if...')
+#3 /data/www/yii/framework/base/CApplication.php(185): CWebApplication->processRequest()
+#4 /data/www/web/index.php(13): CApplication->run()
+#5 {main}
+REQUEST_URI=/index.php?r=site/page'%22%3E%3Ciframe%20onload=alert()%3E&view=about
+---
+2016/09/25 19:56:52 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'The system is unable to find the requested action "page".' in /data/www/yii/framework/web/CController.php:483
+Stack trace:
+#0 /data/www/yii/framework/web/CController.php(270): CController->missingAction('page')
+#1 /data/www/yii/framework/web/CWebApplication.php(282): CController->run('page')
+#2 /data/www/yii/framework/web/CWebApplication.php(141): CWebApplication->runController('site/page')
+#3 /data/www/yii/framework/base/CApplication.php(185): CWebApplication->processRequest()
+#4 /data/www/web/index.php(13): CApplication->run()
+#5 {main}
+REQUEST_URI=/index.php?r=site/page&view=about'%22%3E%3Ciframe%20onload=alert()%3E
+---
+2016/09/25 19:56:53 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'The system is unable to find the requested action "page'"><img src=x onerror=prompt()>".' in /data/www/yii/framework/web/CController.php:483
+Stack trace:
+#0 /data/www/yii/framework/web/CController.php(270): CController->missingAction('page'"><img src...')
+#1 /data/www/yii/framework/web/CWebApplication.php(282): CController->run('page'"><img src...')
+#2 /data/www/yii/framework/web/CWebApplication.php(141): CWebApplication->runController('site/page'"><im...')
+#3 /data/www/yii/framework/base/CApplication.php(185): CWebApplication->processRequest()
+#4 /data/www/web/index.php(13): CApplication->run()
+#5 {main}
+REQUEST_URI=/index.php?r=site/page'%22%3E%3Cimg%20src=x%20onerror=prompt()%3E&view=about
+---
+2016/09/25 19:56:54 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'The system is unable to find the requested action "page".' in /data/www/yii/framework/web/CController.php:483
+Stack trace:
+#0 /data/www/yii/framework/web/CController.php(270): CController->missingAction('page')
+#1 /data/www/yii/framework/web/CWebApplication.php(282): CController->run('page')
+#2 /data/www/yii/framework/web/CWebApplication.php(141): CWebApplication->runController('site/page')
+#3 /data/www/yii/framework/base/CApplication.php(185): CWebApplication->processRequest()
+#4 /data/www/web/index.php(13): CApplication->run()
+#5 {main}
+REQUEST_URI=/index.php?r=site/page&view=about'%22%3E%3Cimg%20src=x%20onerror=prompt()%3E
+---
+2016/09/25 19:56:56 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'The system is unable to find the requested action "page'"><svg onload=prompt()>".' in /data/www/yii/framework/web/CController.php:483
+Stack trace:
+#0 /data/www/yii/framework/web/CController.php(270): CController->missingAction('page'"><svg onl...')
+#1 /data/www/yii/framework/web/CWebApplication.php(282): CController->run('page'"><svg onl...')
+#2 /data/www/yii/framework/web/CWebApplication.php(141): CWebApplication->runController('site/page'"><sv...')
+#3 /data/www/yii/framework/base/CApplication.php(185): CWebApplication->processRequest()
+#4 /data/www/web/index.php(13): CApplication->run()
+#5 {main}
+REQUEST_URI=/index.php?r=site/page'%22%3E%3Csvg%20onload=prompt()%3E&view=about
+---
+2016/09/25 19:56:57 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'The system is unable to find the requested action "page".' in /data/www/yii/framework/web/CController.php:483
+Stack trace:
+#0 /data/www/yii/framework/web/CController.php(270): CController->missingAction('page')
+#1 /data/www/yii/framework/web/CWebApplication.php(282): CController->run('page')
+#2 /data/www/yii/framework/web/CWebApplication.php(141): CWebApplication->runController('site/page')
+#3 /data/www/yii/framework/base/CApplication.php(185): CWebApplication->processRequest()
+#4 /data/www/web/index.php(13): CApplication->run()
+#5 {main}
+REQUEST_URI=/index.php?r=site/page&view=about'%22%3E%3Csvg%20onload=prompt()%3E
+---
+2016/09/25 19:56:59 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "'"/><img/src/onerror=alert()>".' in /data/www/yii/framework/web/CWebApplication.php:286
+Stack trace:
+#0 /data/www/yii/framework/web/CWebApplication.php(141): CWebApplication->runController(''"/><img/src/on...')
+#1 /data/www/yii/framework/base/CApplication.php(185): CWebApplication->processRequest()
+#2 /data/www/web/index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/index.php?r='%22/%3E%3Cimg/src/onerror=alert()%3E&view=about
+HTTP_REFERER=http://121.40.160.91/index.php
+---
+2016/09/25 19:56:59 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'The system is unable to find the requested action "page".' in /data/www/yii/framework/web/CController.php:483
+Stack trace:
+#0 /data/www/yii/framework/web/CController.php(270): CController->missingAction('page')
+#1 /data/www/yii/framework/web/CWebApplication.php(282): CController->run('page')
+#2 /data/www/yii/framework/web/CWebApplication.php(141): CWebApplication->runController('site/page')
+#3 /data/www/yii/framework/base/CApplication.php(185): CWebApplication->processRequest()
+#4 /data/www/web/index.php(13): CApplication->run()
+#5 {main}
+REQUEST_URI=/index.php?r=site/page&view='%22/%3E%3Cimg/src/onerror=alert()%3E
+HTTP_REFERER=http://121.40.160.91/index.php
+---
+2016/09/25 19:57:00 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "'"/><img/src/onerror=alert()>".' in /data/www/yii/framework/web/CWebApplication.php:286
+Stack trace:
+#0 /data/www/yii/framework/web/CWebApplication.php(141): CWebApplication->runController(''"/><img/src/on...')
+#1 /data/www/yii/framework/base/CApplication.php(185): CWebApplication->processRequest()
+#2 /data/www/web/index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/index.php?r=%27%22%2f%3E%3Cimg%2fsrc%2fonerror%3Dalert%28%29%3E&view=about
+HTTP_REFERER=http://121.40.160.91/index.php
+---
+2016/09/25 19:57:00 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'The system is unable to find the requested action "page".' in /data/www/yii/framework/web/CController.php:483
+Stack trace:
+#0 /data/www/yii/framework/web/CController.php(270): CController->missingAction('page')
+#1 /data/www/yii/framework/web/CWebApplication.php(282): CController->run('page')
+#2 /data/www/yii/framework/web/CWebApplication.php(141): CWebApplication->runController('site/page')
+#3 /data/www/yii/framework/base/CApplication.php(185): CWebApplication->processRequest()
+#4 /data/www/web/index.php(13): CApplication->run()
+#5 {main}
+REQUEST_URI=/index.php?r=site/page&view=%27%22%2f%3E%3Cimg%2fsrc%2fonerror%3Dalert%28%29%3E
+HTTP_REFERER=http://121.40.160.91/index.php
+---
+2016/09/25 19:57:01 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "%27%22%2f%3E%3Cimg%2fsrc%2fonerror%3Dalert%28%29%3E".' in /data/www/yii/framework/web/CWebApplication.php:286
+Stack trace:
+#0 /data/www/yii/framework/web/CWebApplication.php(141): CWebApplication->runController('%27%22%2f%3E%3C...')
+#1 /data/www/yii/framework/base/CApplication.php(185): CWebApplication->processRequest()
+#2 /data/www/web/index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/index.php?r=%2527%2522%252f%253E%253Cimg%252fsrc%252fonerror%253Dalert%2528%2529%253E&view=about
+HTTP_REFERER=http://121.40.160.91/index.php
+---
+2016/09/25 19:57:01 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'The system is unable to find the requested action "page".' in /data/www/yii/framework/web/CController.php:483
+Stack trace:
+#0 /data/www/yii/framework/web/CController.php(270): CController->missingAction('page')
+#1 /data/www/yii/framework/web/CWebApplication.php(282): CController->run('page')
+#2 /data/www/yii/framework/web/CWebApplication.php(141): CWebApplication->runController('site/page')
+#3 /data/www/yii/framework/base/CApplication.php(185): CWebApplication->processRequest()
+#4 /data/www/web/index.php(13): CApplication->run()
+#5 {main}
+REQUEST_URI=/index.php?r=site/page&view=%2527%2522%252f%253E%253Cimg%252fsrc%252fonerror%253Dalert%2528%2529%253E
+HTTP_REFERER=http://121.40.160.91/index.php
+---
+2016/09/25 19:57:03 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'The system is unable to find the requested action "page".' in /data/www/yii/framework/web/CController.php:483
+Stack trace:
+#0 /data/www/yii/framework/web/CController.php(270): CController->missingAction('page')
+#1 /data/www/yii/framework/web/CWebApplication.php(282): CController->run('page')
+#2 /data/www/yii/framework/web/CWebApplication.php(141): CWebApplication->runController('site/page')
+#3 /data/www/yii/framework/base/CApplication.php(185): CWebApplication->processRequest()
+#4 /data/www/web/index.php(13): CApplication->run()
+#5 {main}
+REQUEST_URI=/index.php/'%22/%3E%3C/script%3E%3Cscript%3Ealert()%3C/script%3E/?r=site/page&view=about
+HTTP_REFERER=http://121.40.160.91/index.php
+---
+2016/09/25 19:57:04 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'The system is unable to find the requested action "page".' in /data/www/yii/framework/web/CController.php:483
+Stack trace:
+#0 /data/www/yii/framework/web/CController.php(270): CController->missingAction('page')
+#1 /data/www/yii/framework/web/CWebApplication.php(282): CController->run('page')
+#2 /data/www/yii/framework/web/CWebApplication.php(141): CWebApplication->runController('site/page')
+#3 /data/www/yii/framework/base/CApplication.php(185): CWebApplication->processRequest()
+#4 /data/www/web/index.php(13): CApplication->run()
+#5 {main}
+REQUEST_URI=/index.php/%27%22%2f%3E%3C%2fscript%3E%3Cscript%3Ealert%28%29%3C%2fscript%3E/?r=site/page&view=about
+HTTP_REFERER=http://121.40.160.91/index.php
+---
+2016/09/25 19:57:04 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'The system is unable to find the requested action "page".' in /data/www/yii/framework/web/CController.php:483
+Stack trace:
+#0 /data/www/yii/framework/web/CController.php(270): CController->missingAction('page')
+#1 /data/www/yii/framework/web/CWebApplication.php(282): CController->run('page')
+#2 /data/www/yii/framework/web/CWebApplication.php(141): CWebApplication->runController('site/page')
+#3 /data/www/yii/framework/base/CApplication.php(185): CWebApplication->processRequest()
+#4 /data/www/web/index.php(13): CApplication->run()
+#5 {main}
+REQUEST_URI=/index.php/%2527%2522%252f%253E%253C%252fscript%253E%253Cscript%253Ealert%2528%2529%253C%252fscript%253E/?r=site/page&view=about
+HTTP_REFERER=http://121.40.160.91/index.php
+---
+2016/09/25 19:57:06 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'The system is unable to find the requested action "page".' in /data/www/yii/framework/web/CController.php:483
+Stack trace:
+#0 /data/www/yii/framework/web/CController.php(270): CController->missingAction('page')
+#1 /data/www/yii/framework/web/CWebApplication.php(282): CController->run('page')
+#2 /data/www/yii/framework/web/CWebApplication.php(141): CWebApplication->runController('site/page')
+#3 /data/www/yii/framework/base/CApplication.php(185): CWebApplication->processRequest()
+#4 /data/www/web/index.php(13): CApplication->run()
+#5 {main}
+REQUEST_URI=/index.php/'%22+onmouseover=alert()+d='%22/?r=site/page&view=about
+HTTP_REFERER=http://121.40.160.91/index.php
+---
+2016/09/25 19:57:07 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'The system is unable to find the requested action "page".' in /data/www/yii/framework/web/CController.php:483
+Stack trace:
+#0 /data/www/yii/framework/web/CController.php(270): CController->missingAction('page')
+#1 /data/www/yii/framework/web/CWebApplication.php(282): CController->run('page')
+#2 /data/www/yii/framework/web/CWebApplication.php(141): CWebApplication->runController('site/page')
+#3 /data/www/yii/framework/base/CApplication.php(185): CWebApplication->processRequest()
+#4 /data/www/web/index.php(13): CApplication->run()
+#5 {main}
+REQUEST_URI=/index.php/%27%22%20onmouseover%3Dalert%28%29%20d%3D%27%22/?r=site/page&view=about
+HTTP_REFERER=http://121.40.160.91/index.php
+---
+2016/09/25 19:57:07 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'The system is unable to find the requested action "page".' in /data/www/yii/framework/web/CController.php:483
+Stack trace:
+#0 /data/www/yii/framework/web/CController.php(270): CController->missingAction('page')
+#1 /data/www/yii/framework/web/CWebApplication.php(282): CController->run('page')
+#2 /data/www/yii/framework/web/CWebApplication.php(141): CWebApplication->runController('site/page')
+#3 /data/www/yii/framework/base/CApplication.php(185): CWebApplication->processRequest()
+#4 /data/www/web/index.php(13): CApplication->run()
+#5 {main}
+REQUEST_URI=/index.php/%2527%2522%2520onmouseover%253Dalert%2528%2529%2520d%253D%2527%2522/?r=site/page&view=about
+HTTP_REFERER=http://121.40.160.91/index.php
+---
+2016/09/25 19:57:09 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "javascript:alert(1987)".' in /data/www/yii/framework/web/CWebApplication.php:286
+Stack trace:
+#0 /data/www/yii/framework/web/CWebApplication.php(141): CWebApplication->runController('javascript:aler...')
+#1 /data/www/yii/framework/base/CApplication.php(185): CWebApplication->processRequest()
+#2 /data/www/web/index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/index.php?r=javascript:alert(1987)&view=about
+HTTP_REFERER=http://121.40.160.91/index.php
+---
+2016/09/25 19:57:09 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'The system is unable to find the requested action "page".' in /data/www/yii/framework/web/CController.php:483
+Stack trace:
+#0 /data/www/yii/framework/web/CController.php(270): CController->missingAction('page')
+#1 /data/www/yii/framework/web/CWebApplication.php(282): CController->run('page')
+#2 /data/www/yii/framework/web/CWebApplication.php(141): CWebApplication->runController('site/page')
+#3 /data/www/yii/framework/base/CApplication.php(185): CWebApplication->processRequest()
+#4 /data/www/web/index.php(13): CApplication->run()
+#5 {main}
+REQUEST_URI=/index.php?r=site/page&view=javascript:alert(1987)
+HTTP_REFERER=http://121.40.160.91/index.php
+---
+2016/09/25 19:57:10 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "javascript:alert(1987)".' in /data/www/yii/framework/web/CWebApplication.php:286
+Stack trace:
+#0 /data/www/yii/framework/web/CWebApplication.php(141): CWebApplication->runController('javascript:aler...')
+#1 /data/www/yii/framework/base/CApplication.php(185): CWebApplication->processRequest()
+#2 /data/www/web/index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/index.php?r=javascript%3Aalert%281987%29&view=about
+HTTP_REFERER=http://121.40.160.91/index.php
+---
+2016/09/25 19:57:10 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'The system is unable to find the requested action "page".' in /data/www/yii/framework/web/CController.php:483
+Stack trace:
+#0 /data/www/yii/framework/web/CController.php(270): CController->missingAction('page')
+#1 /data/www/yii/framework/web/CWebApplication.php(282): CController->run('page')
+#2 /data/www/yii/framework/web/CWebApplication.php(141): CWebApplication->runController('site/page')
+#3 /data/www/yii/framework/base/CApplication.php(185): CWebApplication->processRequest()
+#4 /data/www/web/index.php(13): CApplication->run()
+#5 {main}
+REQUEST_URI=/index.php?r=site/page&view=javascript%3Aalert%281987%29
+HTTP_REFERER=http://121.40.160.91/index.php
+---
+2016/09/25 19:57:11 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "javascript%3Aalert%281987%29".' in /data/www/yii/framework/web/CWebApplication.php:286
+Stack trace:
+#0 /data/www/yii/framework/web/CWebApplication.php(141): CWebApplication->runController('javascript%3Aal...')
+#1 /data/www/yii/framework/base/CApplication.php(185): CWebApplication->processRequest()
+#2 /data/www/web/index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/index.php?r=javascript%253Aalert%25281987%2529&view=about
+HTTP_REFERER=http://121.40.160.91/index.php
+---
+2016/09/25 19:57:11 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'The system is unable to find the requested action "page".' in /data/www/yii/framework/web/CController.php:483
+Stack trace:
+#0 /data/www/yii/framework/web/CController.php(270): CController->missingAction('page')
+#1 /data/www/yii/framework/web/CWebApplication.php(282): CController->run('page')
+#2 /data/www/yii/framework/web/CWebApplication.php(141): CWebApplication->runController('site/page')
+#3 /data/www/yii/framework/base/CApplication.php(185): CWebApplication->processRequest()
+#4 /data/www/web/index.php(13): CApplication->run()
+#5 {main}
+REQUEST_URI=/index.php?r=site/page&view=javascript%253Aalert%25281987%2529
+HTTP_REFERER=http://121.40.160.91/index.php
+---
