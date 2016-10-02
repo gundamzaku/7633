@@ -7,7 +7,7 @@
 // CWebApplication properties can be configured here.
 return array(
 	'basePath'=>dirname(__FILE__).DIRECTORY_SEPARATOR.'..',
-	'name'=>'7663 games platform',
+	'name'=>'7663',
 
 	// preloading 'log' component
 	'preload'=>array('log'),
@@ -28,6 +28,7 @@ return array(
 			'ipFilters'=>array('127.0.0.1','::1'),
 		),
 		*/
+		'testmod'=>array('param'=>'param1')
 	),
 
 	// application components
@@ -37,7 +38,9 @@ return array(
 			// enable cookie-based authentication
 			'allowAutoLogin'=>true,
 		),
-
+		'user'=>array( 
+			'class' => 'WebUser', 
+        ), 
 		// uncomment the following to enable URLs in path-format
 		/*
 		'urlManager'=>array(
