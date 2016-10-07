@@ -6,8 +6,9 @@
 // This is the main Web application configuration. Any writable
 // CWebApplication properties can be configured here.
 return array(
+
 	'basePath'=>dirname(__FILE__).DIRECTORY_SEPARATOR.'..',
-	'name'=>'7663',
+	'name'=>'7663VR战网平台',
 
 	// preloading 'log' component
 	'preload'=>array('log'),
@@ -38,9 +39,12 @@ return array(
 			// enable cookie-based authentication
 			'allowAutoLogin'=>true,
 		),
-		'user'=>array( 
-			'class' => 'WebUser', 
+		'url'=>array( 
+			'class' => 'WebUrl', 
         ), 
+		'email'=>array( 
+			'class' => 'Email', 
+        ),
 		// uncomment the following to enable URLs in path-format
 		/*
 		'urlManager'=>array(
@@ -55,6 +59,9 @@ return array(
 
 		// database settings are configured in database.php
 		'db'=>require(dirname(__FILE__).'/database.php'),
+		
+		//扩展，加入常量的定义配置
+		'const'=>require(dirname(__FILE__).'/const.php'),
 
 		'errorHandler'=>array(
 			// use 'site/error' action to display errors
