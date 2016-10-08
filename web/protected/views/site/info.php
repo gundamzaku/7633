@@ -1,3 +1,7 @@
+	<?
+	var_dump($interval);
+	exit;
+	?>
 	<?if(!empty($interval)){?>
 	<meta http-equiv="Refresh" content="<?=$interval?>; url=<?=$redirect?>" /> 
 	<?}?>
