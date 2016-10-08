@@ -31,9 +31,9 @@
 				<div class="wrapper" id="messages">
 					<h2>系统消息</h2>
 					<ul class="list-message">
-						<?foreach($message as $k=>$v){?>
+						<?php foreach($message as $k=>$v){?>
 						<li><time><?=$v['add_time']?></time><a href="<?=Yii::app()->url->getMessageDetailUrl("mid=".$v['mid'])?>"><?=$v['title']?></a></li>
-						<?}?>
+						<?php }?>
 					</ul>
 					<a href="<?=Yii::app()->url->getMessageListUrl()?>" class="more">更多</a>
 				</div>

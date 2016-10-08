@@ -1,10 +1,6 @@
-	<?
-	var_dump($interval);
-	?>
-	
-	<?if(!empty($interval)){?>
-
-	<?}?>
+	<?php if(!empty($interval)){?>
+	<meta http-equiv="Refresh" content="<?=$interval?>; url=<?=$redirect?>" /> 
+	<?php }?>
 	<div id="header-home-logo" class="singleformlogo"></div>
 	<div class="singleform dark"><!--注册失败1-->
 		<div class="resault">
