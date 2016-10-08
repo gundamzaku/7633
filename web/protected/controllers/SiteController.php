@@ -308,11 +308,7 @@ class SiteController extends Controller
 			Helper::ajaxJsonMsg($msg);
 		}
 		//数据库中查询是否存在用户名
-		$userInfo = Yii::app()->db->createCommand()
-		->select('id,username')
-		->from('auth_user')
-		->where('username=:username', array(':username'=>$username))
-		->queryRow();
+		$userInfo = $this->dao->getUsername($username);
 
 		if($userInfo == false){
 			
@@ -345,11 +341,7 @@ class SiteController extends Controller
 		}
 
 		//去数据库中确认邀请码是否存在
-		$inviteInfo = Yii::app()->db->createCommand()
-		->select('invite_code,is_get')
-		->from('invite_code')
-		->where('invite_code=:invite_code', array(':invite_code'=>$inviteCode))
-		->queryRow();
+		$inviteInfo = $this->dao->getInviteCode($inviteCode);
 
 		//没有找到数据
 		if($inviteInfo == false){

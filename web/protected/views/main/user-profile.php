@@ -1,4 +1,4 @@
-	<div id="subhead" class="site dark"><h1>7663VR战网 企业会员中心</h1></div>
+	<div id="subhead" class="site dark"><h1><?=WATCHWORD?></h1></div>
 	<div id="main" class="site">
 		<?php $this->widget('application.widgets.InfoLeftWidget');?>
 

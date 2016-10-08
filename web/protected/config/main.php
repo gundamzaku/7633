@@ -29,16 +29,15 @@ return array(
 			'ipFilters'=>array('127.0.0.1','::1'),
 		),
 		*/
-		'testmod'=>array('param'=>'param1')
 	),
 
 	// application components
 	'components'=>array(
-
+		/*
 		'user'=>array(
 			// enable cookie-based authentication
 			'allowAutoLogin'=>true,
-		),
+		),*/
 		'url'=>array( 
 			'class' => 'WebUrl', 
         ), 

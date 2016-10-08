@@ -1,11 +1,13 @@
 <?php
-//ÓòÃû
+//åŸŸå
 define('DOMAIN','www.7663.com');
 /*
- *	·¢ËÍÓÊ¼þµÄÅäÖÃ
+ *	å‘é€é‚®ä»¶çš„é…ç½®
  */
 define('SMTP_HOST','smtp.126.com');
 define('SMTP_FROM','wordpressadmin@126.com');
 define('SMTP_FROM_NAME','webAdmin');
 define('SMTP_USERNAME','wordpressadmin');
 define('SMTP_PASSWORD','bgt5nhy6');
+
+define('WATCHWORD','7663VRæˆ˜ç½‘Â ä¼ä¸šä¼šå‘˜ä¸­å¿ƒ');
