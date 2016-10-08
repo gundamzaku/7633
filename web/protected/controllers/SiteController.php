@@ -373,11 +373,7 @@ class SiteController extends Controller
 
 	//Test
 	public function actionTest(){
-		
-        $page = new Page(10,5);
-        $page->setAllNum(80);
-        $data['page'] = $page->getHtml();
-		var_dump($data['page']);
+		Helper::interrupt($this,"系统已将您的7663VR战网通行证验证发送至您的邮箱，请登录邮箱以后进行激活。！",1,Yii::app()->url->getLoginUrl(),0,"登录战网","您的通行证名(注册邮箱)<br/><br/><br/>");
 		/*模拟写入系统消息
 		for($i = 0;$i<80;$i++){
 			$data["title"] = "标题：".$i;
