@@ -1,6 +1,6 @@
 <?php
 //域名
-define('DOMAIN','www.7663.com');
+define('DOMAIN','7663.becomingjenny.net');
 /*
  *	发送邮件的配置
  */
