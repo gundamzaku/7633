@@ -153,7 +153,7 @@ class SiteController extends Controller
 				Helper::interrupt($this,"激活失败，系统无法完成您此次的激活操作，请重新尝试。",2,Yii::app()->url->getRegisterUrl());
 			}else{
 				$this->dao->commit();
-				Helper::interrupt($this,"您的7663VR战网通行证已激活成功！",1,Yii::app()->url->getLoginUrl(),10,"登录战网","您的通行证名(注册邮箱)<br/>".$username."<br/><br/>");
+				Helper::interrupt($this,"您的7663VR战网通行证已激活成功！",1,Yii::app()->url->getLoginUrl(),0,"登录战网","您的通行证名(注册邮箱)<br/>".$username."<br/><br/>");
 			}
 		}else{
 			Helper::interrupt($this,"您目前已经处于激活状态",2,Yii::app()->url->getRegisterUrl());
@@ -197,7 +197,7 @@ class SiteController extends Controller
 			$email->setTitle("7663VR战网密码重置");
 			$email->send();
 			
-			Helper::interrupt($this,"已将重置密码的链接发放至您的邮箱中，请登录后点击链接进行密码重置。",1,Yii::app()->url->getLoginUrl(),10,"登录战网");
+			Helper::interrupt($this,"已将重置密码的链接发放至您的邮箱中，请登录后点击链接进行密码重置。",1,Yii::app()->url->getLoginUrl(),0,"登录战网");
 		}else{
 			Helper::interrupt($this,"操作失败，请重新尝试。",2,Yii::app()->url->getLoginUrl());
 		}
@@ -284,7 +284,7 @@ class SiteController extends Controller
 				$email->setTitle("7663VR战网邮箱激活确认");
 				$email->send();
 
-				Helper::interrupt($this,"系统已将您的7663VR战网通行证验证发送至您的邮箱，请登录邮箱以后进行激活。！",1,Yii::app()->url->getLoginUrl(),10,"登录战网","您的通行证名(注册邮箱)<br/>".$data["username"]."<br/><br/>");
+				Helper::interrupt($this,"系统已将您的7663VR战网通行证验证发送至您的邮箱，请登录邮箱以后进行激活。！",1,Yii::app()->url->getLoginUrl(),0,"登录战网","您的通行证名(注册邮箱)<br/>".$data["username"]."<br/><br/>");
 				//Helper::interrupt($this,"您的7663VR战网通行证已注册成功！",1,Yii::app()->url->getRegisterUrl(),"","登录战网","您的通行证名(注册邮箱)<br/>".$data["username"]."<br/><br/>");
 			}else{
 				Helper::interrupt($this,"注册失败，请重新尝试。",2,Yii::app()->url->getRegisterUrl());

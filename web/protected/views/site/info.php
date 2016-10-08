@@ -1,4 +1,4 @@
-	<?if($interval>0){?>
+	<?if(!empty($interval)){?>
 	<meta http-equiv="Refresh" content="<?=$interval?>; url=<?=$redirect?>" /> 
 	<?}?>
 	<div id="header-home-logo" class="singleformlogo"></div>
