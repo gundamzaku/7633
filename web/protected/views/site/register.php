@@ -48,11 +48,6 @@
 				</fieldset>
 
 				<fieldset>
-					<label for="email">Email</label><input type="text" value="" id="email" name="email"/>
-					<div class="msg error" style="display:none"></div>
-				</fieldset>
-
-				<fieldset>
 					<label for="qq">QQ</label><input type="text" value="" id="qq" name="qq"/>
 					<div class="msg error" style="display:none"></div>
 				</fieldset>
@@ -175,16 +170,6 @@
 					}
 				});
 				break;
-			case "email":
-				if(typeof($.cookie('email'))!="undefined"){
-					$("#email").val($.cookie('email'));	
-				}
-				$("#email").bind("blur",function(){
-					if(regist.validEmail()==true){
-						$.cookie('email', $(this).val(),{expires:1}); 
-					}
-				});
-				break;
 			case "qq":
 				if(typeof($.cookie('qq'))!="undefined"){
 					$("#qq").val($.cookie('qq'));	
@@ -231,7 +216,6 @@
 		if(regist.validCompanyidnumber() == false)isValid = false;
 		if(regist.validTel() == false)isValid = false;
 		if(regist.validAddress() == false)isValid = false;
-		if(regist.validEmail() == false)isValid = false;
 		if(regist.validQq() == false)isValid = false;
 		if(regist.validOwnername() == false)isValid = false;
 		if(regist.validOwneridnumber() == false)isValid = false;

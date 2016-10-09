@@ -35,7 +35,6 @@ class DaoSite extends Dao{
 			'password'=>md5($userInfo["pwd"]),
 			'first_name'=>'',
 			'last_name'=>'',
-			'email'=>$userInfo["email"],
 			'is_active'=>0,	//没有通过邮箱验证的注册，都是未激活状态
 			'is_staff'=>1,
 			'is_superuser'=>0,

@@ -14,7 +14,7 @@ class SiteController extends Controller
 			$noLogin = false;
 			$action = "";
 			if(!empty($_GET['r']))$action = $_GET['r'];
-			$arr = new SplFixedArray(11); 
+			$arr = new SplFixedArray(12); 
 			$arr[0] = "site/login";
 			$arr[1] = "site/register";
 			$arr[2] = "site/inviteCode";
@@ -26,10 +26,11 @@ class SiteController extends Controller
 			$arr[8] = "site/test";
 			$arr[9] = "site/findPwd";
 			$arr[10] = "site/doLogin";
-			
+			$arr[11] = "site/index";
+
 			$size = $arr->getSize(); 
 			for($i=0;$i<$size;$i++){
-				if($action == $arr->offsetGet($i)){
+				if($action == $arr->offsetGet($i) || empty($action)){
 					$noLogin = true;
 				}
 			}
@@ -45,6 +46,15 @@ class SiteController extends Controller
 	}
 
 	public function actionIndex(){
+		$this->body = "single";
+		$this->layout='//layouts/main_nonav';
+
+		//得到线下店数据
+
+		$this->render('home');
+	}
+
+	public function actionMain(){
 
 		//获得系统消息
 		$result = $this->dao->getMessage();
@@ -85,7 +95,7 @@ class SiteController extends Controller
 		}
 
 		if(empty($pwd)){
-			Helper::interrupt($this,"参数错误。",2,Yii::app()->url->getLoginUrl());
+			Helper::interrupt($this,"密码不能为空。",2,Yii::app()->url->getLoginUrl());
 		}
 		$pwd = md5($pwd);
 
@@ -111,11 +121,19 @@ class SiteController extends Controller
 		
 		//获得用户的登录信息
 		$userLoginInfo = $this->dao->getUserLoginInfo($username);
-		$this->session["last_login"]	= $userLoginInfo['last_login'];		//上次登录时间
-		$this->session["last_login_ip"] = $userLoginInfo['last_login_ip'];	//上次登录IP
+		if(empty($userLoginInfo['last_login'])){
+			$this->session["last_login"]	= $userLoginInfo['now_login'];		//上次登录时间
+		}else{
+			$this->session["last_login"]	= $userLoginInfo['last_login'];		//上次登录时间
+		}
+		if(empty($userLoginInfo['last_login_ip'])){
+			$this->session["last_login_ip"] = $userLoginInfo['now_login_ip'];	//上次登录IP
+		}else{
+			$this->session["last_login_ip"] = $userLoginInfo['last_login_ip'];	//上次登录IP
+		}
 
 		//成功后跳转
-		$this->redirect(array('/site/index'));
+		$this->redirect(array('/site/main'));
 	}
 
 	public function actionRegister(){
@@ -213,7 +231,6 @@ class SiteController extends Controller
 		$data["companyidnumber"]	= !empty($_POST["companyidnumber"])?$_POST["companyidnumber"]:"";
 		$data["tel"]				= !empty($_POST["tel"])?$_POST["tel"]:"";
 		$data["address"]			= !empty($_POST["address"])?$_POST["address"]:"";
-		$data["email"]				= !empty($_POST["email"])?$_POST["email"]:"";
 		$data["qq"]					= !empty($_POST["qq"])?$_POST["qq"]:"";
 		$data["ownername"]			= !empty($_POST["ownername"])?$_POST["ownername"]:"";
 		$data["owneridnumber"]		= !empty($_POST["owneridnumber"])?$_POST["owneridnumber"]:"";
@@ -228,7 +245,6 @@ class SiteController extends Controller
 		$model->companyidnumber = $data["companyidnumber"];
 		$model->tel = $data["tel"];
 		$model->address = $data["address"];
-		$model->email = $data["email"];
 		$model->qq = $data["qq"];
 		$model->ownername = $data["ownername"];
 		$model->owneridnumber = $data["owneridnumber"];

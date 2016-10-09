@@ -24,11 +24,6 @@
 						<label for="address">联系地址</label><input type="text" value="<?=$address?>" id="address" name="address" />
 						<div class="msg error" style="display:none"></div>
 					</fieldset>
-
-					<fieldset>
-						<label for="email">Email</label><input type="text" value="<?=$email?>" id="email" name="email"/>
-						<div class="msg error" style="display:none"></div>
-					</fieldset>
 					<fieldset>
 						<label for="qq">QQ</label><input type="text" value="<?=$qq?>" id="qq" name="qq"/>
 						<div class="msg error" style="display:none"></div>
@@ -76,11 +71,6 @@
 					regist.validAddress()
 				});
 				break;
-			case "email":
-				$("#email").bind("blur",function(){
-					regist.validEmail()
-				});
-				break;
 			case "qq":
 				$("#qq").bind("blur",function(){
 					regist.validQq()
@@ -109,7 +99,6 @@
 		if(regist.validCompanyidnumber() == false)isValid = false;
 		if(regist.validTel() == false)isValid = false;
 		if(regist.validAddress() == false)isValid = false;
-		if(regist.validEmail() == false)isValid = false;
 		if(regist.validQq() == false)isValid = false;
 		if(regist.validOwnername() == false)isValid = false;
 		if(regist.validOwneridnumber() == false)isValid = false;

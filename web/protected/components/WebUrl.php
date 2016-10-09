@@ -96,4 +96,11 @@ class WebUrl extends CComponent {
 	public function getLoginOutUrl(){
 		return "index.php?r=site/loginOut";	
 	}
+
+	//下面是后台的URL配置
+	
+	//登录提交页
+	public function getAdminDoLoginUrl(){
+		return "index.php?r=admin/doLogin";
+	}
 } 

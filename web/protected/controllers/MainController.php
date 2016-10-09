@@ -33,7 +33,6 @@ class MainController extends Controller
 		$data["companyidnumber"]	= !empty($_POST["companyidnumber"])?$_POST["companyidnumber"]:"";
 		$data["tel"]				= !empty($_POST["tel"])?$_POST["tel"]:"";
 		$data["address"]			= !empty($_POST["address"])?$_POST["address"]:"";
-		$data["email"]				= !empty($_POST["email"])?$_POST["email"]:"";
 		$data["qq"]					= !empty($_POST["qq"])?$_POST["qq"]:"";
 		$data["ownername"]			= !empty($_POST["ownername"])?$_POST["ownername"]:"";
 		$data["owneridnumber"]		= !empty($_POST["owneridnumber"])?$_POST["owneridnumber"]:"";
@@ -45,7 +44,6 @@ class MainController extends Controller
 		$model->companyidnumber = $data["companyidnumber"];
 		$model->tel = $data["tel"];
 		$model->address = $data["address"];
-		$model->email = $data["email"];
 		$model->qq = $data["qq"];
 		$model->ownername = $data["ownername"];
 		$model->owneridnumber = $data["owneridnumber"];
