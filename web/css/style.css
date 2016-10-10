@@ -215,9 +215,11 @@ fieldset .msg{
 	margin-top:2px;
 	background:#fff;
 	padding:4px 8px;
-	color:#000;
+	color:#111;
 	border-radius: 3px;
 	line-height: 1.4;
+	width: 228px;
+	font-size: 13.0px;
 }
 fieldset .msg.error{
 	background:#f90;
@@ -247,9 +249,12 @@ fieldset textarea.loading{
 fieldset input[type="text"],
 fieldset input[type="password"],
 fieldset input[type="email"],
-fieldset input[type="number"]{
+fieldset input[type="number"],
+fieldset textarea{
 	width:230px;
 	border-radius: 3px;
+	font-size: 14px;
+	line-height: 1.4;
 }
 fieldset input[type="submit"]{
 	margin-top:20px;
@@ -262,6 +267,14 @@ fieldset input[type="button"]{
 	margin-left:130px;
 	width:100px;
 }
+fieldset span.loading
+fieldset span#sub_process{
+	display:inline-block;
+	margin-left:130px;
+	margin-top: 21px;
+	color: greenyellow;
+}
+
 /* Reset non-text input types */
 input[type="checkbox"],
 input[type="radio"],
