@@ -11,9 +11,13 @@
 						<div class="msg error" style="display:none"></div>
 					</fieldset>
 					<fieldset>
-						<label for="icon">广告图片（请上传280x506px尺寸的图片）</label>
+						<label for="icon">广告图片</label>
 						<input type="file" name="icon"/>
 						<div class="msg error" style="display:none"></div>
+					</fieldset>
+					<fieldset>
+						<label for="icon"></label>
+						请上传280x506px尺寸的图片
 					</fieldset>
 					<?php if(!empty($icon)){?>
 					<fieldset>
