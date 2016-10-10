@@ -15,7 +15,7 @@
 	<!--游戏模块start-->
 	<div id="body-home" class="site dark">
 		<?php foreach($adviertisementInfo as $k=>$v){?>
-		<?php if(empty($v["url"])){
+		<?php if(empty($v["url"]) || $v["url"] = "###"){
 			$v["url"] = "###";
 			$target = 'target="_blank"';
 		?>
