@@ -17,9 +17,9 @@
 		<?php foreach($adviertisementInfo as $k=>$v){?>
 		<?php if(empty($v["url"]) || $v["url"] = "###"){
 			$v["url"] = "###";
-			$target = 'target="_blank"';
+			$target = '';
 		?>
-		<?php }else{$target = "";}?>
+		<?php }else{$target = 'target="_blank"';}?>
 		<a href="<?=$v["url"]?>" class="game" title="<?=$v["title"]?>" target="_blank"><img src="<?=$v["icon"]?>" alt="<?=$v["title"]?>"></a>
 		<?php }?>
 	</div>
