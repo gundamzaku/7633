@@ -66,7 +66,9 @@ class AdminController extends Controller
 		}
 
 		$this->session["adminname"] = $adminInfo["adminname"];
-		Helper::interrupt($this,"登录完成。",1,Yii::app()->url->getAdminMainUrl());
+		
+		$this->redirect(array('/admin/main'));
+		//Helper::interrupt($this,"登录完成。",1,Yii::app()->url->getAdminMainUrl());
 	}
 
 	//后台主页面
