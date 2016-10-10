@@ -20,7 +20,7 @@
 			$target = '';
 		?>
 		<?php }else{$target = 'target="_blank"';}?>
-		<a href="<?=$v["url"]?>" class="game" title="<?=$v["title"]?>" target="_blank"><img src="<?=$v["icon"]?>" alt="<?=$v["title"]?>"></a>
+		<a href="<?=$v["url"]?>" class="game" title="<?=$v["title"]?>" <?=$target?>><img src="<?=$v["icon"]?>" alt="<?=$v["title"]?>"></a>
 		<?php }?>
 	</div>
 	<!--游戏模块end-->
