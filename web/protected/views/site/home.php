@@ -19,7 +19,7 @@
 			$v["url"] = "###";
 			$target = 'target="_blank"';
 		?>
-		<?php }?>
+		<?php }else{$target = "";}?>
 		<a href="<?=$v["url"]?>" class="game" title="<?=$v["title"]?>" target="_blank"><img src="<?=$v["icon"]?>" alt="<?=$v["title"]?>"></a>
 		<?php }?>
 	</div>
