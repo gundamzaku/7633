@@ -11,7 +11,7 @@
 						<div class="msg error" style="display:none"></div>
 					</fieldset>
 					<fieldset>
-						<label for="icon">店铺图片</label>
+						<label for="icon">店铺图片（请上传900x560px尺寸的图片）</label>
 						<input type="file" name="icon"/>
 						<div class="msg error" style="display:none"></div>
 					</fieldset>

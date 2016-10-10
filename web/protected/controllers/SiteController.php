@@ -46,7 +46,7 @@ class SiteController extends Controller
 	}
 
 	public function actionIndex(){
-		$this->body = "single";
+		$this->body = "homepage";
 		$this->layout='//layouts/main_nonav';
 
 

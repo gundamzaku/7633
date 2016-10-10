@@ -7,7 +7,7 @@
 				<p>已接入 <span>88</span> 款游戏</p>
 				<div><a href="<?=Yii::app()->url->getRegisterUrl()?>" id="bt-register">注册平台账号</a> <a href="<?=Yii::app()->url->getLoginUrl()?>">登录</a></div>
 			</div>
-			<a id="header-home-client" href="###" target="_blank">获取战网客户端</a>
+			<a id="header-home-client" href="###">获取战网客户端</a>
 		</div>
 	</div>
 	<!--首页顶部end-->
@@ -15,7 +15,12 @@
 	<!--游戏模块start-->
 	<div id="body-home" class="site dark">
 		<?php foreach($adviertisementInfo as $k=>$v){?>
-		<a href="<?=$v["url"]?>" class="game" title="<?=$v["title"]?>" target="_blank"><img src="<?=$v["icon"]?>" alt="<?=$v["title"]?>"></a>
+		<?php if(empty($v["url"])){
+			$v["url"] = "###";
+			$target = 'target="_blank"';
+		?>
+		<?php }?>
+		<a href="<?=$v["url"]?>" class="game" title="<?=$v["title"]?>" <?=$target?>><img src="<?=$v["icon"]?>" alt="<?=$v["title"]?>"></a>
 		<?php }?>
 	</div>
 	<!--游戏模块end-->
