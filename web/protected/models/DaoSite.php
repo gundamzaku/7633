@@ -226,4 +226,94 @@ class DaoSite extends Dao{
 			->queryRow();
 		return $result;
 	}
+
+	//得到管理员信息
+	public function getAdminInfo($adminname){
+
+		$result = Yii::app()->db->createCommand()
+			->select('*')
+			->from('admin')
+			->where('adminname=:adminname', array(':adminname'=>$adminname))
+			->queryRow();
+		return $result;
+	}
+
+	//添加广告
+	public function addAdviertisement($title,$iconName,$url){
+		$result = Yii::app()->db->createCommand()->insert('adviertisement', array(
+			'title'=>$title,
+			'icon'=>$iconName,
+			'url'=>$url,
+			'add_time' => $this->dateTime
+		));
+		return $result;
+	}
+
+	//得到广告（总数）
+	public function getAdviertisementCount(){
+		
+		$result = Yii::app()->db->createCommand()
+			->select('count(*) ct')
+			->from('adviertisement')
+			->queryRow();
+		return $result;
+	}
+
+	//得到广告（带分页）
+	public function getAdviertisementPage($offset,$limit){
+		
+		$result = Yii::app()->db->createCommand()
+			->select('*')
+			->from('adviertisement')
+			->order('add_time desc')
+			->limit($limit)
+			->offset($offset)
+			->queryAll();
+		return $result;
+	}
+
+	//店铺
+	//得到系统消息（总数）
+	public function getStoreCount(){
+		
+		$result = Yii::app()->db->createCommand()
+			->select('count(*) ct')
+			->from('store')
+			->queryRow();
+		return $result;
+	}
+
+	//得到系统消息（带分页）
+	public function getStorePage($offset,$limit){
+		
+		$result = Yii::app()->db->createCommand()
+			->select('*')
+			->from('store')
+			->order('add_time desc')
+			->limit($limit)
+			->offset($offset)
+			->queryAll();
+		return $result;
+	}
+	//添加店铺
+	public function addStore($title,$iconName,$url){
+		$result = Yii::app()->db->createCommand()->insert('store', array(
+			'title'=>$title,
+			'icon'=>$iconName,
+			'url'=>$url,
+			'add_time' => $this->dateTime
+		));
+		return $result;
+	}
+
+	//添加系统消息
+	//添加店铺
+	public function addMessage($title,$content){
+		$result = Yii::app()->db->createCommand()->insert('message', array(
+			'title'=>$title,
+			'content'=>$content,
+			'add_time' => $this->dateTime
+		));
+		return $result;
+	}
 }

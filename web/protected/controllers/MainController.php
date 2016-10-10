@@ -102,7 +102,7 @@ class MainController extends Controller
 		$data["password"] = $newpwd;
 		$this->dao->updUserInfo($this->session["username"],$data);
 
-		Helper::interrupt($this,"您的密码修改完成，请重新登录。",1,Yii::app()->url->getLoginUrl());
+		Helper::interrupt($this,"您的密码修改完成。",1,Yii::app()->url->getLoginUrl());
 	}
 
 	//系统消息列表页

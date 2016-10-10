@@ -53,4 +53,36 @@ class Helper{
 		//$content = uniqid().$random; // 类似 5443e09c27bf4aB4uT
 		//return sha1($content);
 	}
+	
+	/*
+	 * type is :adv/user
+	 */
+	public static function uploadPic($type,$file){
+        
+		if(empty($type))$type = "default";
+		
+		$image = CUploadedFile::getInstanceByName($file);
+		$time = date("Ymd");
+		$root = Yii::getPathOfAlias('webroot');
+		$baseUrl = '/static/'.$type.'/';
+		$path = $root.$baseUrl;
+		
+		$dir = $path.$time.'/';//上传目录
+        
+		if (!is_dir($path)) {
+            mkdir($path); //目录不存在则创建
+        }
+		
+		if (!is_dir($dir)) {
+            mkdir($dir); //目录不存在则创建
+        }
+		
+        $name = $type."_".uniqid().Helper::getHashLower(8).".".$image->getExtensionName(); //文件名绝对路径
+        $status = $image->saveAs($dir.$name,true); //保存文件
+		if($status == true){
+			return $baseUrl.$time."/".$name;
+		}else{
+			return $status;
+		}
+	}
 }

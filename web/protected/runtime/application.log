@@ -5373,3 +5373,874 @@ Stack trace:
 #13 {main}
 REQUEST_URI=/index.php?r=wap/index
 ---
+2016/10/10 02:22:29 [error] [exception.CException] exception 'CException' with message 'WebUrl and its behaviors do not have a method or closure named "getAdminMainUrl".' in D:\shopex\7663\yii\framework\base\CComponent.php:266
+Stack trace:
+#0 D:\shopex\7663\web\protected\controllers\AdminController.php(68): CComponent->__call('getAdminMainUrl', Array)
+#1 D:\shopex\7663\web\protected\controllers\AdminController.php(68): WebUrl->getAdminMainUrl()
+#2 D:\shopex\7663\yii\framework\web\actions\CInlineAction.php(49): AdminController->actionDoLogin()
+#3 D:\shopex\7663\yii\framework\web\CController.php(308): CInlineAction->runWithParams(Array)
+#4 D:\shopex\7663\yii\framework\web\CController.php(286): CController->runAction(Object(CInlineAction))
+#5 D:\shopex\7663\yii\framework\web\CController.php(265): CController->runActionWithFilters(Object(CInlineAction), Array)
+#6 D:\shopex\7663\yii\framework\web\CWebApplication.php(282): CController->run('doLogin')
+#7 D:\shopex\7663\yii\framework\web\CWebApplication.php(141): CWebApplication->runController('admin/doLogin')
+#8 D:\shopex\7663\yii\framework\base\CApplication.php(185): CWebApplication->processRequest()
+#9 D:\shopex\7663\web\index.php(13): CApplication->run()
+#10 {main}
+REQUEST_URI=/index.php?r=admin/doLogin
+HTTP_REFERER=http://www.7663.com/index.php?r=admin/login
+---
+2016/10/10 02:26:30 [error] [php] Undefined variable: message (D:\shopex\7663\web\protected\views\admin\main.php:34)
+Stack trace:
+#0 D:\shopex\7663\yii\framework\web\CController.php(869): AdminController->renderFile()
+#1 D:\shopex\7663\yii\framework\web\CController.php(782): AdminController->renderPartial()
+#2 D:\shopex\7663\web\protected\controllers\AdminController.php(76): AdminController->render()
+#3 D:\shopex\7663\yii\framework\web\actions\CInlineAction.php(49): AdminController->actionMain()
+#4 D:\shopex\7663\yii\framework\web\CController.php(308): CInlineAction->runWithParams()
+#5 D:\shopex\7663\yii\framework\web\CController.php(286): AdminController->runAction()
+#6 D:\shopex\7663\yii\framework\web\CController.php(265): AdminController->runActionWithFilters()
+#7 D:\shopex\7663\yii\framework\web\CWebApplication.php(282): AdminController->run()
+#8 D:\shopex\7663\yii\framework\web\CWebApplication.php(141): CWebApplication->runController()
+#9 D:\shopex\7663\yii\framework\base\CApplication.php(185): CWebApplication->processRequest()
+#10 D:\shopex\7663\web\index.php(13): CWebApplication->run()
+REQUEST_URI=/index.php?r=admin/main
+in D:\shopex\7663\web\protected\views\admin\main.php (34)
+in D:\shopex\7663\web\protected\controllers\AdminController.php (76)
+in D:\shopex\7663\web\index.php (13)
+2016/10/10 03:49:56 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'The system is unable to find the requested action "adviertisemen".' in D:\shopex\7663\yii\framework\web\CController.php:483
+Stack trace:
+#0 D:\shopex\7663\yii\framework\web\CController.php(270): CController->missingAction('adviertisemen')
+#1 D:\shopex\7663\yii\framework\web\CWebApplication.php(282): CController->run('adviertisemen')
+#2 D:\shopex\7663\yii\framework\web\CWebApplication.php(141): CWebApplication->runController('admin/adviertis...')
+#3 D:\shopex\7663\yii\framework\base\CApplication.php(185): CWebApplication->processRequest()
+#4 D:\shopex\7663\web\index.php(13): CApplication->run()
+#5 {main}
+REQUEST_URI=/index.php?r=admin/adviertisemen
+HTTP_REFERER=http://www.7663.com/index.php?r=admin/main
+---
+2016/10/10 03:50:14 [error] [php] Undefined variable: message (D:\shopex\7663\web\protected\views\admin\adviertisement.php:12)
+Stack trace:
+#0 D:\shopex\7663\yii\framework\web\CController.php(869): AdminController->renderFile()
+#1 D:\shopex\7663\yii\framework\web\CController.php(782): AdminController->renderPartial()
+#2 D:\shopex\7663\web\protected\controllers\AdminController.php(83): AdminController->render()
+#3 D:\shopex\7663\yii\framework\web\actions\CInlineAction.php(49): AdminController->actionAdviertisement()
+#4 D:\shopex\7663\yii\framework\web\CController.php(308): CInlineAction->runWithParams()
+#5 D:\shopex\7663\yii\framework\web\CController.php(286): AdminController->runAction()
+#6 D:\shopex\7663\yii\framework\web\CController.php(265): AdminController->runActionWithFilters()
+#7 D:\shopex\7663\yii\framework\web\CWebApplication.php(282): AdminController->run()
+#8 D:\shopex\7663\yii\framework\web\CWebApplication.php(141): CWebApplication->runController()
+#9 D:\shopex\7663\yii\framework\base\CApplication.php(185): CWebApplication->processRequest()
+#10 D:\shopex\7663\web\index.php(13): CWebApplication->run()
+REQUEST_URI=/index.php?r=admin/adviertisement
+in D:\shopex\7663\web\protected\views\admin\adviertisement.php (12)
+in D:\shopex\7663\web\protected\controllers\AdminController.php (83)
+in D:\shopex\7663\web\index.php (13)
+2016/10/10 03:51:03 [error] [php] Undefined variable: page (D:\shopex\7663\web\protected\views\admin\adviertisement.php:12)
+Stack trace:
+#0 D:\shopex\7663\yii\framework\web\CController.php(869): AdminController->renderFile()
+#1 D:\shopex\7663\yii\framework\web\CController.php(782): AdminController->renderPartial()
+#2 D:\shopex\7663\web\protected\controllers\AdminController.php(83): AdminController->render()
+#3 D:\shopex\7663\yii\framework\web\actions\CInlineAction.php(49): AdminController->actionAdviertisement()
+#4 D:\shopex\7663\yii\framework\web\CController.php(308): CInlineAction->runWithParams()
+#5 D:\shopex\7663\yii\framework\web\CController.php(286): AdminController->runAction()
+#6 D:\shopex\7663\yii\framework\web\CController.php(265): AdminController->runActionWithFilters()
+#7 D:\shopex\7663\yii\framework\web\CWebApplication.php(282): AdminController->run()
+#8 D:\shopex\7663\yii\framework\web\CWebApplication.php(141): CWebApplication->runController()
+#9 D:\shopex\7663\yii\framework\base\CApplication.php(185): CWebApplication->processRequest()
+#10 D:\shopex\7663\web\index.php(13): CWebApplication->run()
+REQUEST_URI=/index.php?r=admin/adviertisement
+in D:\shopex\7663\web\protected\views\admin\adviertisement.php (12)
+in D:\shopex\7663\web\protected\controllers\AdminController.php (83)
+in D:\shopex\7663\web\index.php (13)
+2016/10/10 03:51:04 [error] [php] Undefined variable: page (D:\shopex\7663\web\protected\views\admin\adviertisement.php:12)
+Stack trace:
+#0 D:\shopex\7663\yii\framework\web\CController.php(869): AdminController->renderFile()
+#1 D:\shopex\7663\yii\framework\web\CController.php(782): AdminController->renderPartial()
+#2 D:\shopex\7663\web\protected\controllers\AdminController.php(83): AdminController->render()
+#3 D:\shopex\7663\yii\framework\web\actions\CInlineAction.php(49): AdminController->actionAdviertisement()
+#4 D:\shopex\7663\yii\framework\web\CController.php(308): CInlineAction->runWithParams()
+#5 D:\shopex\7663\yii\framework\web\CController.php(286): AdminController->runAction()
+#6 D:\shopex\7663\yii\framework\web\CController.php(265): AdminController->runActionWithFilters()
+#7 D:\shopex\7663\yii\framework\web\CWebApplication.php(282): AdminController->run()
+#8 D:\shopex\7663\yii\framework\web\CWebApplication.php(141): CWebApplication->runController()
+#9 D:\shopex\7663\yii\framework\base\CApplication.php(185): CWebApplication->processRequest()
+#10 D:\shopex\7663\web\index.php(13): CWebApplication->run()
+REQUEST_URI=/index.php?r=admin/adviertisement
+in D:\shopex\7663\web\protected\views\admin\adviertisement.php (12)
+in D:\shopex\7663\web\protected\controllers\AdminController.php (83)
+in D:\shopex\7663\web\index.php (13)
+2016/10/10 04:02:27 [error] [php] Undefined variable: companyidnumber (D:\shopex\7663\web\protected\views\admin\addAdviertisement.php:13)
+Stack trace:
+#0 D:\shopex\7663\yii\framework\web\CController.php(869): AdminController->renderFile()
+#1 D:\shopex\7663\yii\framework\web\CController.php(782): AdminController->renderPartial()
+#2 D:\shopex\7663\web\protected\controllers\AdminController.php(91): AdminController->render()
+#3 D:\shopex\7663\yii\framework\web\actions\CInlineAction.php(49): AdminController->actionAddAdviertisement()
+#4 D:\shopex\7663\yii\framework\web\CController.php(308): CInlineAction->runWithParams()
+#5 D:\shopex\7663\yii\framework\web\CController.php(286): AdminController->runAction()
+#6 D:\shopex\7663\yii\framework\web\CController.php(265): AdminController->runActionWithFilters()
+#7 D:\shopex\7663\yii\framework\web\CWebApplication.php(282): AdminController->run()
+#8 D:\shopex\7663\yii\framework\web\CWebApplication.php(141): CWebApplication->runController()
+#9 D:\shopex\7663\yii\framework\base\CApplication.php(185): CWebApplication->processRequest()
+#10 D:\shopex\7663\web\index.php(13): CWebApplication->run()
+REQUEST_URI=/index.php?r=admin/addAdviertisement
+in D:\shopex\7663\web\protected\views\admin\addAdviertisement.php (13)
+in D:\shopex\7663\web\protected\controllers\AdminController.php (91)
+in D:\shopex\7663\web\index.php (13)
+2016/10/10 04:03:22 [error] [php] Undefined variable: icon (D:\shopex\7663\web\protected\views\admin\addAdviertisement.php:13)
+Stack trace:
+#0 D:\shopex\7663\yii\framework\web\CController.php(869): AdminController->renderFile()
+#1 D:\shopex\7663\yii\framework\web\CController.php(782): AdminController->renderPartial()
+#2 D:\shopex\7663\web\protected\controllers\AdminController.php(91): AdminController->render()
+#3 D:\shopex\7663\yii\framework\web\actions\CInlineAction.php(49): AdminController->actionAddAdviertisement()
+#4 D:\shopex\7663\yii\framework\web\CController.php(308): CInlineAction->runWithParams()
+#5 D:\shopex\7663\yii\framework\web\CController.php(286): AdminController->runAction()
+#6 D:\shopex\7663\yii\framework\web\CController.php(265): AdminController->runActionWithFilters()
+#7 D:\shopex\7663\yii\framework\web\CWebApplication.php(282): AdminController->run()
+#8 D:\shopex\7663\yii\framework\web\CWebApplication.php(141): CWebApplication->runController()
+#9 D:\shopex\7663\yii\framework\base\CApplication.php(185): CWebApplication->processRequest()
+#10 D:\shopex\7663\web\index.php(13): CWebApplication->run()
+REQUEST_URI=/index.php?r=admin/addAdviertisement
+in D:\shopex\7663\web\protected\views\admin\addAdviertisement.php (13)
+in D:\shopex\7663\web\protected\controllers\AdminController.php (91)
+in D:\shopex\7663\web\index.php (13)
+2016/10/10 04:03:23 [error] [php] Undefined variable: icon (D:\shopex\7663\web\protected\views\admin\addAdviertisement.php:13)
+Stack trace:
+#0 D:\shopex\7663\yii\framework\web\CController.php(869): AdminController->renderFile()
+#1 D:\shopex\7663\yii\framework\web\CController.php(782): AdminController->renderPartial()
+#2 D:\shopex\7663\web\protected\controllers\AdminController.php(91): AdminController->render()
+#3 D:\shopex\7663\yii\framework\web\actions\CInlineAction.php(49): AdminController->actionAddAdviertisement()
+#4 D:\shopex\7663\yii\framework\web\CController.php(308): CInlineAction->runWithParams()
+#5 D:\shopex\7663\yii\framework\web\CController.php(286): AdminController->runAction()
+#6 D:\shopex\7663\yii\framework\web\CController.php(265): AdminController->runActionWithFilters()
+#7 D:\shopex\7663\yii\framework\web\CWebApplication.php(282): AdminController->run()
+#8 D:\shopex\7663\yii\framework\web\CWebApplication.php(141): CWebApplication->runController()
+#9 D:\shopex\7663\yii\framework\base\CApplication.php(185): CWebApplication->processRequest()
+#10 D:\shopex\7663\web\index.php(13): CWebApplication->run()
+REQUEST_URI=/index.php?r=admin/addAdviertisement
+in D:\shopex\7663\web\protected\views\admin\addAdviertisement.php (13)
+in D:\shopex\7663\web\protected\controllers\AdminController.php (91)
+in D:\shopex\7663\web\index.php (13)
+2016/10/10 04:03:24 [error] [php] Undefined variable: icon (D:\shopex\7663\web\protected\views\admin\addAdviertisement.php:13)
+Stack trace:
+#0 D:\shopex\7663\yii\framework\web\CController.php(869): AdminController->renderFile()
+#1 D:\shopex\7663\yii\framework\web\CController.php(782): AdminController->renderPartial()
+#2 D:\shopex\7663\web\protected\controllers\AdminController.php(91): AdminController->render()
+#3 D:\shopex\7663\yii\framework\web\actions\CInlineAction.php(49): AdminController->actionAddAdviertisement()
+#4 D:\shopex\7663\yii\framework\web\CController.php(308): CInlineAction->runWithParams()
+#5 D:\shopex\7663\yii\framework\web\CController.php(286): AdminController->runAction()
+#6 D:\shopex\7663\yii\framework\web\CController.php(265): AdminController->runActionWithFilters()
+#7 D:\shopex\7663\yii\framework\web\CWebApplication.php(282): AdminController->run()
+#8 D:\shopex\7663\yii\framework\web\CWebApplication.php(141): CWebApplication->runController()
+#9 D:\shopex\7663\yii\framework\base\CApplication.php(185): CWebApplication->processRequest()
+#10 D:\shopex\7663\web\index.php(13): CWebApplication->run()
+REQUEST_URI=/index.php?r=admin/addAdviertisement
+in D:\shopex\7663\web\protected\views\admin\addAdviertisement.php (13)
+in D:\shopex\7663\web\protected\controllers\AdminController.php (91)
+in D:\shopex\7663\web\index.php (13)
+2016/10/10 04:03:54 [error] [php] Undefined variable: icon (D:\shopex\7663\web\protected\views\admin\addAdviertisement.php:13)
+Stack trace:
+#0 D:\shopex\7663\yii\framework\web\CController.php(869): AdminController->renderFile()
+#1 D:\shopex\7663\yii\framework\web\CController.php(782): AdminController->renderPartial()
+#2 D:\shopex\7663\web\protected\controllers\AdminController.php(94): AdminController->render()
+#3 D:\shopex\7663\yii\framework\web\actions\CInlineAction.php(49): AdminController->actionAddAdviertisement()
+#4 D:\shopex\7663\yii\framework\web\CController.php(308): CInlineAction->runWithParams()
+#5 D:\shopex\7663\yii\framework\web\CController.php(286): AdminController->runAction()
+#6 D:\shopex\7663\yii\framework\web\CController.php(265): AdminController->runActionWithFilters()
+#7 D:\shopex\7663\yii\framework\web\CWebApplication.php(282): AdminController->run()
+#8 D:\shopex\7663\yii\framework\web\CWebApplication.php(141): CWebApplication->runController()
+#9 D:\shopex\7663\yii\framework\base\CApplication.php(185): CWebApplication->processRequest()
+#10 D:\shopex\7663\web\index.php(13): CWebApplication->run()
+REQUEST_URI=/index.php?r=admin/addAdviertisement
+in D:\shopex\7663\web\protected\views\admin\addAdviertisement.php (13)
+in D:\shopex\7663\web\protected\controllers\AdminController.php (94)
+in D:\shopex\7663\web\index.php (13)
+2016/10/10 04:03:55 [error] [php] Undefined variable: icon (D:\shopex\7663\web\protected\views\admin\addAdviertisement.php:13)
+Stack trace:
+#0 D:\shopex\7663\yii\framework\web\CController.php(869): AdminController->renderFile()
+#1 D:\shopex\7663\yii\framework\web\CController.php(782): AdminController->renderPartial()
+#2 D:\shopex\7663\web\protected\controllers\AdminController.php(94): AdminController->render()
+#3 D:\shopex\7663\yii\framework\web\actions\CInlineAction.php(49): AdminController->actionAddAdviertisement()
+#4 D:\shopex\7663\yii\framework\web\CController.php(308): CInlineAction->runWithParams()
+#5 D:\shopex\7663\yii\framework\web\CController.php(286): AdminController->runAction()
+#6 D:\shopex\7663\yii\framework\web\CController.php(265): AdminController->runActionWithFilters()
+#7 D:\shopex\7663\yii\framework\web\CWebApplication.php(282): AdminController->run()
+#8 D:\shopex\7663\yii\framework\web\CWebApplication.php(141): CWebApplication->runController()
+#9 D:\shopex\7663\yii\framework\base\CApplication.php(185): CWebApplication->processRequest()
+#10 D:\shopex\7663\web\index.php(13): CWebApplication->run()
+REQUEST_URI=/index.php?r=admin/addAdviertisement
+in D:\shopex\7663\web\protected\views\admin\addAdviertisement.php (13)
+in D:\shopex\7663\web\protected\controllers\AdminController.php (94)
+in D:\shopex\7663\web\index.php (13)
+2016/10/10 04:08:52 [error] [php] Undefined variable: model (D:\shopex\7663\web\protected\views\admin\addAdviertisement.php:19)
+Stack trace:
+#0 D:\shopex\7663\yii\framework\web\CController.php(869): AdminController->renderFile()
+#1 D:\shopex\7663\yii\framework\web\CController.php(782): AdminController->renderPartial()
+#2 D:\shopex\7663\web\protected\controllers\AdminController.php(94): AdminController->render()
+#3 D:\shopex\7663\yii\framework\web\actions\CInlineAction.php(49): AdminController->actionAddAdviertisement()
+#4 D:\shopex\7663\yii\framework\web\CController.php(308): CInlineAction->runWithParams()
+#5 D:\shopex\7663\yii\framework\web\CController.php(286): AdminController->runAction()
+#6 D:\shopex\7663\yii\framework\web\CController.php(265): AdminController->runActionWithFilters()
+#7 D:\shopex\7663\yii\framework\web\CWebApplication.php(282): AdminController->run()
+#8 D:\shopex\7663\yii\framework\web\CWebApplication.php(141): CWebApplication->runController()
+#9 D:\shopex\7663\yii\framework\base\CApplication.php(185): CWebApplication->processRequest()
+#10 D:\shopex\7663\web\index.php(13): CWebApplication->run()
+REQUEST_URI=/index.php?r=admin/addAdviertisement
+in D:\shopex\7663\web\protected\views\admin\addAdviertisement.php (19)
+in D:\shopex\7663\web\protected\controllers\AdminController.php (94)
+in D:\shopex\7663\web\index.php (13)
+2016/10/10 04:08:53 [error] [php] Undefined variable: model (D:\shopex\7663\web\protected\views\admin\addAdviertisement.php:19)
+Stack trace:
+#0 D:\shopex\7663\yii\framework\web\CController.php(869): AdminController->renderFile()
+#1 D:\shopex\7663\yii\framework\web\CController.php(782): AdminController->renderPartial()
+#2 D:\shopex\7663\web\protected\controllers\AdminController.php(94): AdminController->render()
+#3 D:\shopex\7663\yii\framework\web\actions\CInlineAction.php(49): AdminController->actionAddAdviertisement()
+#4 D:\shopex\7663\yii\framework\web\CController.php(308): CInlineAction->runWithParams()
+#5 D:\shopex\7663\yii\framework\web\CController.php(286): AdminController->runAction()
+#6 D:\shopex\7663\yii\framework\web\CController.php(265): AdminController->runActionWithFilters()
+#7 D:\shopex\7663\yii\framework\web\CWebApplication.php(282): AdminController->run()
+#8 D:\shopex\7663\yii\framework\web\CWebApplication.php(141): CWebApplication->runController()
+#9 D:\shopex\7663\yii\framework\base\CApplication.php(185): CWebApplication->processRequest()
+#10 D:\shopex\7663\web\index.php(13): CWebApplication->run()
+REQUEST_URI=/index.php?r=admin/addAdviertisement
+in D:\shopex\7663\web\protected\views\admin\addAdviertisement.php (19)
+in D:\shopex\7663\web\protected\controllers\AdminController.php (94)
+in D:\shopex\7663\web\index.php (13)
+2016/10/10 04:09:43 [error] [php] include(Link.php): failed to open stream: No such file or directory (D:\shopex\7663\yii\framework\YiiBase.php:432)
+Stack trace:
+#0 D:\shopex\7663\web\protected\controllers\AdminController.php(91): spl_autoload_call()
+#1 D:\shopex\7663\yii\framework\web\actions\CInlineAction.php(49): AdminController->actionAddAdviertisement()
+#2 D:\shopex\7663\yii\framework\web\CController.php(308): CInlineAction->runWithParams()
+#3 D:\shopex\7663\yii\framework\web\CController.php(286): AdminController->runAction()
+#4 D:\shopex\7663\yii\framework\web\CController.php(265): AdminController->runActionWithFilters()
+#5 D:\shopex\7663\yii\framework\web\CWebApplication.php(282): AdminController->run()
+#6 D:\shopex\7663\yii\framework\web\CWebApplication.php(141): CWebApplication->runController()
+#7 D:\shopex\7663\yii\framework\base\CApplication.php(185): CWebApplication->processRequest()
+#8 D:\shopex\7663\web\index.php(13): CWebApplication->run()
+REQUEST_URI=/index.php?r=admin/addAdviertisement
+in D:\shopex\7663\web\protected\controllers\AdminController.php (91)
+in D:\shopex\7663\web\index.php (13)
+2016/10/10 04:09:45 [error] [php] include(Link.php): failed to open stream: No such file or directory (D:\shopex\7663\yii\framework\YiiBase.php:432)
+Stack trace:
+#0 D:\shopex\7663\web\protected\controllers\AdminController.php(91): spl_autoload_call()
+#1 D:\shopex\7663\yii\framework\web\actions\CInlineAction.php(49): AdminController->actionAddAdviertisement()
+#2 D:\shopex\7663\yii\framework\web\CController.php(308): CInlineAction->runWithParams()
+#3 D:\shopex\7663\yii\framework\web\CController.php(286): AdminController->runAction()
+#4 D:\shopex\7663\yii\framework\web\CController.php(265): AdminController->runActionWithFilters()
+#5 D:\shopex\7663\yii\framework\web\CWebApplication.php(282): AdminController->run()
+#6 D:\shopex\7663\yii\framework\web\CWebApplication.php(141): CWebApplication->runController()
+#7 D:\shopex\7663\yii\framework\base\CApplication.php(185): CWebApplication->processRequest()
+#8 D:\shopex\7663\web\index.php(13): CWebApplication->run()
+REQUEST_URI=/index.php?r=admin/addAdviertisement
+in D:\shopex\7663\web\protected\controllers\AdminController.php (91)
+in D:\shopex\7663\web\index.php (13)
+2016/10/10 04:11:14 [error] [php] include(Link.php): failed to open stream: No such file or directory (D:\shopex\7663\yii\framework\YiiBase.php:432)
+Stack trace:
+#0 D:\shopex\7663\web\protected\controllers\AdminController.php(91): spl_autoload_call()
+#1 D:\shopex\7663\yii\framework\web\actions\CInlineAction.php(49): AdminController->actionAddAdviertisement()
+#2 D:\shopex\7663\yii\framework\web\CController.php(308): CInlineAction->runWithParams()
+#3 D:\shopex\7663\yii\framework\web\CController.php(286): AdminController->runAction()
+#4 D:\shopex\7663\yii\framework\web\CController.php(265): AdminController->runActionWithFilters()
+#5 D:\shopex\7663\yii\framework\web\CWebApplication.php(282): AdminController->run()
+#6 D:\shopex\7663\yii\framework\web\CWebApplication.php(141): CWebApplication->runController()
+#7 D:\shopex\7663\yii\framework\base\CApplication.php(185): CWebApplication->processRequest()
+#8 D:\shopex\7663\web\index.php(13): CWebApplication->run()
+REQUEST_URI=/index.php?r=admin/addAdviertisement
+in D:\shopex\7663\web\protected\controllers\AdminController.php (91)
+in D:\shopex\7663\web\index.php (13)
+2016/10/10 04:11:15 [error] [php] include(Link.php): failed to open stream: No such file or directory (D:\shopex\7663\yii\framework\YiiBase.php:432)
+Stack trace:
+#0 D:\shopex\7663\web\protected\controllers\AdminController.php(91): spl_autoload_call()
+#1 D:\shopex\7663\yii\framework\web\actions\CInlineAction.php(49): AdminController->actionAddAdviertisement()
+#2 D:\shopex\7663\yii\framework\web\CController.php(308): CInlineAction->runWithParams()
+#3 D:\shopex\7663\yii\framework\web\CController.php(286): AdminController->runAction()
+#4 D:\shopex\7663\yii\framework\web\CController.php(265): AdminController->runActionWithFilters()
+#5 D:\shopex\7663\yii\framework\web\CWebApplication.php(282): AdminController->run()
+#6 D:\shopex\7663\yii\framework\web\CWebApplication.php(141): CWebApplication->runController()
+#7 D:\shopex\7663\yii\framework\base\CApplication.php(185): CWebApplication->processRequest()
+#8 D:\shopex\7663\web\index.php(13): CWebApplication->run()
+REQUEST_URI=/index.php?r=admin/addAdviertisement
+in D:\shopex\7663\web\protected\controllers\AdminController.php (91)
+in D:\shopex\7663\web\index.php (13)
+2016/10/10 04:11:24 [error] [exception.CException] exception 'CException' with message 'Property "AdminController.currentDir" is not defined.' in D:\shopex\7663\yii\framework\base\CComponent.php:130
+Stack trace:
+#0 D:\shopex\7663\web\protected\views\admin\addAdviertisement.php(13): CComponent->__get('currentDir')
+#1 D:\shopex\7663\yii\framework\web\CBaseController.php(126): require('D:\\shopex\\7663\\...')
+#2 D:\shopex\7663\yii\framework\web\CBaseController.php(95): CBaseController->renderInternal('D:\\shopex\\7663\\...', Array, true)
+#3 D:\shopex\7663\yii\framework\web\CController.php(869): CBaseController->renderFile('D:\\shopex\\7663\\...', Array, true)
+#4 D:\shopex\7663\yii\framework\web\CController.php(782): CController->renderPartial('addAdviertiseme...', Array, true)
+#5 D:\shopex\7663\web\protected\controllers\AdminController.php(95): CController->render('addAdviertiseme...', Array)
+#6 D:\shopex\7663\yii\framework\web\actions\CInlineAction.php(49): AdminController->actionAddAdviertisement()
+#7 D:\shopex\7663\yii\framework\web\CController.php(308): CInlineAction->runWithParams(Array)
+#8 D:\shopex\7663\yii\framework\web\CController.php(286): CController->runAction(Object(CInlineAction))
+#9 D:\shopex\7663\yii\framework\web\CController.php(265): CController->runActionWithFilters(Object(CInlineAction), Array)
+#10 D:\shopex\7663\yii\framework\web\CWebApplication.php(282): CController->run('addAdviertiseme...')
+#11 D:\shopex\7663\yii\framework\web\CWebApplication.php(141): CWebApplication->runController('admin/addAdvier...')
+#12 D:\shopex\7663\yii\framework\base\CApplication.php(185): CWebApplication->processRequest()
+#13 D:\shopex\7663\web\index.php(13): CApplication->run()
+#14 {main}
+REQUEST_URI=/index.php?r=admin/addAdviertisement
+HTTP_REFERER=http://www.7663.com/index.php?r=admin/adviertisement
+---
+2016/10/10 04:11:25 [error] [exception.CException] exception 'CException' with message 'Property "AdminController.currentDir" is not defined.' in D:\shopex\7663\yii\framework\base\CComponent.php:130
+Stack trace:
+#0 D:\shopex\7663\web\protected\views\admin\addAdviertisement.php(13): CComponent->__get('currentDir')
+#1 D:\shopex\7663\yii\framework\web\CBaseController.php(126): require('D:\\shopex\\7663\\...')
+#2 D:\shopex\7663\yii\framework\web\CBaseController.php(95): CBaseController->renderInternal('D:\\shopex\\7663\\...', Array, true)
+#3 D:\shopex\7663\yii\framework\web\CController.php(869): CBaseController->renderFile('D:\\shopex\\7663\\...', Array, true)
+#4 D:\shopex\7663\yii\framework\web\CController.php(782): CController->renderPartial('addAdviertiseme...', Array, true)
+#5 D:\shopex\7663\web\protected\controllers\AdminController.php(95): CController->render('addAdviertiseme...', Array)
+#6 D:\shopex\7663\yii\framework\web\actions\CInlineAction.php(49): AdminController->actionAddAdviertisement()
+#7 D:\shopex\7663\yii\framework\web\CController.php(308): CInlineAction->runWithParams(Array)
+#8 D:\shopex\7663\yii\framework\web\CController.php(286): CController->runAction(Object(CInlineAction))
+#9 D:\shopex\7663\yii\framework\web\CController.php(265): CController->runActionWithFilters(Object(CInlineAction), Array)
+#10 D:\shopex\7663\yii\framework\web\CWebApplication.php(282): CController->run('addAdviertiseme...')
+#11 D:\shopex\7663\yii\framework\web\CWebApplication.php(141): CWebApplication->runController('admin/addAdvier...')
+#12 D:\shopex\7663\yii\framework\base\CApplication.php(185): CWebApplication->processRequest()
+#13 D:\shopex\7663\web\index.php(13): CApplication->run()
+#14 {main}
+REQUEST_URI=/index.php?r=admin/addAdviertisement
+HTTP_REFERER=http://www.7663.com/index.php?r=admin/adviertisement
+---
+2016/10/10 04:13:52 [error] [exception.CException] exception 'CException' with message 'Property "AdminController.currentDir" is not defined.' in D:\shopex\7663\yii\framework\base\CComponent.php:173
+Stack trace:
+#0 D:\shopex\7663\web\protected\controllers\AdminController.php(92): CComponent->__set('currentDir', '')
+#1 D:\shopex\7663\yii\framework\web\actions\CInlineAction.php(49): AdminController->actionAddAdviertisement()
+#2 D:\shopex\7663\yii\framework\web\CController.php(308): CInlineAction->runWithParams(Array)
+#3 D:\shopex\7663\yii\framework\web\CController.php(286): CController->runAction(Object(CInlineAction))
+#4 D:\shopex\7663\yii\framework\web\CController.php(265): CController->runActionWithFilters(Object(CInlineAction), Array)
+#5 D:\shopex\7663\yii\framework\web\CWebApplication.php(282): CController->run('addAdviertiseme...')
+#6 D:\shopex\7663\yii\framework\web\CWebApplication.php(141): CWebApplication->runController('admin/addAdvier...')
+#7 D:\shopex\7663\yii\framework\base\CApplication.php(185): CWebApplication->processRequest()
+#8 D:\shopex\7663\web\index.php(13): CApplication->run()
+#9 {main}
+REQUEST_URI=/index.php?r=admin/addAdviertisement
+HTTP_REFERER=http://www.7663.com/index.php?r=admin/adviertisement
+---
+2016/10/10 04:13:54 [error] [exception.CException] exception 'CException' with message 'Property "AdminController.currentDir" is not defined.' in D:\shopex\7663\yii\framework\base\CComponent.php:173
+Stack trace:
+#0 D:\shopex\7663\web\protected\controllers\AdminController.php(92): CComponent->__set('currentDir', '')
+#1 D:\shopex\7663\yii\framework\web\actions\CInlineAction.php(49): AdminController->actionAddAdviertisement()
+#2 D:\shopex\7663\yii\framework\web\CController.php(308): CInlineAction->runWithParams(Array)
+#3 D:\shopex\7663\yii\framework\web\CController.php(286): CController->runAction(Object(CInlineAction))
+#4 D:\shopex\7663\yii\framework\web\CController.php(265): CController->runActionWithFilters(Object(CInlineAction), Array)
+#5 D:\shopex\7663\yii\framework\web\CWebApplication.php(282): CController->run('addAdviertiseme...')
+#6 D:\shopex\7663\yii\framework\web\CWebApplication.php(141): CWebApplication->runController('admin/addAdvier...')
+#7 D:\shopex\7663\yii\framework\base\CApplication.php(185): CWebApplication->processRequest()
+#8 D:\shopex\7663\web\index.php(13): CApplication->run()
+#9 {main}
+REQUEST_URI=/index.php?r=admin/addAdviertisement
+HTTP_REFERER=http://www.7663.com/index.php?r=admin/adviertisement
+---
+2016/10/10 04:14:20 [error] [exception.CException] exception 'CException' with message 'Property "AdminController.currentDir" is not defined.' in D:\shopex\7663\yii\framework\base\CComponent.php:173
+Stack trace:
+#0 D:\shopex\7663\web\protected\controllers\AdminController.php(92): CComponent->__set('currentDir', '')
+#1 D:\shopex\7663\yii\framework\web\actions\CInlineAction.php(49): AdminController->actionAddAdviertisement()
+#2 D:\shopex\7663\yii\framework\web\CController.php(308): CInlineAction->runWithParams(Array)
+#3 D:\shopex\7663\yii\framework\web\CController.php(286): CController->runAction(Object(CInlineAction))
+#4 D:\shopex\7663\yii\framework\web\CController.php(265): CController->runActionWithFilters(Object(CInlineAction), Array)
+#5 D:\shopex\7663\yii\framework\web\CWebApplication.php(282): CController->run('addAdviertiseme...')
+#6 D:\shopex\7663\yii\framework\web\CWebApplication.php(141): CWebApplication->runController('admin/addAdvier...')
+#7 D:\shopex\7663\yii\framework\base\CApplication.php(185): CWebApplication->processRequest()
+#8 D:\shopex\7663\web\index.php(13): CApplication->run()
+#9 {main}
+REQUEST_URI=/index.php?r=admin/addAdviertisement
+HTTP_REFERER=http://www.7663.com/index.php?r=admin/adviertisement
+---
+2016/10/10 04:15:28 [error] [exception.CException] exception 'CException' with message 'Property "AdminController.currentDir" is not defined.' in D:\shopex\7663\yii\framework\base\CComponent.php:130
+Stack trace:
+#0 D:\shopex\7663\web\protected\views\admin\addAdviertisement.php(13): CComponent->__get('currentDir')
+#1 D:\shopex\7663\yii\framework\web\CBaseController.php(126): require('D:\\shopex\\7663\\...')
+#2 D:\shopex\7663\yii\framework\web\CBaseController.php(95): CBaseController->renderInternal('D:\\shopex\\7663\\...', Array, true)
+#3 D:\shopex\7663\yii\framework\web\CController.php(869): CBaseController->renderFile('D:\\shopex\\7663\\...', Array, true)
+#4 D:\shopex\7663\yii\framework\web\CController.php(782): CController->renderPartial('addAdviertiseme...', Array, true)
+#5 D:\shopex\7663\web\protected\controllers\AdminController.php(97): CController->render('addAdviertiseme...', Array)
+#6 D:\shopex\7663\yii\framework\web\actions\CInlineAction.php(49): AdminController->actionAddAdviertisement()
+#7 D:\shopex\7663\yii\framework\web\CController.php(308): CInlineAction->runWithParams(Array)
+#8 D:\shopex\7663\yii\framework\web\CController.php(286): CController->runAction(Object(CInlineAction))
+#9 D:\shopex\7663\yii\framework\web\CController.php(265): CController->runActionWithFilters(Object(CInlineAction), Array)
+#10 D:\shopex\7663\yii\framework\web\CWebApplication.php(282): CController->run('addAdviertiseme...')
+#11 D:\shopex\7663\yii\framework\web\CWebApplication.php(141): CWebApplication->runController('admin/addAdvier...')
+#12 D:\shopex\7663\yii\framework\base\CApplication.php(185): CWebApplication->processRequest()
+#13 D:\shopex\7663\web\index.php(13): CApplication->run()
+#14 {main}
+REQUEST_URI=/index.php?r=admin/addAdviertisement
+HTTP_REFERER=http://www.7663.com/index.php?r=admin/adviertisement
+---
+2016/10/10 04:15:29 [error] [exception.CException] exception 'CException' with message 'Property "AdminController.currentDir" is not defined.' in D:\shopex\7663\yii\framework\base\CComponent.php:130
+Stack trace:
+#0 D:\shopex\7663\web\protected\views\admin\addAdviertisement.php(13): CComponent->__get('currentDir')
+#1 D:\shopex\7663\yii\framework\web\CBaseController.php(126): require('D:\\shopex\\7663\\...')
+#2 D:\shopex\7663\yii\framework\web\CBaseController.php(95): CBaseController->renderInternal('D:\\shopex\\7663\\...', Array, true)
+#3 D:\shopex\7663\yii\framework\web\CController.php(869): CBaseController->renderFile('D:\\shopex\\7663\\...', Array, true)
+#4 D:\shopex\7663\yii\framework\web\CController.php(782): CController->renderPartial('addAdviertiseme...', Array, true)
+#5 D:\shopex\7663\web\protected\controllers\AdminController.php(97): CController->render('addAdviertiseme...', Array)
+#6 D:\shopex\7663\yii\framework\web\actions\CInlineAction.php(49): AdminController->actionAddAdviertisement()
+#7 D:\shopex\7663\yii\framework\web\CController.php(308): CInlineAction->runWithParams(Array)
+#8 D:\shopex\7663\yii\framework\web\CController.php(286): CController->runAction(Object(CInlineAction))
+#9 D:\shopex\7663\yii\framework\web\CController.php(265): CController->runActionWithFilters(Object(CInlineAction), Array)
+#10 D:\shopex\7663\yii\framework\web\CWebApplication.php(282): CController->run('addAdviertiseme...')
+#11 D:\shopex\7663\yii\framework\web\CWebApplication.php(141): CWebApplication->runController('admin/addAdvier...')
+#12 D:\shopex\7663\yii\framework\base\CApplication.php(185): CWebApplication->processRequest()
+#13 D:\shopex\7663\web\index.php(13): CApplication->run()
+#14 {main}
+REQUEST_URI=/index.php?r=admin/addAdviertisement
+HTTP_REFERER=http://www.7663.com/index.php?r=admin/adviertisement
+---
+2016/10/10 04:18:25 [error] [php] Undefined variable: form (D:\shopex\7663\web\protected\views\admin\addAdviertisement.php:14)
+Stack trace:
+#0 D:\shopex\7663\yii\framework\web\CController.php(869): AdminController->renderFile()
+#1 D:\shopex\7663\yii\framework\web\CController.php(782): AdminController->renderPartial()
+#2 D:\shopex\7663\web\protected\controllers\AdminController.php(97): AdminController->render()
+#3 D:\shopex\7663\yii\framework\web\actions\CInlineAction.php(49): AdminController->actionAddAdviertisement()
+#4 D:\shopex\7663\yii\framework\web\CController.php(308): CInlineAction->runWithParams()
+#5 D:\shopex\7663\yii\framework\web\CController.php(286): AdminController->runAction()
+#6 D:\shopex\7663\yii\framework\web\CController.php(265): AdminController->runActionWithFilters()
+#7 D:\shopex\7663\yii\framework\web\CWebApplication.php(282): AdminController->run()
+#8 D:\shopex\7663\yii\framework\web\CWebApplication.php(141): CWebApplication->runController()
+#9 D:\shopex\7663\yii\framework\base\CApplication.php(185): CWebApplication->processRequest()
+#10 D:\shopex\7663\web\index.php(13): CWebApplication->run()
+REQUEST_URI=/index.php?r=admin/addAdviertisement
+in D:\shopex\7663\web\protected\views\admin\addAdviertisement.php (14)
+in D:\shopex\7663\web\protected\controllers\AdminController.php (97)
+in D:\shopex\7663\web\index.php (13)
+2016/10/10 04:18:27 [error] [php] Undefined variable: form (D:\shopex\7663\web\protected\views\admin\addAdviertisement.php:14)
+Stack trace:
+#0 D:\shopex\7663\yii\framework\web\CController.php(869): AdminController->renderFile()
+#1 D:\shopex\7663\yii\framework\web\CController.php(782): AdminController->renderPartial()
+#2 D:\shopex\7663\web\protected\controllers\AdminController.php(97): AdminController->render()
+#3 D:\shopex\7663\yii\framework\web\actions\CInlineAction.php(49): AdminController->actionAddAdviertisement()
+#4 D:\shopex\7663\yii\framework\web\CController.php(308): CInlineAction->runWithParams()
+#5 D:\shopex\7663\yii\framework\web\CController.php(286): AdminController->runAction()
+#6 D:\shopex\7663\yii\framework\web\CController.php(265): AdminController->runActionWithFilters()
+#7 D:\shopex\7663\yii\framework\web\CWebApplication.php(282): AdminController->run()
+#8 D:\shopex\7663\yii\framework\web\CWebApplication.php(141): CWebApplication->runController()
+#9 D:\shopex\7663\yii\framework\base\CApplication.php(185): CWebApplication->processRequest()
+#10 D:\shopex\7663\web\index.php(13): CWebApplication->run()
+REQUEST_URI=/index.php?r=admin/addAdviertisement
+in D:\shopex\7663\web\protected\views\admin\addAdviertisement.php (14)
+in D:\shopex\7663\web\protected\controllers\AdminController.php (97)
+in D:\shopex\7663\web\index.php (13)
+2016/10/10 04:24:30 [error] [php] Trying to get property of non-object (D:\shopex\7663\web\protected\controllers\AdminController.php:98)
+Stack trace:
+#0 D:\shopex\7663\yii\framework\web\CController.php(286): AdminController->runAction()
+#1 D:\shopex\7663\yii\framework\web\CController.php(265): AdminController->runActionWithFilters()
+#2 D:\shopex\7663\yii\framework\web\CWebApplication.php(282): AdminController->run()
+#3 D:\shopex\7663\yii\framework\web\CWebApplication.php(141): CWebApplication->runController()
+#4 D:\shopex\7663\yii\framework\base\CApplication.php(185): CWebApplication->processRequest()
+#5 D:\shopex\7663\web\index.php(13): CWebApplication->run()
+REQUEST_URI=/index.php?r=admin/addAdviertisement
+in D:\shopex\7663\web\protected\controllers\AdminController.php (98)
+in D:\shopex\7663\web\index.php (13)
+2016/10/10 04:24:31 [error] [php] Trying to get property of non-object (D:\shopex\7663\web\protected\controllers\AdminController.php:98)
+Stack trace:
+#0 D:\shopex\7663\yii\framework\web\CController.php(286): AdminController->runAction()
+#1 D:\shopex\7663\yii\framework\web\CController.php(265): AdminController->runActionWithFilters()
+#2 D:\shopex\7663\yii\framework\web\CWebApplication.php(282): AdminController->run()
+#3 D:\shopex\7663\yii\framework\web\CWebApplication.php(141): CWebApplication->runController()
+#4 D:\shopex\7663\yii\framework\base\CApplication.php(185): CWebApplication->processRequest()
+#5 D:\shopex\7663\web\index.php(13): CWebApplication->run()
+REQUEST_URI=/index.php?r=admin/addAdviertisement
+in D:\shopex\7663\web\protected\controllers\AdminController.php (98)
+in D:\shopex\7663\web\index.php (13)
+2016/10/10 04:25:17 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'The system is unable to find the requested action "doAddAdviertisement".' in D:\shopex\7663\yii\framework\web\CController.php:483
+Stack trace:
+#0 D:\shopex\7663\yii\framework\web\CController.php(270): CController->missingAction('doAddAdviertise...')
+#1 D:\shopex\7663\yii\framework\web\CWebApplication.php(282): CController->run('doAddAdviertise...')
+#2 D:\shopex\7663\yii\framework\web\CWebApplication.php(141): CWebApplication->runController('admin/doAddAdvi...')
+#3 D:\shopex\7663\yii\framework\base\CApplication.php(185): CWebApplication->processRequest()
+#4 D:\shopex\7663\web\index.php(13): CApplication->run()
+#5 {main}
+REQUEST_URI=/index.php?r=admin/doAddAdviertisement
+HTTP_REFERER=http://www.7663.com/index.php?r=admin/addAdviertisement
+---
+2016/10/10 04:31:03 [error] [php] mkdir(): No such file or directory (D:\shopex\7663\web\protected\controllers\AdminController.php:104)
+Stack trace:
+#0 D:\shopex\7663\yii\framework\web\CController.php(308): CInlineAction->runWithParams()
+#1 D:\shopex\7663\yii\framework\web\CController.php(286): AdminController->runAction()
+#2 D:\shopex\7663\yii\framework\web\CController.php(265): AdminController->runActionWithFilters()
+#3 D:\shopex\7663\yii\framework\web\CWebApplication.php(282): AdminController->run()
+#4 D:\shopex\7663\yii\framework\web\CWebApplication.php(141): CWebApplication->runController()
+#5 D:\shopex\7663\yii\framework\base\CApplication.php(185): CWebApplication->processRequest()
+#6 D:\shopex\7663\web\index.php(13): CWebApplication->run()
+REQUEST_URI=/index.php?r=admin/doAddAdviertisement
+in D:\shopex\7663\web\protected\controllers\AdminController.php (104)
+in D:\shopex\7663\web\index.php (13)
+2016/10/10 04:40:37 [error] [php] mkdir(): No such file or directory (D:\shopex\7663\web\protected\components\Helper.php:74)
+Stack trace:
+#0 D:\shopex\7663\yii\framework\web\actions\CInlineAction.php(49): AdminController->actionDoAddAdviertisement()
+#1 D:\shopex\7663\yii\framework\web\CController.php(308): CInlineAction->runWithParams()
+#2 D:\shopex\7663\yii\framework\web\CController.php(286): AdminController->runAction()
+#3 D:\shopex\7663\yii\framework\web\CController.php(265): AdminController->runActionWithFilters()
+#4 D:\shopex\7663\yii\framework\web\CWebApplication.php(282): AdminController->run()
+#5 D:\shopex\7663\yii\framework\web\CWebApplication.php(141): CWebApplication->runController()
+#6 D:\shopex\7663\yii\framework\base\CApplication.php(185): CWebApplication->processRequest()
+#7 D:\shopex\7663\web\index.php(13): CWebApplication->run()
+REQUEST_URI=/index.php?r=admin/doAddAdviertisement
+in D:\shopex\7663\web\protected\components\Helper.php (74)
+in D:\shopex\7663\web\protected\controllers\AdminController.php (100)
+in D:\shopex\7663\web\index.php (13)
+2016/10/10 04:53:08 [error] [php] Undefined index: title (D:\shopex\7663\web\protected\controllers\AdminController.php:100)
+Stack trace:
+#0 D:\shopex\7663\yii\framework\web\CController.php(286): AdminController->runAction()
+#1 D:\shopex\7663\yii\framework\web\CController.php(265): AdminController->runActionWithFilters()
+#2 D:\shopex\7663\yii\framework\web\CWebApplication.php(282): AdminController->run()
+#3 D:\shopex\7663\yii\framework\web\CWebApplication.php(141): CWebApplication->runController()
+#4 D:\shopex\7663\yii\framework\base\CApplication.php(185): CWebApplication->processRequest()
+#5 D:\shopex\7663\web\index.php(13): CWebApplication->run()
+REQUEST_URI=/index.php?r=admin/doAddAdviertisement
+in D:\shopex\7663\web\protected\controllers\AdminController.php (100)
+in D:\shopex\7663\web\index.php (13)
+2016/10/10 04:53:11 [error] [php] Undefined index: title (D:\shopex\7663\web\protected\controllers\AdminController.php:100)
+Stack trace:
+#0 D:\shopex\7663\yii\framework\web\CController.php(286): AdminController->runAction()
+#1 D:\shopex\7663\yii\framework\web\CController.php(265): AdminController->runActionWithFilters()
+#2 D:\shopex\7663\yii\framework\web\CWebApplication.php(282): AdminController->run()
+#3 D:\shopex\7663\yii\framework\web\CWebApplication.php(141): CWebApplication->runController()
+#4 D:\shopex\7663\yii\framework\base\CApplication.php(185): CWebApplication->processRequest()
+#5 D:\shopex\7663\web\index.php(13): CWebApplication->run()
+REQUEST_URI=/index.php?r=admin/doAddAdviertisement
+in D:\shopex\7663\web\protected\controllers\AdminController.php (100)
+in D:\shopex\7663\web\index.php (13)
+2016/10/10 05:20:02 [error] [php] include(UploadedFile.php): failed to open stream: No such file or directory (D:\shopex\7663\yii\framework\YiiBase.php:432)
+Stack trace:
+#0 D:\shopex\7663\web\protected\controllers\AdminController.php(106): spl_autoload_call()
+#1 D:\shopex\7663\yii\framework\web\actions\CInlineAction.php(49): AdminController->actionDoAddAdviertisement()
+#2 D:\shopex\7663\yii\framework\web\CController.php(308): CInlineAction->runWithParams()
+#3 D:\shopex\7663\yii\framework\web\CController.php(286): AdminController->runAction()
+#4 D:\shopex\7663\yii\framework\web\CController.php(265): AdminController->runActionWithFilters()
+#5 D:\shopex\7663\yii\framework\web\CWebApplication.php(282): AdminController->run()
+#6 D:\shopex\7663\yii\framework\web\CWebApplication.php(141): CWebApplication->runController()
+#7 D:\shopex\7663\yii\framework\base\CApplication.php(185): CWebApplication->processRequest()
+#8 D:\shopex\7663\web\index.php(13): CWebApplication->run()
+REQUEST_URI=/index.php?r=admin/doAddAdviertisement
+in D:\shopex\7663\web\protected\controllers\AdminController.php (106)
+in D:\shopex\7663\web\index.php (13)
+2016/10/10 05:44:23 [error] [system.db.CDbCommand] CDbCommand::execute() failed: SQLSTATE[42S22]: Column not found: 1054 Unknown column 'iconName' in 'field list'. The SQL statement executed was: INSERT INTO `adviertisement` (`title`, `iconName`, `content`, `add_time`) VALUES (:title, :iconName, :content, :add_time).
+in D:\shopex\7663\web\protected\models\DaoSite.php (248)
+in D:\shopex\7663\web\protected\controllers\AdminController.php (119)
+in D:\shopex\7663\web\index.php (13)
+2016/10/10 05:44:23 [error] [exception.CDbException] exception 'CDbException' with message 'CDbCommand failed to execute the SQL statement: SQLSTATE[42S22]: Column not found: 1054 Unknown column 'iconName' in 'field list'. The SQL statement executed was: INSERT INTO `adviertisement` (`title`, `iconName`, `content`, `add_time`) VALUES (:title, :iconName, :content, :add_time)' in D:\shopex\7663\yii\framework\db\CDbCommand.php:358
+Stack trace:
+#0 D:\shopex\7663\yii\framework\db\CDbCommand.php(1278): CDbCommand->execute(Array)
+#1 D:\shopex\7663\web\protected\models\DaoSite.php(248): CDbCommand->insert('adviertisement', Array)
+#2 D:\shopex\7663\web\protected\controllers\AdminController.php(119): DaoSite->addAdviertisement('\xE5\xA5\xBD\xE5\x8A\x9F\xE8\x83\xBD', '/static/adv//D:...', '\xE7\x9C\x9F\xE6\xA3\x92')
+#3 D:\shopex\7663\yii\framework\web\actions\CInlineAction.php(49): AdminController->actionDoAddAdviertisement()
+#4 D:\shopex\7663\yii\framework\web\CController.php(308): CInlineAction->runWithParams(Array)
+#5 D:\shopex\7663\yii\framework\web\CController.php(286): CController->runAction(Object(CInlineAction))
+#6 D:\shopex\7663\yii\framework\web\CController.php(265): CController->runActionWithFilters(Object(CInlineAction), Array)
+#7 D:\shopex\7663\yii\framework\web\CWebApplication.php(282): CController->run('doAddAdviertise...')
+#8 D:\shopex\7663\yii\framework\web\CWebApplication.php(141): CWebApplication->runController('admin/doAddAdvi...')
+#9 D:\shopex\7663\yii\framework\base\CApplication.php(185): CWebApplication->processRequest()
+#10 D:\shopex\7663\web\index.php(13): CApplication->run()
+#11 {main}
+REQUEST_URI=/index.php?r=admin/doAddAdviertisement
+HTTP_REFERER=http://www.7663.com/index.php?r=admin/addAdviertisement
+---
+2016/10/10 05:54:19 [error] [php] Undefined variable: adviertisement (D:\shopex\7663\web\protected\views\admin\adviertisement.php:10)
+Stack trace:
+#0 D:\shopex\7663\yii\framework\web\CController.php(869): AdminController->renderFile()
+#1 D:\shopex\7663\yii\framework\web\CController.php(782): AdminController->renderPartial()
+#2 D:\shopex\7663\web\protected\controllers\AdminController.php(109): AdminController->render()
+#3 D:\shopex\7663\yii\framework\web\actions\CInlineAction.php(49): AdminController->actionAdviertisement()
+#4 D:\shopex\7663\yii\framework\web\CController.php(308): CInlineAction->runWithParams()
+#5 D:\shopex\7663\yii\framework\web\CController.php(286): AdminController->runAction()
+#6 D:\shopex\7663\yii\framework\web\CController.php(265): AdminController->runActionWithFilters()
+#7 D:\shopex\7663\yii\framework\web\CWebApplication.php(282): AdminController->run()
+#8 D:\shopex\7663\yii\framework\web\CWebApplication.php(141): CWebApplication->runController()
+#9 D:\shopex\7663\yii\framework\base\CApplication.php(185): CWebApplication->processRequest()
+#10 D:\shopex\7663\web\index.php(13): CWebApplication->run()
+REQUEST_URI=/index.php?r=admin/adviertisement
+in D:\shopex\7663\web\protected\views\admin\adviertisement.php (10)
+in D:\shopex\7663\web\protected\controllers\AdminController.php (109)
+in D:\shopex\7663\web\index.php (13)
+2016/10/10 05:58:39 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'The system is unable to find the requested action "updAdviertisement".' in D:\shopex\7663\yii\framework\web\CController.php:483
+Stack trace:
+#0 D:\shopex\7663\yii\framework\web\CController.php(270): CController->missingAction('updAdviertiseme...')
+#1 D:\shopex\7663\yii\framework\web\CWebApplication.php(282): CController->run('updAdviertiseme...')
+#2 D:\shopex\7663\yii\framework\web\CWebApplication.php(141): CWebApplication->runController('admin/updAdvier...')
+#3 D:\shopex\7663\yii\framework\base\CApplication.php(185): CWebApplication->processRequest()
+#4 D:\shopex\7663\web\index.php(13): CApplication->run()
+#5 {main}
+REQUEST_URI=/index.php?r=admin/updAdviertisement&aid=3&p=1
+HTTP_REFERER=http://www.7663.com/index.php?r=admin/adviertisement
+---
+2016/10/10 06:15:27 [error] [php] Undefined variable: iconName (D:\shopex\7663\web\protected\controllers\AdminController.php:165)
+Stack trace:
+#0 D:\shopex\7663\yii\framework\web\CController.php(286): AdminController->runAction()
+#1 D:\shopex\7663\yii\framework\web\CController.php(265): AdminController->runActionWithFilters()
+#2 D:\shopex\7663\yii\framework\web\CWebApplication.php(282): AdminController->run()
+#3 D:\shopex\7663\yii\framework\web\CWebApplication.php(141): CWebApplication->runController()
+#4 D:\shopex\7663\yii\framework\base\CApplication.php(185): CWebApplication->processRequest()
+#5 D:\shopex\7663\web\index.php(13): CWebApplication->run()
+REQUEST_URI=/index.php?r=admin/doAddAdviertisement
+in D:\shopex\7663\web\protected\controllers\AdminController.php (165)
+in D:\shopex\7663\web\index.php (13)
+2016/10/10 08:09:02 [error] [system.db.CDbCommand] CDbCommand::execute() failed: SQLSTATE[42S22]: Column not found: 1054 Unknown column 'iconName' in 'field list'. The SQL statement executed was: UPDATE `adviertisement` SET `title`=:title, `content`=:content, `iconName`=:iconName WHERE aid=:aid.
+in D:\shopex\7663\web\protected\models\Dao.php (45)
+in D:\shopex\7663\web\protected\controllers\AdminController.php (177)
+in D:\shopex\7663\web\index.php (13)
+2016/10/10 08:09:02 [error] [exception.CDbException] exception 'CDbException' with message 'CDbCommand failed to execute the SQL statement: SQLSTATE[42S22]: Column not found: 1054 Unknown column 'iconName' in 'field list'. The SQL statement executed was: UPDATE `adviertisement` SET `title`=:title, `content`=:content, `iconName`=:iconName WHERE aid=:aid' in D:\shopex\7663\yii\framework\db\CDbCommand.php:358
+Stack trace:
+#0 D:\shopex\7663\yii\framework\db\CDbCommand.php(1313): CDbCommand->execute(Array)
+#1 D:\shopex\7663\web\protected\models\Dao.php(45): CDbCommand->update('adviertisement', Array, 'aid=:aid', Array)
+#2 D:\shopex\7663\web\protected\controllers\AdminController.php(177): Dao->updTableInfo('adviertisement', Array, 'aid', '3')
+#3 D:\shopex\7663\yii\framework\web\actions\CInlineAction.php(49): AdminController->actionDoAddAdviertisement()
+#4 D:\shopex\7663\yii\framework\web\CController.php(308): CInlineAction->runWithParams(Array)
+#5 D:\shopex\7663\yii\framework\web\CController.php(286): CController->runAction(Object(CInlineAction))
+#6 D:\shopex\7663\yii\framework\web\CController.php(265): CController->runActionWithFilters(Object(CInlineAction), Array)
+#7 D:\shopex\7663\yii\framework\web\CWebApplication.php(282): CController->run('doAddAdviertise...')
+#8 D:\shopex\7663\yii\framework\web\CWebApplication.php(141): CWebApplication->runController('admin/doAddAdvi...')
+#9 D:\shopex\7663\yii\framework\base\CApplication.php(185): CWebApplication->processRequest()
+#10 D:\shopex\7663\web\index.php(13): CApplication->run()
+#11 {main}
+REQUEST_URI=/index.php?r=admin/doAddAdviertisement
+HTTP_REFERER=http://www.7663.com/index.php?r=admin/updAdviertisement&aid=3&p=1
+---
+2016/10/10 09:03:32 [error] [exception.CException] exception 'CException' with message 'WebUrl and its behaviors do not have a method or closure named "getStoreUrl".' in D:\shopex\7663\yii\framework\base\CComponent.php:266
+Stack trace:
+#0 D:\shopex\7663\web\protected\controllers\AdminController.php(194): CComponent->__call('getStoreUrl', Array)
+#1 D:\shopex\7663\web\protected\controllers\AdminController.php(194): WebUrl->getStoreUrl()
+#2 D:\shopex\7663\yii\framework\web\actions\CInlineAction.php(49): AdminController->actionStore()
+#3 D:\shopex\7663\yii\framework\web\CController.php(308): CInlineAction->runWithParams(Array)
+#4 D:\shopex\7663\yii\framework\web\CController.php(286): CController->runAction(Object(CInlineAction))
+#5 D:\shopex\7663\yii\framework\web\CController.php(265): CController->runActionWithFilters(Object(CInlineAction), Array)
+#6 D:\shopex\7663\yii\framework\web\CWebApplication.php(282): CController->run('store')
+#7 D:\shopex\7663\yii\framework\web\CWebApplication.php(141): CWebApplication->runController('admin/store')
+#8 D:\shopex\7663\yii\framework\base\CApplication.php(185): CWebApplication->processRequest()
+#9 D:\shopex\7663\web\index.php(13): CApplication->run()
+#10 {main}
+REQUEST_URI=/index.php?r=admin/store
+HTTP_REFERER=http://www.7663.com/index.php?r=admin/main
+---
+2016/10/10 09:07:50 [error] [php] Undefined variable: adviertisement (D:\shopex\7663\web\protected\views\admin\store.php:10)
+Stack trace:
+#0 D:\shopex\7663\yii\framework\web\CController.php(869): AdminController->renderFile()
+#1 D:\shopex\7663\yii\framework\web\CController.php(782): AdminController->renderPartial()
+#2 D:\shopex\7663\web\protected\controllers\AdminController.php(218): AdminController->render()
+#3 D:\shopex\7663\yii\framework\web\actions\CInlineAction.php(49): AdminController->actionStore()
+#4 D:\shopex\7663\yii\framework\web\CController.php(308): CInlineAction->runWithParams()
+#5 D:\shopex\7663\yii\framework\web\CController.php(286): AdminController->runAction()
+#6 D:\shopex\7663\yii\framework\web\CController.php(265): AdminController->runActionWithFilters()
+#7 D:\shopex\7663\yii\framework\web\CWebApplication.php(282): AdminController->run()
+#8 D:\shopex\7663\yii\framework\web\CWebApplication.php(141): CWebApplication->runController()
+#9 D:\shopex\7663\yii\framework\base\CApplication.php(185): CWebApplication->processRequest()
+#10 D:\shopex\7663\web\index.php(13): CWebApplication->run()
+REQUEST_URI=/index.php?r=admin/store
+in D:\shopex\7663\web\protected\views\admin\store.php (10)
+in D:\shopex\7663\web\protected\controllers\AdminController.php (218)
+in D:\shopex\7663\web\index.php (13)
+2016/10/10 09:09:15 [error] [php] Undefined variable: store (D:\shopex\7663\web\protected\views\admin\store.php:10)
+Stack trace:
+#0 D:\shopex\7663\yii\framework\web\CController.php(869): AdminController->renderFile()
+#1 D:\shopex\7663\yii\framework\web\CController.php(782): AdminController->renderPartial()
+#2 D:\shopex\7663\web\protected\controllers\AdminController.php(230): AdminController->render()
+#3 D:\shopex\7663\yii\framework\web\actions\CInlineAction.php(49): AdminController->actionAddStore()
+#4 D:\shopex\7663\yii\framework\web\CController.php(308): CInlineAction->runWithParams()
+#5 D:\shopex\7663\yii\framework\web\CController.php(286): AdminController->runAction()
+#6 D:\shopex\7663\yii\framework\web\CController.php(265): AdminController->runActionWithFilters()
+#7 D:\shopex\7663\yii\framework\web\CWebApplication.php(282): AdminController->run()
+#8 D:\shopex\7663\yii\framework\web\CWebApplication.php(141): CWebApplication->runController()
+#9 D:\shopex\7663\yii\framework\base\CApplication.php(185): CWebApplication->processRequest()
+#10 D:\shopex\7663\web\index.php(13): CWebApplication->run()
+REQUEST_URI=/index.php?r=admin/addStore
+in D:\shopex\7663\web\protected\views\admin\store.php (10)
+in D:\shopex\7663\web\protected\controllers\AdminController.php (230)
+in D:\shopex\7663\web\index.php (13)
+2016/10/10 09:10:20 [error] [php] Undefined variable: aid (D:\shopex\7663\web\protected\views\admin\addStore.php:10)
+Stack trace:
+#0 D:\shopex\7663\yii\framework\web\CController.php(869): AdminController->renderFile()
+#1 D:\shopex\7663\yii\framework\web\CController.php(782): AdminController->renderPartial()
+#2 D:\shopex\7663\web\protected\controllers\AdminController.php(230): AdminController->render()
+#3 D:\shopex\7663\yii\framework\web\actions\CInlineAction.php(49): AdminController->actionAddStore()
+#4 D:\shopex\7663\yii\framework\web\CController.php(308): CInlineAction->runWithParams()
+#5 D:\shopex\7663\yii\framework\web\CController.php(286): AdminController->runAction()
+#6 D:\shopex\7663\yii\framework\web\CController.php(265): AdminController->runActionWithFilters()
+#7 D:\shopex\7663\yii\framework\web\CWebApplication.php(282): AdminController->run()
+#8 D:\shopex\7663\yii\framework\web\CWebApplication.php(141): CWebApplication->runController()
+#9 D:\shopex\7663\yii\framework\base\CApplication.php(185): CWebApplication->processRequest()
+#10 D:\shopex\7663\web\index.php(13): CWebApplication->run()
+REQUEST_URI=/index.php?r=admin/addStore
+in D:\shopex\7663\web\protected\views\admin\addStore.php (10)
+in D:\shopex\7663\web\protected\controllers\AdminController.php (230)
+in D:\shopex\7663\web\index.php (13)
+2016/10/10 09:10:21 [error] [php] Undefined variable: aid (D:\shopex\7663\web\protected\views\admin\addStore.php:10)
+Stack trace:
+#0 D:\shopex\7663\yii\framework\web\CController.php(869): AdminController->renderFile()
+#1 D:\shopex\7663\yii\framework\web\CController.php(782): AdminController->renderPartial()
+#2 D:\shopex\7663\web\protected\controllers\AdminController.php(230): AdminController->render()
+#3 D:\shopex\7663\yii\framework\web\actions\CInlineAction.php(49): AdminController->actionAddStore()
+#4 D:\shopex\7663\yii\framework\web\CController.php(308): CInlineAction->runWithParams()
+#5 D:\shopex\7663\yii\framework\web\CController.php(286): AdminController->runAction()
+#6 D:\shopex\7663\yii\framework\web\CController.php(265): AdminController->runActionWithFilters()
+#7 D:\shopex\7663\yii\framework\web\CWebApplication.php(282): AdminController->run()
+#8 D:\shopex\7663\yii\framework\web\CWebApplication.php(141): CWebApplication->runController()
+#9 D:\shopex\7663\yii\framework\base\CApplication.php(185): CWebApplication->processRequest()
+#10 D:\shopex\7663\web\index.php(13): CWebApplication->run()
+REQUEST_URI=/index.php?r=admin/addStore
+in D:\shopex\7663\web\protected\views\admin\addStore.php (10)
+in D:\shopex\7663\web\protected\controllers\AdminController.php (230)
+in D:\shopex\7663\web\index.php (13)
+2016/10/10 09:21:27 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'The system is unable to find the requested action "updStore".' in D:\shopex\7663\yii\framework\web\CController.php:483
+Stack trace:
+#0 D:\shopex\7663\yii\framework\web\CController.php(270): CController->missingAction('updStore')
+#1 D:\shopex\7663\yii\framework\web\CWebApplication.php(282): CController->run('updStore')
+#2 D:\shopex\7663\yii\framework\web\CWebApplication.php(141): CWebApplication->runController('admin/updStore')
+#3 D:\shopex\7663\yii\framework\base\CApplication.php(185): CWebApplication->processRequest()
+#4 D:\shopex\7663\web\index.php(13): CApplication->run()
+#5 {main}
+REQUEST_URI=/index.php?r=admin/updStore&sid=6&p=1
+HTTP_REFERER=http://www.7663.com/index.php?r=admin/store
+---
+2016/10/10 09:22:35 [error] [php] Undefined index: ssid (D:\shopex\7663\web\protected\controllers\AdminController.php:243)
+Stack trace:
+#0 D:\shopex\7663\yii\framework\web\CController.php(286): AdminController->runAction()
+#1 D:\shopex\7663\yii\framework\web\CController.php(265): AdminController->runActionWithFilters()
+#2 D:\shopex\7663\yii\framework\web\CWebApplication.php(282): AdminController->run()
+#3 D:\shopex\7663\yii\framework\web\CWebApplication.php(141): CWebApplication->runController()
+#4 D:\shopex\7663\yii\framework\base\CApplication.php(185): CWebApplication->processRequest()
+#5 D:\shopex\7663\web\index.php(13): CWebApplication->run()
+REQUEST_URI=/index.php?r=admin/updStore&sid=6&p=1
+in D:\shopex\7663\web\protected\controllers\AdminController.php (243)
+in D:\shopex\7663\web\index.php (13)
+2016/10/10 09:22:37 [error] [php] Undefined index: ssid (D:\shopex\7663\web\protected\controllers\AdminController.php:243)
+Stack trace:
+#0 D:\shopex\7663\yii\framework\web\CController.php(286): AdminController->runAction()
+#1 D:\shopex\7663\yii\framework\web\CController.php(265): AdminController->runActionWithFilters()
+#2 D:\shopex\7663\yii\framework\web\CWebApplication.php(282): AdminController->run()
+#3 D:\shopex\7663\yii\framework\web\CWebApplication.php(141): CWebApplication->runController()
+#4 D:\shopex\7663\yii\framework\base\CApplication.php(185): CWebApplication->processRequest()
+#5 D:\shopex\7663\web\index.php(13): CWebApplication->run()
+REQUEST_URI=/index.php?r=admin/updStore&sid=6&p=1
+in D:\shopex\7663\web\protected\controllers\AdminController.php (243)
+in D:\shopex\7663\web\index.php (13)
+2016/10/10 09:23:04 [error] [php] Undefined variable: aid (D:\shopex\7663\web\protected\controllers\AdminController.php:292)
+Stack trace:
+#0 D:\shopex\7663\yii\framework\web\CController.php(286): AdminController->runAction()
+#1 D:\shopex\7663\yii\framework\web\CController.php(265): AdminController->runActionWithFilters()
+#2 D:\shopex\7663\yii\framework\web\CWebApplication.php(282): AdminController->run()
+#3 D:\shopex\7663\yii\framework\web\CWebApplication.php(141): CWebApplication->runController()
+#4 D:\shopex\7663\yii\framework\base\CApplication.php(185): CWebApplication->processRequest()
+#5 D:\shopex\7663\web\index.php(13): CWebApplication->run()
+REQUEST_URI=/index.php?r=admin/doAddStore
+in D:\shopex\7663\web\protected\controllers\AdminController.php (292)
+in D:\shopex\7663\web\index.php (13)
+2016/10/10 09:23:59 [error] [php] Undefined variable: aid (D:\shopex\7663\web\protected\controllers\AdminController.php:292)
+Stack trace:
+#0 D:\shopex\7663\yii\framework\web\CController.php(286): AdminController->runAction()
+#1 D:\shopex\7663\yii\framework\web\CController.php(265): AdminController->runActionWithFilters()
+#2 D:\shopex\7663\yii\framework\web\CWebApplication.php(282): AdminController->run()
+#3 D:\shopex\7663\yii\framework\web\CWebApplication.php(141): CWebApplication->runController()
+#4 D:\shopex\7663\yii\framework\base\CApplication.php(185): CWebApplication->processRequest()
+#5 D:\shopex\7663\web\index.php(13): CWebApplication->run()
+REQUEST_URI=/index.php?r=admin/doAddStore
+in D:\shopex\7663\web\protected\controllers\AdminController.php (292)
+in D:\shopex\7663\web\index.php (13)
+2016/10/10 09:28:58 [error] [php] Undefined variable: storeinfo (D:\shopex\7663\web\protected\views\site\home.php:29)
+Stack trace:
+#0 D:\shopex\7663\yii\framework\web\CController.php(869): SiteController->renderFile()
+#1 D:\shopex\7663\yii\framework\web\CController.php(782): SiteController->renderPartial()
+#2 D:\shopex\7663\web\protected\controllers\SiteController.php(61): SiteController->render()
+#3 D:\shopex\7663\yii\framework\web\actions\CInlineAction.php(49): SiteController->actionIndex()
+#4 D:\shopex\7663\yii\framework\web\CController.php(308): CInlineAction->runWithParams()
+#5 D:\shopex\7663\yii\framework\web\CController.php(286): SiteController->runAction()
+#6 D:\shopex\7663\yii\framework\web\CController.php(265): SiteController->runActionWithFilters()
+#7 D:\shopex\7663\yii\framework\web\CWebApplication.php(282): SiteController->run()
+#8 D:\shopex\7663\yii\framework\web\CWebApplication.php(141): CWebApplication->runController()
+#9 D:\shopex\7663\yii\framework\base\CApplication.php(185): CWebApplication->processRequest()
+#10 D:\shopex\7663\web\index.php(13): CWebApplication->run()
+REQUEST_URI=/
+in D:\shopex\7663\web\protected\views\site\home.php (29)
+in D:\shopex\7663\web\protected\controllers\SiteController.php (61)
+in D:\shopex\7663\web\index.php (13)
+2016/10/10 09:34:59 [error] [php] Undefined offset: 3 (D:\shopex\7663\web\protected\views\site\home.php:31)
+Stack trace:
+#0 D:\shopex\7663\yii\framework\web\CController.php(869): SiteController->renderFile()
+#1 D:\shopex\7663\yii\framework\web\CController.php(782): SiteController->renderPartial()
+#2 D:\shopex\7663\web\protected\controllers\SiteController.php(61): SiteController->render()
+#3 D:\shopex\7663\yii\framework\web\actions\CInlineAction.php(49): SiteController->actionIndex()
+#4 D:\shopex\7663\yii\framework\web\CController.php(308): CInlineAction->runWithParams()
+#5 D:\shopex\7663\yii\framework\web\CController.php(286): SiteController->runAction()
+#6 D:\shopex\7663\yii\framework\web\CController.php(265): SiteController->runActionWithFilters()
+#7 D:\shopex\7663\yii\framework\web\CWebApplication.php(282): SiteController->run()
+#8 D:\shopex\7663\yii\framework\web\CWebApplication.php(141): CWebApplication->runController()
+#9 D:\shopex\7663\yii\framework\base\CApplication.php(185): CWebApplication->processRequest()
+#10 D:\shopex\7663\web\index.php(13): CWebApplication->run()
+REQUEST_URI=/
+in D:\shopex\7663\web\protected\views\site\home.php (31)
+in D:\shopex\7663\web\protected\controllers\SiteController.php (61)
+in D:\shopex\7663\web\index.php (13)
+2016/10/10 09:44:44 [error] [php] Undefined variable: store (D:\shopex\7663\web\protected\views\admin\message.php:9)
+Stack trace:
+#0 D:\shopex\7663\yii\framework\web\CController.php(869): AdminController->renderFile()
+#1 D:\shopex\7663\yii\framework\web\CController.php(782): AdminController->renderPartial()
+#2 D:\shopex\7663\web\protected\controllers\AdminController.php(332): AdminController->render()
+#3 D:\shopex\7663\yii\framework\web\actions\CInlineAction.php(49): AdminController->actionMessage()
+#4 D:\shopex\7663\yii\framework\web\CController.php(308): CInlineAction->runWithParams()
+#5 D:\shopex\7663\yii\framework\web\CController.php(286): AdminController->runAction()
+#6 D:\shopex\7663\yii\framework\web\CController.php(265): AdminController->runActionWithFilters()
+#7 D:\shopex\7663\yii\framework\web\CWebApplication.php(282): AdminController->run()
+#8 D:\shopex\7663\yii\framework\web\CWebApplication.php(141): CWebApplication->runController()
+#9 D:\shopex\7663\yii\framework\base\CApplication.php(185): CWebApplication->processRequest()
+#10 D:\shopex\7663\web\index.php(13): CWebApplication->run()
+REQUEST_URI=/index.php?r=admin/message
+in D:\shopex\7663\web\protected\views\admin\message.php (9)
+in D:\shopex\7663\web\protected\controllers\AdminController.php (332)
+in D:\shopex\7663\web\index.php (13)
+2016/10/10 09:44:46 [error] [php] Undefined variable: store (D:\shopex\7663\web\protected\views\admin\message.php:9)
+Stack trace:
+#0 D:\shopex\7663\yii\framework\web\CController.php(869): AdminController->renderFile()
+#1 D:\shopex\7663\yii\framework\web\CController.php(782): AdminController->renderPartial()
+#2 D:\shopex\7663\web\protected\controllers\AdminController.php(332): AdminController->render()
+#3 D:\shopex\7663\yii\framework\web\actions\CInlineAction.php(49): AdminController->actionMessage()
+#4 D:\shopex\7663\yii\framework\web\CController.php(308): CInlineAction->runWithParams()
+#5 D:\shopex\7663\yii\framework\web\CController.php(286): AdminController->runAction()
+#6 D:\shopex\7663\yii\framework\web\CController.php(265): AdminController->runActionWithFilters()
+#7 D:\shopex\7663\yii\framework\web\CWebApplication.php(282): AdminController->run()
+#8 D:\shopex\7663\yii\framework\web\CWebApplication.php(141): CWebApplication->runController()
+#9 D:\shopex\7663\yii\framework\base\CApplication.php(185): CWebApplication->processRequest()
+#10 D:\shopex\7663\web\index.php(13): CWebApplication->run()
+REQUEST_URI=/index.php?r=admin/message
+in D:\shopex\7663\web\protected\views\admin\message.php (9)
+in D:\shopex\7663\web\protected\controllers\AdminController.php (332)
+in D:\shopex\7663\web\index.php (13)
+2016/10/10 09:45:15 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'The system is unable to find the requested action "addMessage".' in D:\shopex\7663\yii\framework\web\CController.php:483
+Stack trace:
+#0 D:\shopex\7663\yii\framework\web\CController.php(270): CController->missingAction('addMessage')
+#1 D:\shopex\7663\yii\framework\web\CWebApplication.php(282): CController->run('addMessage')
+#2 D:\shopex\7663\yii\framework\web\CWebApplication.php(141): CWebApplication->runController('admin/addMessag...')
+#3 D:\shopex\7663\yii\framework\base\CApplication.php(185): CWebApplication->processRequest()
+#4 D:\shopex\7663\web\index.php(13): CApplication->run()
+#5 {main}
+REQUEST_URI=/index.php?r=admin/addMessage
+HTTP_REFERER=http://www.7663.com/index.php?r=admin/message&p=1
+---
+2016/10/10 09:45:33 [error] [exception.CException] exception 'CException' with message 'AdminController cannot find the requested view "addMessage".' in D:\shopex\7663\yii\framework\web\CController.php:878
+Stack trace:
+#0 D:\shopex\7663\yii\framework\web\CController.php(782): CController->renderPartial('addMessage', Array, true)
+#1 D:\shopex\7663\web\protected\controllers\AdminController.php(344): CController->render('addMessage', Array)
+#2 D:\shopex\7663\yii\framework\web\actions\CInlineAction.php(49): AdminController->actionAddMessage()
+#3 D:\shopex\7663\yii\framework\web\CController.php(308): CInlineAction->runWithParams(Array)
+#4 D:\shopex\7663\yii\framework\web\CController.php(286): CController->runAction(Object(CInlineAction))
+#5 D:\shopex\7663\yii\framework\web\CController.php(265): CController->runActionWithFilters(Object(CInlineAction), Array)
+#6 D:\shopex\7663\yii\framework\web\CWebApplication.php(282): CController->run('addMessage')
+#7 D:\shopex\7663\yii\framework\web\CWebApplication.php(141): CWebApplication->runController('admin/addMessag...')
+#8 D:\shopex\7663\yii\framework\base\CApplication.php(185): CWebApplication->processRequest()
+#9 D:\shopex\7663\web\index.php(13): CApplication->run()
+#10 {main}
+REQUEST_URI=/index.php?r=admin/addMessage
+HTTP_REFERER=http://www.7663.com/index.php?r=admin/message&p=1
+---
+2016/10/10 09:49:35 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'The system is unable to find the requested action "doAddMessage".' in D:\shopex\7663\yii\framework\web\CController.php:483
+Stack trace:
+#0 D:\shopex\7663\yii\framework\web\CController.php(270): CController->missingAction('doAddMessage')
+#1 D:\shopex\7663\yii\framework\web\CWebApplication.php(282): CController->run('doAddMessage')
+#2 D:\shopex\7663\yii\framework\web\CWebApplication.php(141): CWebApplication->runController('admin/doAddMess...')
+#3 D:\shopex\7663\yii\framework\base\CApplication.php(185): CWebApplication->processRequest()
+#4 D:\shopex\7663\web\index.php(13): CApplication->run()
+#5 {main}
+REQUEST_URI=/index.php?r=admin/doAddMessage
+HTTP_REFERER=http://www.7663.com/index.php?r=admin/addMessage
+---
+2016/10/10 09:58:11 [error] [system.db.CDbCommand] CDbCommand::execute() failed: SQLSTATE[23000]: Integrity constraint violation: 1062 Duplicate entry 'gundamzaku@163.com' for key 'username'. The SQL statement executed was: INSERT INTO `auth_user_login_info` (`username`, `now_login`, `now_login_ip`) VALUES (:username, :now_login, :now_login_ip).
+in D:\shopex\7663\web\protected\models\DaoSite.php (71)
+in D:\shopex\7663\web\protected\controllers\SiteController.php (121)
+in D:\shopex\7663\web\index.php (13)

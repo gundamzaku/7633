@@ -49,9 +49,16 @@ class SiteController extends Controller
 		$this->body = "single";
 		$this->layout='//layouts/main_nonav';
 
-		//得到线下店数据
+		//得到广告数据
+		$adviertisementInfo = $this->dao->getAdviertisementPage(0,5);
+		$data['adviertisementInfo'] = !empty($adviertisementInfo)?$adviertisementInfo:array();
 
-		$this->render('home');
+
+		//得到线下店数据
+		$storeInfo = $this->dao->getStorePage(0,10);
+		$data['storeInfo'] = !empty($storeInfo)?$storeInfo:array();
+
+		$this->render('home',$data);
 	}
 
 	public function actionMain(){

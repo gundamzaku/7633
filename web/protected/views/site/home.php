@@ -14,11 +14,9 @@
 
 	<!--游戏模块start-->
 	<div id="body-home" class="site dark">
-		<a href="###" class="game" title="游戏名称"><img src="images/game1.jpg" alt="游戏名称"></a>
-		<a href="###" class="game" title="游戏名称"><img src="images/game1.jpg" alt="游戏名称"></a>
-		<a href="###" class="game" title="游戏名称"><img src="images/game1.jpg" alt="游戏名称"></a>
-		<a href="###" class="game" title="游戏名称"><img src="images/game1.jpg" alt="游戏名称"></a>
-		<a href="###" class="game" title="游戏名称"><img src="images/game1.jpg" alt="游戏名称"></a>
+		<?php foreach($adviertisementInfo as $k=>$v){?>
+		<a href="<?=$v["url"]?>" class="game" title="<?=$v["title"]?>" target="_blank"><img src="<?=$v["icon"]?>" alt="<?=$v["title"]?>"></a>
+		<?php }?>
 	</div>
 	<!--游戏模块end-->
 
@@ -28,40 +26,23 @@
 			<div class="swiper-container" id="home-stores">
 			    <div class="swiper-wrapper">
 					<ul class="swiper-slide">
-						<li><img src="images/store1.jpg" alt="店铺名称" />
-							<p>店铺名称1已加入平台</p>
+						<?php for($i=0;$i<5;$i++){?>
+						<?php if(!empty($storeInfo[$i])){?>
+						<li><img src="<?=$storeInfo[$i]["icon"]?>" alt="<?=$storeInfo[$i]["title"]?>" />
+							<p><?=$storeInfo[$i]["title"]?></p>
 						</li>
-						<li><img src="images/store1.jpg" alt="店铺名称" />
-							<p>店铺名称2已加入平台</p>
-						</li>
-						<li><img src="images/store1.jpg" alt="店铺名称" />
-							<p>店铺名称3已加入平台</p>
-						</li>
-						<li><img src="images/store1.jpg" alt="店铺名称" />
-							<p>店铺名称4已加入平台</p>
-						</li>
-						<li><img src="images/store1.jpg" alt="店铺名称" />
-							<p>店铺名称5已加入平台</p>
-						</li>
-
+						<?}}?>
 					</ul>
+					<?php if(count($storeInfo)>5){?>
 			        <ul class="swiper-slide">
-						<li><img src="images/store1.jpg" alt="店铺名称" />
-							<p>店铺名称6已加入平台</p>
+						<?php for($i=5;$i<10;$i++){?>
+						<?php if(!empty($storeInfo[$i])){?>
+						<li><img src="<?=$storeInfo[$i]["icon"]?>" alt="<?=$storeInfo[$i]["title"]?>" />
+							<p><?=$storeInfo[$i]["title"]?></p>
 						</li>
-						<li><img src="images/store1.jpg" alt="店铺名称" />
-							<p>店铺名称7已加入平台</p>
-						</li>
-						<li><img src="images/store1.jpg" alt="店铺名称" />
-							<p>店铺名称8已加入平台</p>
-						</li>
-						<li><img src="images/store1.jpg" alt="店铺名称" />
-							<p>店铺名称9已加入平台</p>
-						</li>
-						<li><img src="images/store1.jpg" alt="店铺名称" />
-							<p>店铺名称10已加入平台</p>
-						</li>
+						<?}}?>
 					</ul>
+					<?php }?>
 			    </div>				
 			</div>
 			<div class="swiper-button-prev"></div>

@@ -97,10 +97,86 @@ class WebUrl extends CComponent {
 		return "index.php?r=site/loginOut";	
 	}
 
+	/**********************************************/
 	//下面是后台的URL配置
-	
-	//登录提交页
+	//登录页
+	public function getAdminLoginUrl(){
+		return "index.php?r=admin/login";
+	}
+	//登录提交确认页
 	public function getAdminDoLoginUrl(){
 		return "index.php?r=admin/doLogin";
 	}
+	//进入主页面
+	public function getAdminMainUrl(){
+		return "index.php?r=admin/main";
+	}
+	//进入广告列表面
+	public function getAdminAdviertisementUrl(){
+		
+		return "index.php?r=admin/adviertisement";
+	}
+
+	//添加广告页面
+	public function getAdminAddAdviertisementUrl(){
+		return "index.php?r=admin/addAdviertisement";
+	}
+
+	//修改广告页面
+	public function getAdminUpdAdviertisementUrl($param=""){
+		if(!empty($param))$param = "&".$param;
+		return "index.php?r=admin/updAdviertisement".$param;
+	}
+
+	//添加广告确认页面
+	public function getAdminDoAddAdviertisementUrl(){
+		return "index.php?r=admin/doAddAdviertisement";
+	}
+
+	//商铺
+	//进入商铺列表面
+	public function getAdminStoreUrl(){
+		
+		return "index.php?r=admin/store";
+	}
+
+	//添加商铺页面
+	public function getAdminAddStoreUrl(){
+		return "index.php?r=admin/addStore";
+	}
+
+	//修改商铺页面
+	public function getAdminUpdStoreUrl($param=""){
+		if(!empty($param))$param = "&".$param;
+		return "index.php?r=admin/updStore".$param;
+	}
+
+	//添加商铺确认页面
+	public function getAdminDoAddStoreUrl(){
+		return "index.php?r=admin/doAddStore";
+	}
+
+	//系统消息
+	//进入系统消息列表面
+	public function getAdminMessageUrl(){
+		
+		return "index.php?r=admin/message";
+	}
+
+	//添加系统消息页面
+	public function getAdminAddMessageUrl(){
+		return "index.php?r=admin/addMessage";
+	}
+
+	//修改系统消息页面
+	public function getAdminUpdMessageUrl($param=""){
+		if(!empty($param))$param = "&".$param;
+		return "index.php?r=admin/updMessage".$param;
+	}
+
+	//添加系统消息确认页面
+	public function getAdminDoAddMessageUrl(){
+		return "index.php?r=admin/doAddMessage";
+	}
+	
 } 
