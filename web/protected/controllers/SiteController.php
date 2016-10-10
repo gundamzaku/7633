@@ -34,7 +34,7 @@ class SiteController extends Controller
 					$noLogin = true;
 				}
 			}
-
+			
 			if($noLogin === false){
 				$this->redirect(array('/site/login'));
 				//需要登录
@@ -49,6 +49,7 @@ class SiteController extends Controller
 		$this->body = "single";
 		$this->layout='//layouts/main_nonav';
 
+
 		//得到广告数据
 		$adviertisementInfo = $this->dao->getAdviertisementPage(0,5);
 		$data['adviertisementInfo'] = !empty($adviertisementInfo)?$adviertisementInfo:array();
@@ -59,6 +60,7 @@ class SiteController extends Controller
 		$data['storeInfo'] = !empty($storeInfo)?$storeInfo:array();
 
 		$this->render('home',$data);
+
 	}
 
 	public function actionMain(){

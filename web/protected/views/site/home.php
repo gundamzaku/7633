@@ -31,7 +31,7 @@
 						<li><img src="<?=$storeInfo[$i]["icon"]?>" alt="<?=$storeInfo[$i]["title"]?>" />
 							<p><?=$storeInfo[$i]["title"]?></p>
 						</li>
-						<?}}?>
+						<?php }}?>
 					</ul>
 					<?php if(count($storeInfo)>5){?>
 			        <ul class="swiper-slide">
@@ -40,7 +40,7 @@
 						<li><img src="<?=$storeInfo[$i]["icon"]?>" alt="<?=$storeInfo[$i]["title"]?>" />
 							<p><?=$storeInfo[$i]["title"]?></p>
 						</li>
-						<?}}?>
+						<?php }}?>
 					</ul>
 					<?php }?>
 			    </div>				
