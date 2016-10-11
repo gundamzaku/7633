@@ -6480,3 +6480,7 @@ Stack trace:
 REQUEST_URI=/index.php?r=admin/upload&action=config&&noCache=1476181328197
 HTTP_REFERER=http://www.7663.com/index.php?r=admin/updSetting
 ---
+2016/10/11 11:41:36 [error] [system.db.CDbCommand] CDbCommand::execute() failed: SQLSTATE[23000]: Integrity constraint violation: 1062 Duplicate entry 'gundamzaku@163.com' for key 'username'. The SQL statement executed was: INSERT INTO `auth_user_login_info` (`username`, `now_login`, `now_login_ip`) VALUES (:username, :now_login, :now_login_ip).
+in D:\shopex\7663\web\protected\models\DaoSite.php (71)
+in D:\shopex\7663\web\protected\controllers\SiteController.php (131)
+in D:\shopex\7663\web\index.php (13)
