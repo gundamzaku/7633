@@ -8,173 +8,173 @@ class WebUrl extends CComponent {
 	public function init(){ 
 	} 
 
-	//Ê×Ò³
+	//é¦–é¡µ
 	public function getIndexUrl(){
 		return "/";
 	}
 	
-	//µÇÂ¼Ò³
+	//ç™»å½•é¡µ
 	public function getLoginUrl(){
 		return "index.php?r=site/login";
 	}
-	//µÇÂ¼Ìá½»Ò³
+	//ç™»å½•æäº¤é¡µ
 	public function getDoLoginUrl(){
 		return "index.php?r=site/doLogin";
 	}
-	//×¢²áÒ³
+	//æ³¨å†Œé¡µ
 	public function getRegisterUrl(){
 		return "index.php?r=site/register";
 	}
-	//¼¤»îÈ·ÈÏÒ³
+	//æ¿€æ´»ç¡®è®¤é¡µ
 	public function getActivateUrl(){
 		return "index.php?r=site/activate";
 	}
 
-	//ÑéÖ¤ÓÃ»§ÊÇ·ñ´æÔÚ
+	//éªŒè¯ç”¨æˆ·æ˜¯å¦å­˜åœ¨
 	public function getUsernameExistUrl(){
 		return "index.php?r=site/usernameExist";
 	}
 	
-	//×¢²áÒ³
+	//æ³¨å†Œé¡µ
 	public function getDoRegisterUrl(){
 		return "index.php?r=site/doRegister";
 	}
 
-	//ÑéÖ¤ÑûÇëÂëÒ³
+	//éªŒè¯é‚€è¯·ç é¡µ
 	public function getInviteCodeUrl(){
 		return "index.php?r=site/inviteCode";
 	}
 
-	//ÕÒ»ØÃÜÂëµÄÌá½»Ò³
+	//æ‰¾å›å¯†ç çš„æäº¤é¡µ
 	public function getFindPwdUrl(){
 		return "index.php?r=site/findPwd";	
 	}
 	
-	//ÓÃ»§ĞÅÏ¢ÏÔÊ¾/ĞŞ¸ÄÒ³
+	//ç”¨æˆ·ä¿¡æ¯æ˜¾ç¤º/ä¿®æ”¹é¡µ
 	public function getUserProfileUrl(){
 		return "index.php?r=main/userProfile";	
 	}
-	//ÓÃ»§ĞÅÏ¢ÏÔÊ¾/ĞŞ¸Ä²Ù×÷Ò³
+	//ç”¨æˆ·ä¿¡æ¯æ˜¾ç¤º/ä¿®æ”¹æ“ä½œé¡µ
 	public function getDoUserProfileUrl(){
 		return "index.php?r=main/doUserProfile";	
 	}
-	//ÓÃ»§°²È«ĞÅÏ¢ÏÔÊ¾/ĞŞ¸ÄÒ³
+	//ç”¨æˆ·å®‰å…¨ä¿¡æ¯æ˜¾ç¤º/ä¿®æ”¹é¡µ
 	public function getUserSecurityUrl(){
 		return "index.php?r=main/userSecurity";	
 	}
 
-	//ÓÃ»§°²È«ĞÅÏ¢ÏÔÊ¾/ĞŞ¸ÄµÄÌá½»Ò³
+	//ç”¨æˆ·å®‰å…¨ä¿¡æ¯æ˜¾ç¤º/ä¿®æ”¹çš„æäº¤é¡µ
 	public function getDoUserSecurityUrl(){
 		return "index.php?r=main/doUserSecurity";	
 	}
 
-	//ÏµÍ³ÏûÏ¢ÁĞ±í
+	//ç³»ç»Ÿæ¶ˆæ¯åˆ—è¡¨
 	public function getMessageListUrl($param=""){
 		if(!empty($param))$param = "&".$param;
 		return "index.php?r=main/messageList".$param;		
 	}
 
-	//ÏµÍ³ÏûÏ¢ÏêÇéÒ³
+	//ç³»ç»Ÿæ¶ˆæ¯è¯¦æƒ…é¡µ
 	public function getMessageDetailUrl($param=""){
 		if(!empty($param))$param = "&".$param;
 		return "index.php?r=main/messageDetail".$param;	
 	}
 
-	//¶©µ¥Ò³
+	//è®¢å•é¡µ
 	public function getOrdersUrl($param=""){
 		if(!empty($param))$param = "&".$param;
 		return "index.php?r=pay/orders".$param;	
 	}
 
-	//Ö§¸¶Ò³
+	//æ”¯ä»˜é¡µ
 	public function getPayUrl($param=""){
 		if(!empty($param))$param = "&".$param;
 		return "index.php?r=pay/pay".$param;	
 	}
 
-	//ÍË³ö
+	//é€€å‡º
 	public function getLoginOutUrl(){
 		return "index.php?r=site/loginOut";	
 	}
 
 	/**********************************************/
-	//ÏÂÃæÊÇºóÌ¨µÄURLÅäÖÃ
-	//µÇÂ¼Ò³
+	//ä¸‹é¢æ˜¯åå°çš„URLé…ç½®
+	//ç™»å½•é¡µ
 	public function getAdminLoginUrl(){
 		return "index.php?r=admin/login";
 	}
-	//µÇÂ¼Ìá½»È·ÈÏÒ³
+	//ç™»å½•æäº¤ç¡®è®¤é¡µ
 	public function getAdminDoLoginUrl(){
 		return "index.php?r=admin/doLogin";
 	}
-	//½øÈëÖ÷Ò³Ãæ
+	//è¿›å…¥ä¸»é¡µé¢
 	public function getAdminMainUrl(){
 		return "index.php?r=admin/main";
 	}
-	//½øÈë¹ã¸æÁĞ±íÃæ
+	//è¿›å…¥å¹¿å‘Šåˆ—è¡¨é¢
 	public function getAdminAdviertisementUrl(){
 		
 		return "index.php?r=admin/adviertisement";
 	}
 
-	//Ìí¼Ó¹ã¸æÒ³Ãæ
+	//æ·»åŠ å¹¿å‘Šé¡µé¢
 	public function getAdminAddAdviertisementUrl(){
 		return "index.php?r=admin/addAdviertisement";
 	}
 
-	//ĞŞ¸Ä¹ã¸æÒ³Ãæ
+	//ä¿®æ”¹å¹¿å‘Šé¡µé¢
 	public function getAdminUpdAdviertisementUrl($param=""){
 		if(!empty($param))$param = "&".$param;
 		return "index.php?r=admin/updAdviertisement".$param;
 	}
 
-	//Ìí¼Ó¹ã¸æÈ·ÈÏÒ³Ãæ
+	//æ·»åŠ å¹¿å‘Šç¡®è®¤é¡µé¢
 	public function getAdminDoAddAdviertisementUrl(){
 		return "index.php?r=admin/doAddAdviertisement";
 	}
 
-	//ÉÌÆÌ
-	//½øÈëÉÌÆÌÁĞ±íÃæ
+	//å•†é“º
+	//è¿›å…¥å•†é“ºåˆ—è¡¨é¢
 	public function getAdminStoreUrl(){
 		
 		return "index.php?r=admin/store";
 	}
 
-	//Ìí¼ÓÉÌÆÌÒ³Ãæ
+	//æ·»åŠ å•†é“ºé¡µé¢
 	public function getAdminAddStoreUrl(){
 		return "index.php?r=admin/addStore";
 	}
 
-	//ĞŞ¸ÄÉÌÆÌÒ³Ãæ
+	//ä¿®æ”¹å•†é“ºé¡µé¢
 	public function getAdminUpdStoreUrl($param=""){
 		if(!empty($param))$param = "&".$param;
 		return "index.php?r=admin/updStore".$param;
 	}
 
-	//Ìí¼ÓÉÌÆÌÈ·ÈÏÒ³Ãæ
+	//æ·»åŠ å•†é“ºç¡®è®¤é¡µé¢
 	public function getAdminDoAddStoreUrl(){
 		return "index.php?r=admin/doAddStore";
 	}
 
-	//ÏµÍ³ÏûÏ¢
-	//½øÈëÏµÍ³ÏûÏ¢ÁĞ±íÃæ
+	//ç³»ç»Ÿæ¶ˆæ¯
+	//è¿›å…¥ç³»ç»Ÿæ¶ˆæ¯åˆ—è¡¨é¢
 	public function getAdminMessageUrl(){
 		
 		return "index.php?r=admin/message";
 	}
 
-	//Ìí¼ÓÏµÍ³ÏûÏ¢Ò³Ãæ
+	//æ·»åŠ ç³»ç»Ÿæ¶ˆæ¯é¡µé¢
 	public function getAdminAddMessageUrl(){
 		return "index.php?r=admin/addMessage";
 	}
 
-	//ĞŞ¸ÄÏµÍ³ÏûÏ¢Ò³Ãæ
+	//ä¿®æ”¹ç³»ç»Ÿæ¶ˆæ¯é¡µé¢
 	public function getAdminUpdMessageUrl($param=""){
 		if(!empty($param))$param = "&".$param;
 		return "index.php?r=admin/updMessage".$param;
 	}
 
-	//Ìí¼ÓÏµÍ³ÏûÏ¢È·ÈÏÒ³Ãæ
+	//æ·»åŠ ç³»ç»Ÿæ¶ˆæ¯ç¡®è®¤é¡µé¢
 	public function getAdminDoAddMessageUrl(){
 		return "index.php?r=admin/doAddMessage";
 	}

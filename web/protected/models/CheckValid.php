@@ -6,9 +6,9 @@ class CheckSecurity extends CValidator{
 
 	public function rules(){
 		return array(
-			array('pwd', 'required','message'=>'ÃÜÂë²»ÄÜÎª¿Õ'),
-			array('pwd', 'compare', 'compareAttribute' => 'repeatpwd','message'=>'ÃÜÂëÑéÖ¤²»Ò»ÖÂ'),
-			array('pwd', 'length','min'=>5,'max'=>24,'tooLong'=>'ÃÜÂëÇëÊäÈë³¤¶ÈÎª5-24¸ö×Ö·û', 'tooShort'=>'ÃÜÂëÇëÊäÈë³¤¶ÈÎª5-24¸ö×Ö·û'),
+			array('pwd', 'required','message'=>'å¯†ç ä¸èƒ½ä¸ºç©º'),
+			array('pwd', 'compare', 'compareAttribute' => 'repeatpwd','message'=>'å¯†ç éªŒè¯ä¸ä¸€è‡´'),
+			array('pwd', 'length','min'=>5,'max'=>24,'tooLong'=>'å¯†ç è¯·è¾“å…¥é•¿åº¦ä¸º5-24ä¸ªå­—ç¬¦', 'tooShort'=>'å¯†ç è¯·è¾“å…¥é•¿åº¦ä¸º5-24ä¸ªå­—ç¬¦'),
 		);
 	}
 
