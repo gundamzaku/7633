@@ -307,11 +307,23 @@ class DaoSite extends Dao{
 	}
 
 	//添加系统消息
-	//添加店铺
 	public function addMessage($title,$content){
 		$result = Yii::app()->db->createCommand()->insert('message', array(
 			'title'=>$title,
 			'content'=>$content,
+			'add_time' => $this->dateTime
+		));
+		return $result;
+	}
+
+	//添加配置
+	public function addSetting($download_url,$games_num,$shops_num,$invite_method){
+
+		$result = Yii::app()->db->createCommand()->insert('setting', array(
+			'download_url'=>$download_url,
+			'games_num'=>$games_num,
+			'shops_num'=>$shops_num,
+			'invite_method'=>$invite_method,
 			'add_time' => $this->dateTime
 		));
 		return $result;

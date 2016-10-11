@@ -395,4 +395,48 @@ class AdminController extends Controller
 		}
 		Helper::interrupt($this,"系统消息".$desc."完成。",1,$url);
 	}
+
+	//修改配置页面
+	public function actionUpdSetting(){
+		
+		$this->body = "single";
+		$this->layout='//layouts/main_admin_nonav';
+		
+		$sid = 1;
+
+		//根据SID拿到配置信息
+		$settingInfo = $this->dao->getTableInfo("setting","sid",$sid);
+
+		$data['sid']			= $settingInfo["sid"];		//
+		$data['download_url']	= $settingInfo["download_url"];		//下载地址
+		$data['shops_num']		= $settingInfo["shops_num"];		//商铺数量
+		$data['games_num']		= $settingInfo["games_num"];		//游戏数量
+		$data['invite_method']	= $settingInfo["invite_method"];	//邀请码
+		
+		$this->render('addSetting',$data);
+	}
+
+	//修改配置页面
+	public function actionDoUpdSetting(){
+		
+		$download_url	= !empty($_POST["download_url"])?$_POST["download_url"]:"";
+		$games_num		= !empty($_POST["games_num"])?$_POST["games_num"]:"";
+		$shops_num		= !empty($_POST["shops_num"])?$_POST["shops_num"]:"";
+		$invite_method	= !empty($_POST["editorValue"])?$_POST["editorValue"]:"";
+		
+		$info["download_url"] = $download_url;
+		$info["games_num"] = $games_num;
+		$info["shops_num"] = $shops_num;
+		$info["invite_method"] = $invite_method;
+
+		$result = $this->dao->updTableInfo("setting",$info,"sid",1);
+
+		if($result == false){
+			//写入一次
+			$result = $this->dao->addSetting($info["download_url"],$info["games_num"],$info["shops_num"],$info["invite_method"]);
+
+		}
+
+		Helper::interrupt($this,"后台数据配置修改完成。",1,Yii::app()->url->getAdminSettingUrl());
+	}
 }

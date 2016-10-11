@@ -3,11 +3,12 @@
 		<div id="header-home-logo"></div>
 		<div id="header-home-section">
 			<div id="header-home-left">
-				<p>已接入 <span>888</span> 家线下店</p>
-				<p>已接入 <span>88</span> 款游戏</p>
+				<p>已接入 <span><?=$settingInfo["shops_num"]?></span> 家线下店</p>
+				<p>已接入 <span><?=$settingInfo["games_num"]?></span> 款游戏</p>
 				<div><a href="<?=Yii::app()->url->getRegisterUrl()?>" id="bt-register">注册平台账号</a> <a href="<?=Yii::app()->url->getLoginUrl()?>">登录</a></div>
 			</div>
-			<a id="header-home-client" href="###">获取战网客户端</a>
+			<?php ($settingInfo["download_url"] == "###")?$target="":$target="target='_blank'";?>
+			<a id="header-home-client" href="<?=$settingInfo["download_url"]?>" <?=$target?>>获取战网客户端</a>
 		</div>
 	</div>
 	<!--首页顶部end-->

@@ -45,4 +45,11 @@ class Dao{
 			]);
 		return $result;
 	}
+
+	//写入表数据
+	/*
+	public function addMessage($table,$info){
+		$result = Yii::app()->db->createCommand()->insert($table, $info);
+		return $result;
+	}*/
 }

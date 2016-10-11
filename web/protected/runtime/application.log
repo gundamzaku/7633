@@ -6244,3 +6244,239 @@ HTTP_REFERER=http://www.7663.com/index.php?r=admin/addMessage
 in D:\shopex\7663\web\protected\models\DaoSite.php (71)
 in D:\shopex\7663\web\protected\controllers\SiteController.php (121)
 in D:\shopex\7663\web\index.php (13)
+2016/10/11 09:23:21 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'The system is unable to find the requested action "doUpdSetting".' in D:\shopex\7663\yii\framework\web\CController.php:483
+Stack trace:
+#0 D:\shopex\7663\yii\framework\web\CController.php(270): CController->missingAction('doUpdSetting')
+#1 D:\shopex\7663\yii\framework\web\CWebApplication.php(282): CController->run('doUpdSetting')
+#2 D:\shopex\7663\yii\framework\web\CWebApplication.php(141): CWebApplication->runController('admin/doUpdSett...')
+#3 D:\shopex\7663\yii\framework\base\CApplication.php(185): CWebApplication->processRequest()
+#4 D:\shopex\7663\web\index.php(13): CApplication->run()
+#5 {main}
+REQUEST_URI=/index.php?r=admin/doUpdSetting
+HTTP_REFERER=http://www.7663.com/index.php?r=admin/main
+---
+2016/10/11 09:24:05 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'The system is unable to find the requested action "doUpdSetting".' in D:\shopex\7663\yii\framework\web\CController.php:483
+Stack trace:
+#0 D:\shopex\7663\yii\framework\web\CController.php(270): CController->missingAction('doUpdSetting')
+#1 D:\shopex\7663\yii\framework\web\CWebApplication.php(282): CController->run('doUpdSetting')
+#2 D:\shopex\7663\yii\framework\web\CWebApplication.php(141): CWebApplication->runController('admin/doUpdSett...')
+#3 D:\shopex\7663\yii\framework\base\CApplication.php(185): CWebApplication->processRequest()
+#4 D:\shopex\7663\web\index.php(13): CApplication->run()
+#5 {main}
+REQUEST_URI=/index.php?r=admin/doUpdSetting
+HTTP_REFERER=http://www.7663.com/index.php?r=admin/main
+---
+2016/10/11 09:24:07 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'The system is unable to find the requested action "doUpdSetting".' in D:\shopex\7663\yii\framework\web\CController.php:483
+Stack trace:
+#0 D:\shopex\7663\yii\framework\web\CController.php(270): CController->missingAction('doUpdSetting')
+#1 D:\shopex\7663\yii\framework\web\CWebApplication.php(282): CController->run('doUpdSetting')
+#2 D:\shopex\7663\yii\framework\web\CWebApplication.php(141): CWebApplication->runController('admin/doUpdSett...')
+#3 D:\shopex\7663\yii\framework\base\CApplication.php(185): CWebApplication->processRequest()
+#4 D:\shopex\7663\web\index.php(13): CApplication->run()
+#5 {main}
+REQUEST_URI=/index.php?r=admin/doUpdSetting
+HTTP_REFERER=http://www.7663.com/index.php?r=admin/main
+---
+2016/10/11 09:24:10 [error] [exception.CException] exception 'CException' with message 'WebUrl and its behaviors do not have a method or closure named "getAdminDoUpdSettingUrl".' in D:\shopex\7663\yii\framework\base\CComponent.php:266
+Stack trace:
+#0 D:\shopex\7663\web\protected\views\admin\addSetting.php(8): CComponent->__call('getAdminDoUpdSe...', Array)
+#1 D:\shopex\7663\web\protected\views\admin\addSetting.php(8): WebUrl->getAdminDoUpdSettingUrl()
+#2 D:\shopex\7663\yii\framework\web\CBaseController.php(126): require('D:\\shopex\\7663\\...')
+#3 D:\shopex\7663\yii\framework\web\CBaseController.php(95): CBaseController->renderInternal('D:\\shopex\\7663\\...', Array, true)
+#4 D:\shopex\7663\yii\framework\web\CController.php(869): CBaseController->renderFile('D:\\shopex\\7663\\...', Array, true)
+#5 D:\shopex\7663\yii\framework\web\CController.php(782): CController->renderPartial('addSetting', Array, true)
+#6 D:\shopex\7663\web\protected\controllers\AdminController.php(416): CController->render('addSetting', Array)
+#7 D:\shopex\7663\yii\framework\web\actions\CInlineAction.php(49): AdminController->actionUpdSetting()
+#8 D:\shopex\7663\yii\framework\web\CController.php(308): CInlineAction->runWithParams(Array)
+#9 D:\shopex\7663\yii\framework\web\CController.php(286): CController->runAction(Object(CInlineAction))
+#10 D:\shopex\7663\yii\framework\web\CController.php(265): CController->runActionWithFilters(Object(CInlineAction), Array)
+#11 D:\shopex\7663\yii\framework\web\CWebApplication.php(282): CController->run('updSetting')
+#12 D:\shopex\7663\yii\framework\web\CWebApplication.php(141): CWebApplication->runController('admin/updSettin...')
+#13 D:\shopex\7663\yii\framework\base\CApplication.php(185): CWebApplication->processRequest()
+#14 D:\shopex\7663\web\index.php(13): CApplication->run()
+#15 {main}
+REQUEST_URI=/index.php?r=admin/updSetting
+HTTP_REFERER=http://www.7663.com/index.php?r=admin/main
+---
+2016/10/11 09:25:56 [error] [php] Undefined variable: url (D:\shopex\7663\web\protected\views\admin\addSetting.php:24)
+Stack trace:
+#0 D:\shopex\7663\yii\framework\web\CController.php(869): AdminController->renderFile()
+#1 D:\shopex\7663\yii\framework\web\CController.php(782): AdminController->renderPartial()
+#2 D:\shopex\7663\web\protected\controllers\AdminController.php(416): AdminController->render()
+#3 D:\shopex\7663\yii\framework\web\actions\CInlineAction.php(49): AdminController->actionUpdSetting()
+#4 D:\shopex\7663\yii\framework\web\CController.php(308): CInlineAction->runWithParams()
+#5 D:\shopex\7663\yii\framework\web\CController.php(286): AdminController->runAction()
+#6 D:\shopex\7663\yii\framework\web\CController.php(265): AdminController->runActionWithFilters()
+#7 D:\shopex\7663\yii\framework\web\CWebApplication.php(282): AdminController->run()
+#8 D:\shopex\7663\yii\framework\web\CWebApplication.php(141): CWebApplication->runController()
+#9 D:\shopex\7663\yii\framework\base\CApplication.php(185): CWebApplication->processRequest()
+#10 D:\shopex\7663\web\index.php(13): CWebApplication->run()
+REQUEST_URI=/index.php?r=admin/updSetting
+in D:\shopex\7663\web\protected\views\admin\addSetting.php (24)
+in D:\shopex\7663\web\protected\controllers\AdminController.php (416)
+in D:\shopex\7663\web\index.php (13)
+2016/10/11 10:09:30 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'The system is unable to find the requested action "upload".' in D:\shopex\7663\yii\framework\web\CController.php:483
+Stack trace:
+#0 D:\shopex\7663\yii\framework\web\CController.php(270): CController->missingAction('upload')
+#1 D:\shopex\7663\yii\framework\web\CWebApplication.php(282): CController->run('upload')
+#2 D:\shopex\7663\yii\framework\web\CWebApplication.php(141): CWebApplication->runController('admin/upload')
+#3 D:\shopex\7663\yii\framework\base\CApplication.php(185): CWebApplication->processRequest()
+#4 D:\shopex\7663\web\index.php(13): CApplication->run()
+#5 {main}
+REQUEST_URI=/index.php?r=admin/upload&action=config&&noCache=1476180570700
+HTTP_REFERER=http://www.7663.com/index.php?r=admin/updSetting
+---
+2016/10/11 10:09:59 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'The system is unable to find the requested action "upload".' in D:\shopex\7663\yii\framework\web\CController.php:483
+Stack trace:
+#0 D:\shopex\7663\yii\framework\web\CController.php(270): CController->missingAction('upload')
+#1 D:\shopex\7663\yii\framework\web\CWebApplication.php(282): CController->run('upload')
+#2 D:\shopex\7663\yii\framework\web\CWebApplication.php(141): CWebApplication->runController('admin/upload')
+#3 D:\shopex\7663\yii\framework\base\CApplication.php(185): CWebApplication->processRequest()
+#4 D:\shopex\7663\web\index.php(13): CApplication->run()
+#5 {main}
+REQUEST_URI=/index.php?r=admin/upload&action=config&&noCache=1476180599596
+HTTP_REFERER=http://www.7663.com/index.php?r=admin/updSetting
+---
+2016/10/11 10:10:37 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'The system is unable to find the requested action "upload".' in D:\shopex\7663\yii\framework\web\CController.php:483
+Stack trace:
+#0 D:\shopex\7663\yii\framework\web\CController.php(270): CController->missingAction('upload')
+#1 D:\shopex\7663\yii\framework\web\CWebApplication.php(282): CController->run('upload')
+#2 D:\shopex\7663\yii\framework\web\CWebApplication.php(141): CWebApplication->runController('admin/upload')
+#3 D:\shopex\7663\yii\framework\base\CApplication.php(185): CWebApplication->processRequest()
+#4 D:\shopex\7663\web\index.php(13): CApplication->run()
+#5 {main}
+REQUEST_URI=/index.php?r=admin/upload&action=config&&noCache=1476180637527
+HTTP_REFERER=http://www.7663.com/index.php?r=admin/updSetting
+---
+2016/10/11 10:10:59 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'The system is unable to find the requested action "upload".' in D:\shopex\7663\yii\framework\web\CController.php:483
+Stack trace:
+#0 D:\shopex\7663\yii\framework\web\CController.php(270): CController->missingAction('upload')
+#1 D:\shopex\7663\yii\framework\web\CWebApplication.php(282): CController->run('upload')
+#2 D:\shopex\7663\yii\framework\web\CWebApplication.php(141): CWebApplication->runController('admin/upload')
+#3 D:\shopex\7663\yii\framework\base\CApplication.php(185): CWebApplication->processRequest()
+#4 D:\shopex\7663\web\index.php(13): CApplication->run()
+#5 {main}
+REQUEST_URI=/index.php?r=admin/upload&action=config&&noCache=1476180659785
+HTTP_REFERER=http://www.7663.com/index.php?r=admin/updSetting
+---
+2016/10/11 10:17:30 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'The system is unable to find the requested action "upload".' in D:\shopex\7663\yii\framework\web\CController.php:483
+Stack trace:
+#0 D:\shopex\7663\yii\framework\web\CController.php(270): CController->missingAction('upload')
+#1 D:\shopex\7663\yii\framework\web\CWebApplication.php(282): CController->run('upload')
+#2 D:\shopex\7663\yii\framework\web\CWebApplication.php(141): CWebApplication->runController('admin/upload')
+#3 D:\shopex\7663\yii\framework\base\CApplication.php(185): CWebApplication->processRequest()
+#4 D:\shopex\7663\web\index.php(13): CApplication->run()
+#5 {main}
+REQUEST_URI=/index.php?r=admin/upload&action=config&&noCache=1476181050673
+HTTP_REFERER=http://www.7663.com/index.php?r=admin/updSetting
+---
+2016/10/11 10:17:47 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'The system is unable to find the requested action "upload".' in D:\shopex\7663\yii\framework\web\CController.php:483
+Stack trace:
+#0 D:\shopex\7663\yii\framework\web\CController.php(270): CController->missingAction('upload')
+#1 D:\shopex\7663\yii\framework\web\CWebApplication.php(282): CController->run('upload')
+#2 D:\shopex\7663\yii\framework\web\CWebApplication.php(141): CWebApplication->runController('admin/upload')
+#3 D:\shopex\7663\yii\framework\base\CApplication.php(185): CWebApplication->processRequest()
+#4 D:\shopex\7663\web\index.php(13): CApplication->run()
+#5 {main}
+REQUEST_URI=/index.php?r=admin/upload&action=config&&noCache=1476181067646
+HTTP_REFERER=http://www.7663.com/index.php?r=admin/updSetting
+---
+2016/10/11 10:17:51 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'The system is unable to find the requested action "upload".' in D:\shopex\7663\yii\framework\web\CController.php:483
+Stack trace:
+#0 D:\shopex\7663\yii\framework\web\CController.php(270): CController->missingAction('upload')
+#1 D:\shopex\7663\yii\framework\web\CWebApplication.php(282): CController->run('upload')
+#2 D:\shopex\7663\yii\framework\web\CWebApplication.php(141): CWebApplication->runController('admin/upload')
+#3 D:\shopex\7663\yii\framework\base\CApplication.php(185): CWebApplication->processRequest()
+#4 D:\shopex\7663\web\index.php(13): CApplication->run()
+#5 {main}
+REQUEST_URI=/index.php?r=admin/upload&action=config&&noCache=1476181070932
+HTTP_REFERER=http://www.7663.com/index.php?r=admin/updSetting
+---
+2016/10/11 10:18:31 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'The system is unable to find the requested action "upload".' in D:\shopex\7663\yii\framework\web\CController.php:483
+Stack trace:
+#0 D:\shopex\7663\yii\framework\web\CController.php(270): CController->missingAction('upload')
+#1 D:\shopex\7663\yii\framework\web\CWebApplication.php(282): CController->run('upload')
+#2 D:\shopex\7663\yii\framework\web\CWebApplication.php(141): CWebApplication->runController('admin/upload')
+#3 D:\shopex\7663\yii\framework\base\CApplication.php(185): CWebApplication->processRequest()
+#4 D:\shopex\7663\web\index.php(13): CApplication->run()
+#5 {main}
+REQUEST_URI=/index.php?r=admin/upload&action=config&&noCache=1476181111640
+HTTP_REFERER=http://www.7663.com/index.php?r=admin/updSetting
+---
+2016/10/11 10:19:11 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'The system is unable to find the requested action "upload".' in D:\shopex\7663\yii\framework\web\CController.php:483
+Stack trace:
+#0 D:\shopex\7663\yii\framework\web\CController.php(270): CController->missingAction('upload')
+#1 D:\shopex\7663\yii\framework\web\CWebApplication.php(282): CController->run('upload')
+#2 D:\shopex\7663\yii\framework\web\CWebApplication.php(141): CWebApplication->runController('admin/upload')
+#3 D:\shopex\7663\yii\framework\base\CApplication.php(185): CWebApplication->processRequest()
+#4 D:\shopex\7663\web\index.php(13): CApplication->run()
+#5 {main}
+REQUEST_URI=/index.php?r=admin/upload&action=config&&noCache=1476181151234
+HTTP_REFERER=http://www.7663.com/index.php?r=admin/updSetting
+---
+2016/10/11 10:19:14 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'The system is unable to find the requested action "upload".' in D:\shopex\7663\yii\framework\web\CController.php:483
+Stack trace:
+#0 D:\shopex\7663\yii\framework\web\CController.php(270): CController->missingAction('upload')
+#1 D:\shopex\7663\yii\framework\web\CWebApplication.php(282): CController->run('upload')
+#2 D:\shopex\7663\yii\framework\web\CWebApplication.php(141): CWebApplication->runController('admin/upload')
+#3 D:\shopex\7663\yii\framework\base\CApplication.php(185): CWebApplication->processRequest()
+#4 D:\shopex\7663\web\index.php(13): CApplication->run()
+#5 {main}
+REQUEST_URI=/index.php?r=admin/upload&action=config&&noCache=1476181154711
+HTTP_REFERER=http://www.7663.com/index.php?r=admin/updSetting
+---
+2016/10/11 10:19:31 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'The system is unable to find the requested action "upload".' in D:\shopex\7663\yii\framework\web\CController.php:483
+Stack trace:
+#0 D:\shopex\7663\yii\framework\web\CController.php(270): CController->missingAction('upload')
+#1 D:\shopex\7663\yii\framework\web\CWebApplication.php(282): CController->run('upload')
+#2 D:\shopex\7663\yii\framework\web\CWebApplication.php(141): CWebApplication->runController('admin/upload')
+#3 D:\shopex\7663\yii\framework\base\CApplication.php(185): CWebApplication->processRequest()
+#4 D:\shopex\7663\web\index.php(13): CApplication->run()
+#5 {main}
+REQUEST_URI=/index.php?r=admin/upload&action=config&&noCache=1476181170901
+HTTP_REFERER=http://www.7663.com/index.php?r=admin/updSetting
+---
+2016/10/11 10:20:25 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'The system is unable to find the requested action "upload".' in D:\shopex\7663\yii\framework\web\CController.php:483
+Stack trace:
+#0 D:\shopex\7663\yii\framework\web\CController.php(270): CController->missingAction('upload')
+#1 D:\shopex\7663\yii\framework\web\CWebApplication.php(282): CController->run('upload')
+#2 D:\shopex\7663\yii\framework\web\CWebApplication.php(141): CWebApplication->runController('admin/upload')
+#3 D:\shopex\7663\yii\framework\base\CApplication.php(185): CWebApplication->processRequest()
+#4 D:\shopex\7663\web\index.php(13): CApplication->run()
+#5 {main}
+REQUEST_URI=/index.php?r=admin/upload&action=config&&noCache=1476181225219
+HTTP_REFERER=http://www.7663.com/index.php?r=admin/updSetting
+---
+2016/10/11 10:20:41 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'The system is unable to find the requested action "upload".' in D:\shopex\7663\yii\framework\web\CController.php:483
+Stack trace:
+#0 D:\shopex\7663\yii\framework\web\CController.php(270): CController->missingAction('upload')
+#1 D:\shopex\7663\yii\framework\web\CWebApplication.php(282): CController->run('upload')
+#2 D:\shopex\7663\yii\framework\web\CWebApplication.php(141): CWebApplication->runController('admin/upload')
+#3 D:\shopex\7663\yii\framework\base\CApplication.php(185): CWebApplication->processRequest()
+#4 D:\shopex\7663\web\index.php(13): CApplication->run()
+#5 {main}
+REQUEST_URI=/index.php?r=admin/upload&action=config&&noCache=1476181241496
+HTTP_REFERER=http://www.7663.com/index.php?r=admin/updSetting
+---
+2016/10/11 10:21:16 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'The system is unable to find the requested action "upload".' in D:\shopex\7663\yii\framework\web\CController.php:483
+Stack trace:
+#0 D:\shopex\7663\yii\framework\web\CController.php(270): CController->missingAction('upload')
+#1 D:\shopex\7663\yii\framework\web\CWebApplication.php(282): CController->run('upload')
+#2 D:\shopex\7663\yii\framework\web\CWebApplication.php(141): CWebApplication->runController('admin/upload')
+#3 D:\shopex\7663\yii\framework\base\CApplication.php(185): CWebApplication->processRequest()
+#4 D:\shopex\7663\web\index.php(13): CApplication->run()
+#5 {main}
+REQUEST_URI=/index.php?r=admin/upload&action=config&&noCache=1476181276768
+HTTP_REFERER=http://www.7663.com/index.php?r=admin/updSetting
+---
+2016/10/11 10:22:08 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'The system is unable to find the requested action "upload".' in D:\shopex\7663\yii\framework\web\CController.php:483
+Stack trace:
+#0 D:\shopex\7663\yii\framework\web\CController.php(270): CController->missingAction('upload')
+#1 D:\shopex\7663\yii\framework\web\CWebApplication.php(282): CController->run('upload')
+#2 D:\shopex\7663\yii\framework\web\CWebApplication.php(141): CWebApplication->runController('admin/upload')
+#3 D:\shopex\7663\yii\framework\base\CApplication.php(185): CWebApplication->processRequest()
+#4 D:\shopex\7663\web\index.php(13): CApplication->run()
+#5 {main}
+REQUEST_URI=/index.php?r=admin/upload&action=config&&noCache=1476181328197
+HTTP_REFERER=http://www.7663.com/index.php?r=admin/updSetting
+---

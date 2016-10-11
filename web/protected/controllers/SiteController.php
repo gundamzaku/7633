@@ -58,7 +58,13 @@ class SiteController extends Controller
 		//得到线下店数据
 		$storeInfo = $this->dao->getStorePage(0,10);
 		$data['storeInfo'] = !empty($storeInfo)?$storeInfo:array();
-
+		
+		//得到部分相关配置
+		$settingInfo = $this->dao->getTableInfo("setting","sid",1);
+		$data['settingInfo'] = !empty($settingInfo)?$settingInfo:array();
+		if(empty($data['settingInfo']['download_url'])){
+			$data['settingInfo']['download_url'] = "###";
+		}
 		$this->render('home',$data);
 
 	}
@@ -89,6 +95,8 @@ class SiteController extends Controller
 	public function actionLogin(){
 		$this->body = "single";
 		$this->layout='//layouts/main_nonav';
+		$this->loginBan();
+
 		$this->render('login');		
 	}
 
@@ -148,6 +156,7 @@ class SiteController extends Controller
 	public function actionRegister(){
 		$this->body = "single";
 		$this->layout='//layouts/main_nonav';
+		$this->loginBan();
 		$this->render('register');
 	}
 
@@ -401,6 +410,12 @@ class SiteController extends Controller
 		Helper::interrupt($this,"您已经退出系统。",1,Yii::app()->url->getLoginUrl());
 	}
 
+	protected function loginBan(){
+		if(!empty($this->session["username"])){
+			$this->redirect(array('/site/main'));
+		}	
+	}
+
 	//Test
 	public function actionTest(){
 		var_dump($_COOKIE);
@@ -414,4 +429,5 @@ class SiteController extends Controller
 		//Helper::interrupt($this,"您的密码修改完成，请重新登录。",1,Yii::app()->url->getLoginUrl());
 	}
 	
+
 }

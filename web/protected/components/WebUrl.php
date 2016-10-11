@@ -179,4 +179,14 @@ class WebUrl extends CComponent {
 		return "index.php?r=admin/doAddMessage";
 	}
 	
+	//添加配置页面
+	public function getAdminSettingUrl(){
+		return "index.php?r=admin/updSetting";
+	}	
+
+	//操作配置页面
+	public function getAdminDoUpdSettingUrl(){
+		return "index.php?r=admin/doUpdSetting";
+	}	
+	
 } 
