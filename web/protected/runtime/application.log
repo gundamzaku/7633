@@ -6484,3 +6484,41 @@ HTTP_REFERER=http://www.7663.com/index.php?r=admin/updSetting
 in D:\shopex\7663\web\protected\models\DaoSite.php (71)
 in D:\shopex\7663\web\protected\controllers\SiteController.php (131)
 in D:\shopex\7663\web\index.php (13)
+2016/10/12 01:46:04 [error] [system.db.CDbCommand] CDbCommand::execute() failed: SQLSTATE[23000]: Integrity constraint violation: 1062 Duplicate entry 'gundamzaku@163.com' for key 'username'. The SQL statement executed was: INSERT INTO `auth_user_login_info` (`username`, `now_login`, `now_login_ip`) VALUES (:username, :now_login, :now_login_ip).
+in D:\shopex\7663\web\protected\models\DaoSite.php (71)
+in D:\shopex\7663\web\protected\controllers\SiteController.php (131)
+in D:\shopex\7663\web\index.php (13)
+2016/10/12 01:46:10 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'The system is unable to find the requested action "index".' in D:\shopex\7663\yii\framework\web\CController.php:483
+Stack trace:
+#0 D:\shopex\7663\yii\framework\web\CController.php(270): CController->missingAction('')
+#1 D:\shopex\7663\yii\framework\web\CWebApplication.php(282): CController->run('')
+#2 D:\shopex\7663\yii\framework\web\CWebApplication.php(141): CWebApplication->runController('pay')
+#3 D:\shopex\7663\yii\framework\base\CApplication.php(185): CWebApplication->processRequest()
+#4 D:\shopex\7663\web\index.php(13): CApplication->run()
+#5 {main}
+REQUEST_URI=/index.php?r=pay
+---
+2016/10/12 01:54:23 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'The system is unable to find the requested action "actionPaySuccess".' in D:\shopex\7663\yii\framework\web\CController.php:483
+Stack trace:
+#0 D:\shopex\7663\yii\framework\web\CController.php(270): CController->missingAction('actionPaySucces...')
+#1 D:\shopex\7663\yii\framework\web\CWebApplication.php(282): CController->run('actionPaySucces...')
+#2 D:\shopex\7663\yii\framework\web\CWebApplication.php(141): CWebApplication->runController('pay/actionPaySu...')
+#3 D:\shopex\7663\yii\framework\base\CApplication.php(185): CWebApplication->processRequest()
+#4 D:\shopex\7663\web\index.php(13): CApplication->run()
+#5 {main}
+REQUEST_URI=/index.php?r=pay/actionPaySuccess
+---
+2016/10/12 01:54:26 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'The system is unable to find the requested action "actionPaySuccess".' in D:\shopex\7663\yii\framework\web\CController.php:483
+Stack trace:
+#0 D:\shopex\7663\yii\framework\web\CController.php(270): CController->missingAction('actionPaySucces...')
+#1 D:\shopex\7663\yii\framework\web\CWebApplication.php(282): CController->run('actionPaySucces...')
+#2 D:\shopex\7663\yii\framework\web\CWebApplication.php(141): CWebApplication->runController('pay/actionPaySu...')
+#3 D:\shopex\7663\yii\framework\base\CApplication.php(185): CWebApplication->processRequest()
+#4 D:\shopex\7663\web\index.php(13): CApplication->run()
+#5 {main}
+REQUEST_URI=/index.php?r=pay/actionPaySuccess
+---
+2016/10/12 01:57:15 [error] [system.db.CDbCommand] CDbCommand::execute() failed: SQLSTATE[23000]: Integrity constraint violation: 1062 Duplicate entry 'gundamzaku@163.com' for key 'username'. The SQL statement executed was: INSERT INTO `auth_user_login_info` (`username`, `now_login`, `now_login_ip`) VALUES (:username, :now_login, :now_login_ip).
+in D:\shopex\7663\web\protected\models\DaoSite.php (71)
+in D:\shopex\7663\web\protected\controllers\SiteController.php (131)
+in D:\shopex\7663\web\index.php (13)

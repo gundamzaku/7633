@@ -92,6 +92,12 @@ class WebUrl extends CComponent {
 		return "index.php?r=pay/pay".$param;	
 	}
 
+	//支付成功页
+	public function getPaySuccessUrl($param=""){
+		if(!empty($param))$param = "&".$param;
+		return "index.php?r=pay/paySuccess".$param;	
+	}
+
 	//退出
 	public function getLoginOutUrl(){
 		return "index.php?r=site/loginOut";	
