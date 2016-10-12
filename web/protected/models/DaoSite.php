@@ -318,14 +318,18 @@ class DaoSite extends Dao{
 
 	//添加配置
 	public function addSetting($download_url,$games_num,$shops_num,$invite_method){
-
-		$result = Yii::app()->db->createCommand()->insert('setting', array(
-			'download_url'=>$download_url,
-			'games_num'=>$games_num,
-			'shops_num'=>$shops_num,
-			'invite_method'=>$invite_method,
-			'add_time' => $this->dateTime
-		));
+		try{
+			$result = Yii::app()->db->createCommand()->insert('setting', array(
+				'sid'=>1,
+				'download_url'=>$download_url,
+				'games_num'=>$games_num,
+				'shops_num'=>$shops_num,
+				'invite_method'=>$invite_method,
+				'add_time' => $this->dateTime
+			));
+		}catch(Exception  $e){
+			$result = false;
+		}
 		return $result;
 	}
 }

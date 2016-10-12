@@ -6522,3 +6522,32 @@ REQUEST_URI=/index.php?r=pay/actionPaySuccess
 in D:\shopex\7663\web\protected\models\DaoSite.php (71)
 in D:\shopex\7663\web\protected\controllers\SiteController.php (131)
 in D:\shopex\7663\web\index.php (13)
+2016/10/12 02:09:37 [error] [system.db.CDbCommand] CDbCommand::execute() failed: SQLSTATE[23000]: Integrity constraint violation: 1062 Duplicate entry '1' for key 'PRIMARY'. The SQL statement executed was: INSERT INTO `setting` (`sid`, `download_url`, `games_num`, `shops_num`, `invite_method`, `add_time`) VALUES (:sid, :download_url, :games_num, :shops_num, :invite_method, :add_time).
+in D:\shopex\7663\web\protected\models\DaoSite.php (329)
+in D:\shopex\7663\web\protected\controllers\AdminController.php (436)
+in D:\shopex\7663\web\index.php (13)
+2016/10/12 02:09:37 [error] [exception.CDbException] exception 'CDbException' with message 'CDbCommand failed to execute the SQL statement: SQLSTATE[23000]: Integrity constraint violation: 1062 Duplicate entry '1' for key 'PRIMARY'. The SQL statement executed was: INSERT INTO `setting` (`sid`, `download_url`, `games_num`, `shops_num`, `invite_method`, `add_time`) VALUES (:sid, :download_url, :games_num, :shops_num, :invite_method, :add_time)' in D:\shopex\7663\yii\framework\db\CDbCommand.php:358
+Stack trace:
+#0 D:\shopex\7663\yii\framework\db\CDbCommand.php(1278): CDbCommand->execute(Array)
+#1 D:\shopex\7663\web\protected\models\DaoSite.php(329): CDbCommand->insert('setting', Array)
+#2 D:\shopex\7663\web\protected\controllers\AdminController.php(436): DaoSite->addSetting('', '123', '30', '<p><img src="/s...')
+#3 D:\shopex\7663\yii\framework\web\actions\CInlineAction.php(49): AdminController->actionDoUpdSetting()
+#4 D:\shopex\7663\yii\framework\web\CController.php(308): CInlineAction->runWithParams(Array)
+#5 D:\shopex\7663\yii\framework\web\CController.php(286): CController->runAction(Object(CInlineAction))
+#6 D:\shopex\7663\yii\framework\web\CController.php(265): CController->runActionWithFilters(Object(CInlineAction), Array)
+#7 D:\shopex\7663\yii\framework\web\CWebApplication.php(282): CController->run('doUpdSetting')
+#8 D:\shopex\7663\yii\framework\web\CWebApplication.php(141): CWebApplication->runController('admin/doUpdSett...')
+#9 D:\shopex\7663\yii\framework\base\CApplication.php(185): CWebApplication->processRequest()
+#10 D:\shopex\7663\web\index.php(13): CApplication->run()
+#11 {main}
+REQUEST_URI=/index.php?r=admin/doUpdSetting
+HTTP_REFERER=http://www.7663.com/index.php?r=admin/updSetting
+---
+2016/10/12 02:10:43 [error] [system.db.CDbCommand] CDbCommand::execute() failed: SQLSTATE[23000]: Integrity constraint violation: 1062 Duplicate entry '1' for key 'PRIMARY'. The SQL statement executed was: INSERT INTO `setting` (`sid`, `download_url`, `games_num`, `shops_num`, `invite_method`, `add_time`) VALUES (:sid, :download_url, :games_num, :shops_num, :invite_method, :add_time).
+in D:\shopex\7663\web\protected\models\DaoSite.php (329)
+in D:\shopex\7663\web\protected\controllers\AdminController.php (436)
+in D:\shopex\7663\web\index.php (13)
+2016/10/12 02:10:48 [error] [system.db.CDbCommand] CDbCommand::execute() failed: SQLSTATE[23000]: Integrity constraint violation: 1062 Duplicate entry '1' for key 'PRIMARY'. The SQL statement executed was: INSERT INTO `setting` (`sid`, `download_url`, `games_num`, `shops_num`, `invite_method`, `add_time`) VALUES (:sid, :download_url, :games_num, :shops_num, :invite_method, :add_time).
+in D:\shopex\7663\web\protected\models\DaoSite.php (329)
+in D:\shopex\7663\web\protected\controllers\AdminController.php (436)
+in D:\shopex\7663\web\index.php (13)
