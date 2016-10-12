@@ -771,8 +771,10 @@ article.sticky .featured-post {
 	vertical-align: middle;
 }
 #header-home-left p span{
-	color: #fff;
-	font-size: 39px;
+	color: #f90;
+    font-size: 39px;
+    font-family: impact;
+
 }
 #header-home-left div{
 	line-height: 50px;
@@ -870,6 +872,7 @@ article.sticky .featured-post {
 }
 #slide-home li p{
 	margin:5px auto;
+	line-height: 1.2;
 }
 #slide-home .swiper-button-next{
 	right: -webkit-calc(50% - 560px);
