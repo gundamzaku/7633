@@ -43,4 +43,10 @@ class PayController extends Controller
 		$this->render('pay');
 
 	}
+
+	//支付完成页
+	public function actionPaySuccess(){
+		$this->render('pay-success');
+
+	}
 }
