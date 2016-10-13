@@ -93,9 +93,9 @@ class WebUrl extends CComponent {
 	}
 
 	//支付成功页
-	public function getPaySuccessUrl($param=""){
+	public function getPayResultUrl($param=""){
 		if(!empty($param))$param = "&".$param;
-		return "index.php?r=pay/paySuccess".$param;	
+		return "index.php?r=pay/payResult".$param;	
 	}
 
 	//退出

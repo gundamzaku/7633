@@ -45,8 +45,9 @@ class PayController extends Controller
 	}
 
 	//支付完成页
-	public function actionPaySuccess(){
-		$this->render('pay-success');
+	public function actionPayResult(){
+		$this->layout='//layouts/main_nonav';
+		$this->render('pay-result');
 
 	}
 }

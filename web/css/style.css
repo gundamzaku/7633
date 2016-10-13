@@ -204,7 +204,7 @@ label {
 	display: inline-block;
 }
 fieldset{
-	width:380px;
+	width:388px;
 	max-width:90%;
 	margin: 8px auto;
 }
@@ -273,6 +273,7 @@ fieldset input[type="button"]{
 	margin-left:130px;
 	width:100px;
 }
+
 fieldset span.loading
 fieldset span#sub_process{
 	display:inline-block;
@@ -285,7 +286,7 @@ fieldset ol{
 }
 fieldset li.ui-widget-content{
 	list-style: none;
-	width:72px;
+	width:76px;
 	text-align: center;
 	display: inline-block;
 	margin:4px 4px 4px 0;
@@ -300,6 +301,7 @@ fieldset li.ui-widget-content.ui-selected{
 	background-position: right bottom;
 	background-repeat: no-repeat;
 }
+
 
 /* Reset non-text input types */
 input[type="checkbox"],
@@ -388,6 +390,35 @@ body .pagenation li {
 .pagenation li a{
 	font-size:13px;
 }
+#bank-select li{width:109px;}
+#bank-select li span{
+	background-image: url(../images/bankLogo_1.png);
+	background-repeat: no-repeat;
+	display: block;
+	font-size:0;
+	color: transparent;
+	height:30px;
+	background-position: -5px 3px;
+}
+#bank-select li#bank1 span{background-position: -5px -312px;}/*工商银行*/
+#bank-select li#bank2 span{background-position: -5px -87px;}/*建设银行*/
+#bank-select li#bank3 span{background-position: -5px -42px;}/*农业银行*/
+#bank-select li#bank4 span{background-position: -5px 3px;}/*招商银行*/
+#bank-select li#bank5 span{background-position: -5px -222px;}/*中国银行*/
+#bank-select li#bank6 span{background-position: -5px -42px; background-image: url(../images/bankLogo_4.png);}/*交通银行*/
+#bank-select li#bank7 span{background-position: -5px -42px; background-image: url(../images/bankLogo_2.png);}/*浦发银行*/
+#bank-select li#bank8 span{background-position: -5px -447px;}/*光大银行*/
+#bank-select li#bank9 span{background-position: -5px -402px;}/*中信银行*/
+#bank-select li#bank10 span{background-position: -5px -177px; background-image: url(../images/bankLogo_4.png);}/*广发银行*/
+#bank-select li#bank11 span{background-position: -5px -267px;}/*兴业银行*/
+#bank-select li#bank12 span{background-position: -5px -177px;}/*中国邮政银行*/
+#bank-select li#bank13 span{background-position: -5px -357px;}/*民生银行*/
+#bank-select li#bank14 span{background-position: -5px -132px; background-image: url(../images/bankLogo_2.png);}/*上海银行*/
+#bank-select li#bank15 span{background-position: -5px -357px; background-image: url(../images/bankLogo_2.png);}/*平安银行*/
+#bank-select li#bank16 span{background-position: -5px -312px; background-image: url(../images/bankLogo_2.png);}/*北京银行*/
+#bank-select li#bank17 span{background-position: -5px -132px;}/*深圳发展银行*/
+#bank-select li#bank18 span{background-position: -5px -87px; background-image: url(../images/bankLogo_5.png);}/*华夏银行*/
+
 /* Responsive images */
 .entry-content img,
 .comment-content img,
@@ -942,6 +973,10 @@ a.more:hover:after{
 	padding:0;
 	margin-bottom: 28px;
 }
+#main.light{
+	background-color: #f7f7f7;
+}
+
 .site .col-left{
 	background:#274369;
 	float:left;
@@ -957,7 +992,27 @@ a.more:hover:after{
 	width:calc(100% - 304px);
 	min-height:500px;
 }
-#main .dark h2{
+.site .col-right form{
+	margin-bottom: 56px;
+}
+.site .col-left .tabs{
+
+}
+.site .col-left .tabs li{
+	list-style: none;
+	height:80px;
+}
+.site .col-left .tabs li a{
+	display: block;
+}
+.site .col-left .tabs li a.current,
+.site .col-left .tabs li a:hover,
+.site .col-left .tabs li.ui-selected a{
+	background-color: #e9eaeb;
+}
+
+#main .dark h2,
+#main .light h2{
 	padding:10px 20px;
 	color:#f90;
 	background-color:#122641;
@@ -965,6 +1020,13 @@ a.more:hover:after{
     margin: 0;
 	line-height: 1.5;
 	font-weight: 400;
+}
+#main .light h2{
+	color:#111;
+	background-color:#ccd4dc;
+}
+.site .col-left.light{
+	background-color: #f7f7f7;
 }
 .site .col-left .wrapper{
 	padding-bottom: 21px;
@@ -1098,9 +1160,11 @@ table.orders tbody tr:hover{
 	position: relative;
 }
 body.homepage{
-
 	background-image:url(../images/bg-home.png);
 }
+
+
+
 /*body,*/
 body.single{
 	background-image:url(../images/bg-sub.jpg);
@@ -1138,13 +1202,38 @@ fieldset.formfooter {padding-top: 20px;}
 }
 
 /*pay page*/
+#payname{
+	color: #122641;
+	font-size: 17px;
+	display: inline-block;
+	margin-left: 10px;
+}
 #payamount{
-	text-align: right;
+	text-align: center;
+	padding-left:10px;
 }
 #paycurrency{
 	color:#123356;
 	font-weight: 600;
 }
+.tabs#payments{
+    width: 303px;
+}
+.tabs#payments li a{
+	background-image:url(../images/logo-payment.png);
+	background-repeat: no-repeat;
+	background-position: 15px 0;
+	line-height: 80px;
+	padding-left:100px;
+	font-size: 16px;
+}
+.tabs#payments li a#item1{ }
+.tabs#payments li a#item2{ background-position: 15px -80px; }
+.tabs#payments li a#item3{ background-position: 15px -160px; }
+
+
+
+
 /* Footer */
 footer[role="contentinfo"] {
 	background:#1a315a;

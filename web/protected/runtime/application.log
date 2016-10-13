@@ -6551,3 +6551,37 @@ in D:\shopex\7663\web\index.php (13)
 in D:\shopex\7663\web\protected\models\DaoSite.php (329)
 in D:\shopex\7663\web\protected\controllers\AdminController.php (436)
 in D:\shopex\7663\web\index.php (13)
+2016/10/13 01:51:51 [error] [system.db.CDbCommand] CDbCommand::execute() failed: SQLSTATE[23000]: Integrity constraint violation: 1062 Duplicate entry 'gundamzaku@163.com' for key 'username'. The SQL statement executed was: INSERT INTO `auth_user_login_info` (`username`, `now_login`, `now_login_ip`) VALUES (:username, :now_login, :now_login_ip).
+in D:\shopex\7663\web\protected\models\DaoSite.php (71)
+in D:\shopex\7663\web\protected\controllers\SiteController.php (131)
+in D:\shopex\7663\web\index.php (13)
+2016/10/13 01:51:57 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'The system is unable to find the requested action "pay".' in D:\shopex\7663\yii\framework\web\CController.php:483
+Stack trace:
+#0 D:\shopex\7663\yii\framework\web\CController.php(270): CController->missingAction('pay')
+#1 D:\shopex\7663\yii\framework\web\CWebApplication.php(282): CController->run('pay')
+#2 D:\shopex\7663\yii\framework\web\CWebApplication.php(141): CWebApplication->runController('site/pay')
+#3 D:\shopex\7663\yii\framework\base\CApplication.php(185): CWebApplication->processRequest()
+#4 D:\shopex\7663\web\index.php(13): CApplication->run()
+#5 {main}
+REQUEST_URI=/index.php?r=site/pay
+---
+2016/10/13 01:52:02 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'The system is unable to find the requested action "index".' in D:\shopex\7663\yii\framework\web\CController.php:483
+Stack trace:
+#0 D:\shopex\7663\yii\framework\web\CController.php(270): CController->missingAction('')
+#1 D:\shopex\7663\yii\framework\web\CWebApplication.php(282): CController->run('')
+#2 D:\shopex\7663\yii\framework\web\CWebApplication.php(141): CWebApplication->runController('pay/')
+#3 D:\shopex\7663\yii\framework\base\CApplication.php(185): CWebApplication->processRequest()
+#4 D:\shopex\7663\web\index.php(13): CApplication->run()
+#5 {main}
+REQUEST_URI=/index.php?r=pay/
+---
+2016/10/13 01:52:05 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'The system is unable to find the requested action "index".' in D:\shopex\7663\yii\framework\web\CController.php:483
+Stack trace:
+#0 D:\shopex\7663\yii\framework\web\CController.php(270): CController->missingAction('')
+#1 D:\shopex\7663\yii\framework\web\CWebApplication.php(282): CController->run('')
+#2 D:\shopex\7663\yii\framework\web\CWebApplication.php(141): CWebApplication->runController('pay/')
+#3 D:\shopex\7663\yii\framework\base\CApplication.php(185): CWebApplication->processRequest()
+#4 D:\shopex\7663\web\index.php(13): CApplication->run()
+#5 {main}
+REQUEST_URI=/index.php?r=pay/
+---
