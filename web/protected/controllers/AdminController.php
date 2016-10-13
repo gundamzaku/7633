@@ -439,4 +439,53 @@ class AdminController extends Controller
 
 		Helper::interrupt($this,"后台数据配置修改完成。",1,Yii::app()->url->getAdminSettingUrl());
 	}
+	
+	public function actionDoDelete(){
+		
+		$type	= $_POST['type'];
+		$id		= $_POST['id'];
+		//广告
+		if($type == "adviertisement"){
+			$table = "adviertisement";
+			$field = "aid";
+		}else if($type == "message"){
+			$table = "message";
+			$field = "mid";
+		}else{
+			$msg['result']		= "fail";
+			$msg['message']		= "参数错误";
+			Helper::ajaxJsonMsg($msg);
+		}
+
+		//根据ID查到数据
+		$result = $this->dao->getTableInfo($table,$field,$id);
+		if($result == false){
+			$msg['result']		= "fail";
+			$msg['message']		= "没有数据";
+			Helper::ajaxJsonMsg($msg);
+		}
+		//把这些数据写到LOG里面
+		$info["log"] = json_encode($result);
+		$info["add_time"] = date("Y-m-d H:i:s");
+		$info["add_ip"] = Yii::app()->request->userHostAddress;
+		$this->dao->addTableInfo("delete_log",$info);
+		//直接删除
+		$result = $this->dao->delTableInfo($table,$field,$id);
+		if($result == 1){		
+			$msg['result']		= "succ";
+			$msg['message']		= "操作成功";
+			Helper::ajaxJsonMsg($msg);
+		}else{
+			$msg['result']		= "fail";
+			$msg['message']		= "操作失败";
+			Helper::ajaxJsonMsg($msg);
+		}
+	}
+
+	//退出登录
+	public function actionLoginOut(){
+		
+		session_destroy();
+		Helper::interrupt($this,"您已经退出系统。",1,Yii::app()->url->getAdminLoginUrl());
+	}
 }

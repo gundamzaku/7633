@@ -6,7 +6,7 @@
 				<?php if(empty($this->session["adminname"])){?>
 				<a href="<?=Yii::app()->url->getAdminLoginUrl()?>">登录</a>
 				<?php }else{?>
-					<?=$this->session["adminname"]?>
+					<?=$this->session["adminname"]?>|<a href="<?=Yii::app()->url->getAdminLoginOutUrl()?>">退出</a>
 				<?php }?>
 			</div>
 		</div>

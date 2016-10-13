@@ -46,10 +46,19 @@ class Dao{
 		return $result;
 	}
 
+	//根据某个ID得到某表信息
+	public function delTableInfo($table,$field,$value){
+
+		$result = Yii::app()->db->createCommand()->delete($table,$field."=:".$field, array(  
+				':'.$field => $value,  
+			)); 
+		return $result;
+	}
+
 	//写入表数据
-	/*
-	public function addMessage($table,$info){
+	
+	public function addTableInfo($table,$info){
 		$result = Yii::app()->db->createCommand()->insert($table, $info);
 		return $result;
-	}*/
+	}
 }

@@ -194,5 +194,13 @@ class WebUrl extends CComponent {
 	public function getAdminDoUpdSettingUrl(){
 		return "index.php?r=admin/doUpdSetting";
 	}	
-	
+	//删除
+	public function getAdminDoDeleteUrl($param=""){
+		if(!empty($param))$param = "&".$param;
+		return "index.php?r=admin/doDelete".$param;
+	}
+	//退出
+	public function getAdminLoginOutUrl(){
+		return "index.php?r=admin/loginOut";	
+	}
 } 
