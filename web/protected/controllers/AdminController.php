@@ -211,6 +211,7 @@ class AdminController extends Controller
 			$result[$k]['add_time'] = date("m-d",strtotime($result[$k]['add_time']));
 			$result[$k]['title']	= $purifier->purify($result[$k]['title']);
 			$result[$k]['url']		= $purifier->purify($result[$k]['url']);
+			$result[$k]['content']	= $purifier->purify($result[$k]['content']);
 		}
 
         $data['page'] = $page->getHtml();
@@ -229,6 +230,7 @@ class AdminController extends Controller
 		$data['title'] = "";
 		$data['icon'] = "";
 		$data['url'] = "";
+		$data['content'] = "";
 		$this->render('addStore',$data);
 	}
 	
@@ -246,6 +248,7 @@ class AdminController extends Controller
 		$data['title'] = $storeInfo["title"];
 		$data['icon'] = $storeInfo["icon"];
 		$data['url'] = $storeInfo["url"];
+		$data['content'] = $storeInfo["content"];
 		
 		$this->render('addStore',$data);
 	}
@@ -256,6 +259,7 @@ class AdminController extends Controller
 		$sid = !empty($_POST["sid"])?$_POST["sid"]:"";
 		$title = !empty($_POST["title"])?$_POST["title"]:"";
 		$url = !empty($_POST["url"])?$_POST["url"]:"";
+		$content = !empty($_POST["editorValue"])?$_POST["editorValue"]:"";
 		$iconOld = !empty($_POST["icon_old"])?$_POST["icon_old"]:"";
 		$icon = !empty($_FILES["icon"])?$_FILES["icon"]:"";
 
@@ -281,7 +285,7 @@ class AdminController extends Controller
 
 		if(empty($sid)){
 
-			$this->dao->addStore($title,$iconName,$url);
+			$this->dao->addStore($title,$iconName,$url,$content);
 			$desc = "添加";
 			$url = Yii::app()->url->getAdminAddStoreUrl();
 		
@@ -290,6 +294,7 @@ class AdminController extends Controller
 			$info["title"] = $title;
 			$info["url"] = $url;
 			$info["icon"] = $iconName;
+			$info["content"] = $content;
 
 			$this->dao->updTableInfo("store",$info,"sid",$sid);
 			$desc = "修改";
@@ -451,6 +456,9 @@ class AdminController extends Controller
 		}else if($type == "message"){
 			$table = "message";
 			$field = "mid";
+		}else if($type == "store"){
+			$table = "store";
+			$field = "sid";
 		}else{
 			$msg['result']		= "fail";
 			$msg['message']		= "参数错误";

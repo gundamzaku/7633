@@ -6653,3 +6653,27 @@ Stack trace:
 REQUEST_URI=/index.php?r=admin/doDelete
 HTTP_REFERER=http://www.7663.com/index.php?r=admin/message
 ---
+2016/10/14 10:04:02 [error] [php] Undefined variable: content (D:\shopex\7663\web\protected\controllers\AdminController.php:288)
+Stack trace:
+#0 D:\shopex\7663\yii\framework\web\CController.php(286): AdminController->runAction()
+#1 D:\shopex\7663\yii\framework\web\CController.php(265): AdminController->runActionWithFilters()
+#2 D:\shopex\7663\yii\framework\web\CWebApplication.php(282): AdminController->run()
+#3 D:\shopex\7663\yii\framework\web\CWebApplication.php(141): CWebApplication->runController()
+#4 D:\shopex\7663\yii\framework\base\CApplication.php(185): CWebApplication->processRequest()
+#5 D:\shopex\7663\web\index.php(13): CWebApplication->run()
+REQUEST_URI=/index.php?r=admin/doAddStore
+in D:\shopex\7663\web\protected\controllers\AdminController.php (288)
+in D:\shopex\7663\web\index.php (13)
+2016/10/14 10:04:28 [error] [php] Undefined variable: content (D:\shopex\7663\web\protected\models\DaoSite.php:304)
+Stack trace:
+#0 D:\shopex\7663\yii\framework\web\CController.php(308): CInlineAction->runWithParams()
+#1 D:\shopex\7663\yii\framework\web\CController.php(286): AdminController->runAction()
+#2 D:\shopex\7663\yii\framework\web\CController.php(265): AdminController->runActionWithFilters()
+#3 D:\shopex\7663\yii\framework\web\CWebApplication.php(282): AdminController->run()
+#4 D:\shopex\7663\yii\framework\web\CWebApplication.php(141): CWebApplication->runController()
+#5 D:\shopex\7663\yii\framework\base\CApplication.php(185): CWebApplication->processRequest()
+#6 D:\shopex\7663\web\index.php(13): CWebApplication->run()
+REQUEST_URI=/index.php?r=admin/doAddStore
+in D:\shopex\7663\web\protected\models\DaoSite.php (304)
+in D:\shopex\7663\web\protected\controllers\AdminController.php (288)
+in D:\shopex\7663\web\index.php (13)

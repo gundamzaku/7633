@@ -14,7 +14,7 @@ class SiteController extends Controller
 			$noLogin = false;
 			$action = "";
 			if(!empty($_GET['r']))$action = $_GET['r'];
-			$arr = new SplFixedArray(12); 
+			$arr = new SplFixedArray(13); 
 			$arr[0] = "site/login";
 			$arr[1] = "site/register";
 			$arr[2] = "site/inviteCode";
@@ -27,6 +27,7 @@ class SiteController extends Controller
 			$arr[9] = "site/findPwd";
 			$arr[10] = "site/doLogin";
 			$arr[11] = "site/index";
+			$arr[11] = "site/storeDetails";
 
 			$size = $arr->getSize(); 
 			for($i=0;$i<$size;$i++){
@@ -67,6 +68,18 @@ class SiteController extends Controller
 		}
 		$this->render('home',$data);
 
+	}
+
+	//店铺展示页
+	public function actionStoreDetails(){
+		
+		$sid = intval($_GET["sid"]);
+		$result = $this->dao->getTableInfo("store","sid",$sid);
+		if($result == false){
+			Helper::interrupt($this,"参数错误。",2,Yii::app()->url->getIndexUrl());
+		}
+		//if(!empty($result['add_time'))$result['add_time'] = date("m-d",strtotime($result['add_time']));
+		$this->render('news-details',$result);
 	}
 
 	public function actionMain(){

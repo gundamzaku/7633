@@ -9,6 +9,9 @@
 			case "message":
 				console.log("message");
 				break;
+			case "store":
+				console.log("store");
+				break;
 			default:
 				console.log("yes");
 		}

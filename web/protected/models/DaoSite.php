@@ -296,11 +296,12 @@ class DaoSite extends Dao{
 		return $result;
 	}
 	//添加店铺
-	public function addStore($title,$iconName,$url){
+	public function addStore($title,$iconName,$url,$content){
 		$result = Yii::app()->db->createCommand()->insert('store', array(
 			'title'=>$title,
 			'icon'=>$iconName,
 			'url'=>$url,
+			'content'=>$content,
 			'add_time' => $this->dateTime
 		));
 		return $result;

@@ -8,10 +8,18 @@
 				
 				<ul class="list-message">
 					<?php foreach($store as $k=>$v){?>
-						<li><time><?=$v['add_time']?></time><a href="<?=Yii::app()->url->getAdminUpdStoreUrl("sid=".$v['sid']."&p=".$p)?>"><?=$v['title']?></a></li>
+						<li><time><?=$v['add_time']?></time><a href="<?=Yii::app()->url->getAdminUpdStoreUrl("sid=".$v['sid']."&p=".$p)?>"><?=$v['title']?></a>
+						<a href="javascript:;" style="float:right;" onclick="removeData(this,'store','<?=$v['sid']?>')">删除</a>
+						</li>
 					<?php }?>
 				</ul>
 				<?=$page?>
 			</div>
 		</div>
 	</div>
+	<script type="text/javascript">
+	<!--
+	var url = "<?=Yii::app()->url->getAdminDoDeleteUrl()?>";
+	//-->
+	</script>
+	<script src="js/delete.js" type="text/javascript"></script>

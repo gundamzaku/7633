@@ -1,3 +1,6 @@
+    <script type="text/javascript" charset="utf-8" src="js/uedit/ueditor.config.js"></script>
+    <script type="text/javascript" charset="utf-8" src="js/uedit/ueditor.all.min.js"> </script>
+    <script type="text/javascript" charset="utf-8" src="js/uedit/lang/zh-cn/zh-cn.js"></script>	
 	<?php use yii\widgets\ActiveForm;?>
 	<div id="subhead" class="site dark"><h1><a href="<?=Yii::app()->url->getAdminMainUrl()?>">后台</a></h1></div>
 	<div id="main" class="site">
@@ -25,8 +28,14 @@
 						<img src="<?=$icon?>"/><input type="hidden" value="<?=$icon?>" name="icon_old" readonly/>
 					</fieldset>	
 					<?php }?>
+					<!--
 					<fieldset>
 						<label for="url">店铺地址</label><input type="text" value="<?=$url?>" id="url" name="url" />
+						<div class="msg error" style="display:none"></div>
+					</fieldset>-->
+					<fieldset>
+						<label for="content">店铺简介</label>
+						<script id="content" type="text/plain" style="width:600px;height:300px;"></script>
 						<div class="msg error" style="display:none"></div>
 					</fieldset>
 					<fieldset>
@@ -36,3 +45,9 @@
 			</div>
 		</div>
 	</div>
+	<script type="text/javascript">
+		var ue = UE.getEditor('content');
+		ue.addListener("ready", function () {
+			ue.setContent('<?=$content?>');
+		});
+	</script>

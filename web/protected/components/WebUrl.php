@@ -98,6 +98,12 @@ class WebUrl extends CComponent {
 		return "index.php?r=pay/payResult".$param;	
 	}
 
+	//店铺展示页
+	public function getStoreDetailsUrl($param=""){
+		if(!empty($param))$param = "&".$param;
+		return "index.php?r=site/storeDetails".$param;
+	}
+
 	//退出
 	public function getLoginOutUrl(){
 		return "index.php?r=site/loginOut";	

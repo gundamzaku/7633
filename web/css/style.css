@@ -390,7 +390,7 @@ body .pagenation li {
 .pagenation li a{
 	font-size:13px;
 }
-#bank-select li{width:109px;}
+#bank-select li{width:108px;}
 #bank-select li span{
 	background-image: url(../images/bankLogo_1.png);
 	background-repeat: no-repeat;
@@ -992,6 +992,11 @@ a.more:hover:after{
 	width:calc(100% - 304px);
 	min-height:500px;
 }
+.site .col-full{
+	background:#e9eaeb;
+
+	min-height:500px;
+}
 .site .col-right form{
 	margin-bottom: 56px;
 }
@@ -1129,17 +1134,21 @@ ul.list-message li time{
 .single ul.list-message li time{
 	background:#c3d5e2;
 }
-.col-right .single{
+.col-right .single,
+.col-full .single{
 	padding:0 20px 20px 20px;
 }
-.col-right .single h2{
+.col-right .single h2,
+.col-full .single h2{
 	font-weight: 400;
 	margin:13px 0;
 	border-bottom:1px solid #435a7a;
 }
-.col-right .single form{
+.col-right .single form,
+.col-full .single form{
 	margin-top: 20px;
 }
+
 
 table.orders tbody tr:hover{
 	background-color: #fff;

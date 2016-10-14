@@ -34,7 +34,7 @@
 					<ul class="swiper-slide">
 						<?php for($i=0;$i<5;$i++){?>
 						<?php if(!empty($storeInfo[$i])){?>
-						<li><img src="<?=$storeInfo[$i]["icon"]?>" alt="<?=$storeInfo[$i]["title"]?>" />
+						<li><a href="<?=Yii::app()->url->getStoreDetailsUrl("sid=".$storeInfo[$i]["sid"])?>"><img src="<?=$storeInfo[$i]["icon"]?>" alt="<?=$storeInfo[$i]["title"]?>" /></a>
 							<p><?=$storeInfo[$i]["title"]?></p>
 						</li>
 						<?php }}?>
@@ -43,7 +43,7 @@
 			        <ul class="swiper-slide">
 						<?php for($i=5;$i<10;$i++){?>
 						<?php if(!empty($storeInfo[$i])){?>
-						<li><img src="<?=$storeInfo[$i]["icon"]?>" alt="<?=$storeInfo[$i]["title"]?>" />
+						<li><a href="<?=Yii::app()->url->getStoreDetailsUrl("sid=".$storeInfo[$i]["sid"])?>"><img src="<?=$storeInfo[$i]["icon"]?>" alt="<?=$storeInfo[$i]["title"]?>" /></a>
 							<p><?=$storeInfo[$i]["title"]?></p>
 						</li>
 						<?php }}?>
